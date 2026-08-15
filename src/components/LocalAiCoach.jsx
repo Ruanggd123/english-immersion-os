@@ -322,7 +322,7 @@ export default function LocalAiCoach() {
       </div>
 
       {/* Messages Log */}
-      <div className="card" style={{ padding: '0', overflow: 'hidden', borderColor: 'var(--border-color-active)', display: 'flex', flexDirection: 'column', height: '480px' }}>
+      <div className="card" style={{ padding: '0', overflow: 'hidden', borderColor: 'var(--border-color-active)', display: 'flex', flexDirection: 'column', height: 'min(480px, 65vh)' }}>
         <div style={{ flex: 1, padding: '1.25rem', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '1rem', background: 'rgba(0, 0, 0, 0.15)' }}>
           {messages.map((msg, idx) => (
             <div

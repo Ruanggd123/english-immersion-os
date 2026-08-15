@@ -179,11 +179,11 @@ export default function App() {
       {/* Main Content Area */}
       <main className="main-content">
         {currentTab === 'daily' && (
-          <DailyLesson 
-            currentDay={progressData.currentDay} 
-            setDay={setDay} 
-            toggleTask={toggleTask} 
-            todayTasks={progressData.todayTasks} 
+          <DailyLesson
+            currentDay={progressData.currentDay}
+            setDay={setDay}
+            toggleTask={toggleTask}
+            todayTasks={progressData.todayTasks}
             setTab={setCurrentTab}
           />
         )}
