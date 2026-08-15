@@ -20,7 +20,7 @@ const TASK_KEYS = [
   'evening_reading', 'evening_listening', 'evening_journal'
 ];
 
-export default function LiveSession({ currentDay, setDay, toggleTask }) {
+export default function LiveSession({ currentDay, setDay, toggleTask, markAllTasksDone }) {
   const dayNum = allDays[currentDay] ? currentDay : 1;
   const lesson = allDays[dayNum];
 
@@ -94,9 +94,13 @@ export default function LiveSession({ currentDay, setDay, toggleTask }) {
   };
 
   const markDayComplete = () => {
-    TASK_KEYS.forEach(k => {
-      if (toggleTask) toggleTask(k);
-    });
+    if (markAllTasksDone) {
+      markAllTasksDone();
+    } else {
+      TASK_KEYS.forEach(k => {
+        if (toggleTask) toggleTask(k);
+      });
+    }
     setMarkedDone(true);
   };
 

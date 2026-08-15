@@ -285,7 +285,7 @@ export default function CognitiveTools() {
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
-                  justify: 'center',
+                  justifyContent: 'center',
                   padding: '2rem',
                   cursor: 'pointer',
                   marginBottom: '1.5rem',

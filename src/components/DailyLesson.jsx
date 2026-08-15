@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BookOpen, Headphones, Mic, CheckSquare, ChevronRight, Volume2, Play, Calendar, Sliders, Zap, Bot } from 'lucide-react';
 import { speakNaturalEnglish } from '../utils/audio';
 import { allDays } from '../data/phases';
+import SpeakingVerifier from './SpeakingVerifier';
 
 export default function DailyLesson({ currentDay, setDay, toggleTask, todayTasks, setTab }) {
   const [selectedDay, setSelectedDay] = useState(currentDay || 1);
@@ -54,7 +55,7 @@ export default function DailyLesson({ currentDay, setDay, toggleTask, todayTasks
         borderRadius: 'var(--radius-xl)',
         padding: '1.75rem',
         display: 'flex',
-        justify: 'space-between',
+        justifyContent: 'space-between',
         alignItems: 'center',
         flexWrap: 'wrap',
         gap: '1.25rem'
@@ -156,7 +157,7 @@ export default function DailyLesson({ currentDay, setDay, toggleTask, todayTasks
                   borderRadius: 'var(--radius-sm)',
                   border: '1px solid var(--border-color)',
                   display: 'flex',
-                  justify: 'space-between',
+                  justifyContent: 'space-between',
                   alignItems: 'center'
                 }}>
                   <div>
@@ -332,8 +333,7 @@ export default function DailyLesson({ currentDay, setDay, toggleTask, todayTasks
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
-            <div style={{ background: 'var(--bg-card)', padding: '1rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--accent-emerald)' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem', gap: '0.5rem', flexWrap: 'wrap' }}>
+            <div style={{ background: 'var(--bg-card)', padding: '1rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--accent-emerald)' }}>              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem', gap: '0.5rem', flexWrap: 'wrap' }}>
                 <h5 style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--accent-emerald)' }}>
                   Roteiro de Fala Oral (Speaking Solo)
                 </h5>
@@ -355,6 +355,8 @@ export default function DailyLesson({ currentDay, setDay, toggleTask, todayTasks
               </p>
             </div>
           </div>
+
+          <SpeakingVerifier targets={lesson.chunks.map(c => c.en)} />
         </div>
 
       </div>

@@ -277,7 +277,7 @@ export default function LearningLibrary() {
                     background: 'var(--bg-card)',
                     borderRadius: 'var(--radius-sm)',
                     display: 'flex',
-                    justify: 'space-between',
+                    justifyContent: 'space-between',
                     alignItems: 'center'
                   }}>
                     <div>

@@ -4,6 +4,21 @@ import { Calendar, Clock, Flame, Award, CheckCircle2, Play, Sparkles, BookOpen, 
 export default function Dashboard({ progressData, toggleTask, setTab }) {
   const { currentDay, completedDays, totalHours, streak, todayTasks } = progressData;
 
+  const listenStats = (() => {
+    try {
+      const s = JSON.parse(localStorage.getItem('english_listening_stats') || 'null');
+      const w = JSON.parse(localStorage.getItem('english_listening_weak') || '{}');
+      const today = new Date().toISOString().slice(0, 10);
+      const done = s && s.date === today ? s.done : 0;
+      const correct = s && s.date === today ? s.correct : 0;
+      const weak = Object.values(w).filter(v => v >= 2).length;
+      const pct = done > 0 ? Math.round((correct / done) * 100) : 0;
+      return { done, correct, weak, pct };
+    } catch {
+      return { done: 0, correct: 0, weak: 0, pct: 0 };
+    }
+  })();
+
   const totalDays = 180;
   const progressPercent = Math.round((completedDays / totalDays) * 100);
 
@@ -28,7 +43,7 @@ export default function Dashboard({ progressData, toggleTask, setTab }) {
         borderRadius: 'var(--radius-xl)',
         padding: '2rem',
         display: 'flex',
-        justify: 'space-between',
+        justifyContent: 'space-between',
         alignItems: 'center',
         flexWrap: 'wrap',
         gap: '1.5rem'
@@ -101,9 +116,23 @@ export default function Dashboard({ progressData, toggleTask, setTab }) {
             Seu progresso é salvo automaticamente no seu navegador.
           </p>
         </div>
+        <div className="card">
+          <div className="card-header">
+            <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600 }}>LISTENING LAB (HOJE)</span>
+            <Headphones size={20} color="var(--accent-purple)" />
+          </div>
+          <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--accent-purple)', marginBottom: '0.5rem' }}>
+            {listenStats.done} <span style={{ fontSize: '1rem', color: 'var(--text-muted)', fontWeight: 500 }}>/ 30 frases</span>
+          </div>
+          <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>
+            Precisão de hoje: <strong style={{ color: listenStats.pct >= 80 ? 'var(--accent-emerald)' : 'var(--accent-amber)' }}>{listenStats.pct}%</strong>
+            {listenStats.weak > 0 && <> • <strong style={{ color: 'var(--accent-rose)' }}>{listenStats.weak} na fila de revisão</strong></>}
+          </p>
+          <button className="btn btn-secondary" style={{ width: '100%', justifyContent: 'center' }} onClick={() => setTab('listening')}>
+            <Headphones size={15} /> Abrir Listening Lab
+          </button>
+        </div>
       </div>
-
-      {/* Unified Master Study Block Quick Action */}
       <div className="card" style={{ borderColor: 'var(--accent-emerald)', background: 'linear-gradient(135deg, var(--bg-card) 0%, rgba(16, 185, 129, 0.1) 100%)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
           <div>

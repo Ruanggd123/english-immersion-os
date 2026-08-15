@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { LayoutDashboard, BookOpenCheck, Calendar, Clock, BookOpen, Award, PenTool, Code2, Sparkles, Brain, Bot, Library, Mic } from 'lucide-react';
+import { LayoutDashboard, BookOpenCheck, Calendar, Clock, BookOpen, Award, PenTool, Code2, Sparkles, Brain, Bot, Library, Mic, Headphones, PlayCircle, Briefcase, Compass } from 'lucide-react';
 import Dashboard from './components/Dashboard';
 import DailyLesson from './components/DailyLesson';
 import ScheduleView from './components/ScheduleView';
 import FocusTimer from './components/FocusTimer';
-import MethodologyHelper from './components/MethodologyHelper';
 import SaturdayTests from './components/SaturdayTests';
 import JournalEditor from './components/JournalEditor';
 import TechVocab from './components/TechVocab';
@@ -12,6 +11,10 @@ import CognitiveTools from './components/CognitiveTools';
 import LocalAiCoach from './components/LocalAiCoach';
 import LearningLibrary from './components/LearningLibrary';
 import PhoneticsCoach from './components/PhoneticsCoach';
+import ListeningLab from './components/ListeningLab';
+import LiveSession from './components/LiveSession';
+import InterviewLab from './components/InterviewLab';
+import MethodologyHelper from './components/MethodologyHelper';
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState('daily');
@@ -72,6 +75,21 @@ export default function App() {
     }));
   };
 
+  // Mark all tasks of the day as done (used by the Live Session completion)
+  const markAllTasksDone = () => {
+    setProgressData(prev => {
+      const todayTasks = {};
+      Object.keys(prev.todayTasks).forEach(key => {
+        todayTasks[key] = true;
+      });
+      return {
+        ...prev,
+        todayTasks,
+        completedDays: prev.completedDays < prev.currentDay ? prev.currentDay : prev.completedDays
+      };
+    });
+  };
+
   const setDay = (dayNum) => {
     setProgressData(prev => ({
       ...prev,
@@ -104,6 +122,13 @@ export default function App() {
             </button>
 
             <button
+              className={`tab-btn ${currentTab === 'live' ? 'active' : ''}`}
+              onClick={() => setCurrentTab('live')}
+            >
+              <PlayCircle size={16} /> Sessão ao Vivo
+            </button>
+
+            <button
               className={`tab-btn ${currentTab === 'ai' ? 'active' : ''}`}
               onClick={() => setCurrentTab('ai')}
             >
@@ -115,6 +140,13 @@ export default function App() {
               onClick={() => setCurrentTab('phonetics')}
             >
               <Mic size={16} /> Treinador de Fonemas
+            </button>
+
+            <button
+              className={`tab-btn ${currentTab === 'listening' ? 'active' : ''}`}
+              onClick={() => setCurrentTab('listening')}
+            >
+              <Headphones size={16} /> Listening Lab
             </button>
 
             <button
@@ -172,6 +204,20 @@ export default function App() {
             >
               <Code2 size={16} /> Chunks de TI
             </button>
+
+            <button
+              className={`tab-btn ${currentTab === 'interview' ? 'active' : ''}`}
+              onClick={() => setCurrentTab('interview')}
+            >
+              <Briefcase size={16} /> Entrevistas
+            </button>
+
+            <button
+              className={`tab-btn ${currentTab === 'methodology' ? 'active' : ''}`}
+              onClick={() => setCurrentTab('methodology')}
+            >
+              <Compass size={16} /> Metodologia
+            </button>
           </nav>
         </div>
       </header>
@@ -188,12 +234,25 @@ export default function App() {
           />
         )}
 
+        {currentTab === 'live' && (
+          <LiveSession
+            currentDay={progressData.currentDay}
+            setDay={setDay}
+            toggleTask={toggleTask}
+            markAllTasksDone={markAllTasksDone}
+          />
+        )}
+
         {currentTab === 'ai' && (
           <LocalAiCoach />
         )}
 
         {currentTab === 'phonetics' && (
           <PhoneticsCoach />
+        )}
+
+        {currentTab === 'listening' && (
+          <ListeningLab currentDay={progressData.currentDay} />
         )}
 
         {currentTab === 'library' && (
@@ -226,6 +285,14 @@ export default function App() {
 
         {currentTab === 'tech' && (
           <TechVocab />
+        )}
+
+        {currentTab === 'interview' && (
+          <InterviewLab />
+        )}
+
+        {currentTab === 'methodology' && (
+          <MethodologyHelper />
         )}
       </main>
 

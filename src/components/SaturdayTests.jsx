@@ -189,7 +189,7 @@ export default function SaturdayTests() {
                   border: `1px solid ${vocabAnswers[idx] ? 'var(--accent-emerald)' : 'var(--border-color)'}`,
                   cursor: 'pointer',
                   display: 'flex',
-                  justify: 'space-between',
+                  justifyContent: 'space-between',
                   alignItems: 'center',
                   transition: 'var(--transition-fast)'
                 }}
@@ -394,7 +394,7 @@ export default function SaturdayTests() {
                     borderRadius: 'var(--radius-sm)',
                     border: '1px solid var(--border-color)',
                     display: 'flex',
-                    justify: 'space-between',
+                    justifyContent: 'space-between',
                     alignItems: 'center'
                   }}>
                     <div>
