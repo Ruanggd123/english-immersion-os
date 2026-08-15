@@ -1,0 +1,1438 @@
+// FASE 4A — Semanas 16 a 19 (Dias 105 a 132) — Present Perfect: Experiências e Duração
+export const days_105_132 = {
+  105: {
+    dayName: "Dia 105 — Segunda-feira",
+    title: "Present Perfect — HAVE/HAS + Past Participle",
+    focus: "Falar de experiências e ações com impacto no presente.",
+    vocab: [
+      { en: "Experience", pt: "Experiência" },
+      { en: "Past participle", pt: "Particípio passado" },
+      { en: "Achievement", pt: "Conquista" },
+      { en: "Build — built", pt: "Construir — construído" },
+      { en: "Create — created", pt: "Criar — criado" },
+      { en: "Improve — improved", pt: "Melhorar — melhorado" },
+      { en: "Work — worked", pt: "Trabalhar — trabalhado" },
+      { en: "Learn — learned", pt: "Aprender — aprendido" },
+      { en: "Finish — finished", pt: "Terminar — terminado" },
+      { en: "Visit — visited", pt: "Visitar — visitado" }
+    ],
+    grammar: {
+      title: "Present Perfect (Afirmativa)",
+      rule: "HAVE/HAS + PAST PARTICIPLE. Usamos para experiências na vida (sem dizer quando): I have built three apps. She has learned English. Regra: he/she/it usa HAS; os demais usam HAVE.",
+      table: [
+        { form: "Experiência", example: "I have built three apps in my life.", pt: "Já construí três apps na minha vida." },
+        { form: "3ª pessoa", example: "She has improved a lot this year.", pt: "Ela melhorou muito este ano." },
+        { form: "Contração", example: "I've learned a new language.", pt: "Aprendi (já) um novo idioma." }
+      ]
+    },
+    reading: {
+      title: "My Life in Projects",
+      text: "I have done many things in my life. I have built three mobile apps and two websites. I have worked in two companies. I have learned English for my career. My friend has visited four countries. We have finished the first phase of our project. Today, I feel proud of my experience.",
+      translation: "Eu já fiz muitas coisas na minha vida. Já construí três apps móveis e dois sites. Já trabalhei em duas empresas. Aprendi inglês para minha carreira. Meu amigo já visitou quatro países. Terminamos a primeira fase do nosso projeto. Hoje, sinto orgulho da minha experiência."
+    },
+    quiz: [
+      { q: "Complete: 'I ___ built three apps.'", options: ["have", "has", "am"], ans: "have" },
+      { q: "Complete: 'She ___ learned English.'", options: ["has", "have", "is"], ans: "has" },
+      { q: "Particípio de 'build':", options: ["built", "builded", "building"], ans: "built" }
+    ],
+    chunks: [
+      { en: "I have built three apps", pt: "já construí três apps" },
+      { en: "I have learned English", pt: "já aprendi inglês" },
+      { en: "we have finished the project", pt: "terminamos o projeto" }
+    ],
+    listeningScript: "Let me tell you about my experience. I have worked as a developer for years. I have built many apps, and I have helped my team grow. My friend has visited many countries. What have you done in your life?",
+    speakingPrompt: "Fale sobre suas experiências: 'I have built... I have worked... I have learned... I have visited...'",
+    lightReading: "Resumes are written in Present Perfect: 'I have developed APIs', 'I have improved performance by 30%' — experience language for interviews.",
+    journalPrompt: "Today is Day 105. I have learned the Present Perfect.",
+    tip: "DICA DE USO: o Present Perfect conecta passado e presente. 'I have lost my keys' (ainda não achei) vs 'I lost my keys' (já resolvi). Contexto decide o tempo."
+  },
+  106: {
+    dayName: "Dia 106 — Terça-feira",
+    title: "Particípios Irregulares (Done, Gone, Seen, Written)",
+    focus: "Memorizar os particípios irregulares mais usados.",
+    vocab: [
+      { en: "Do — done", pt: "Fazer — feito" },
+      { en: "Go — gone", pt: "Ir — ido" },
+      { en: "See — seen", pt: "Ver — visto" },
+      { en: "Write — written", pt: "Escrever — escrito" },
+      { en: "Make — made", pt: "Fazer — feito (criar)" },
+      { en: "Take — taken", pt: "Pegar — pego" },
+      { en: "Find — found", pt: "Achar — achado" },
+      { en: "Give — given", pt: "Dar — dado" },
+      { en: "Think — thought", pt: "Pensar — pensado" },
+      { en: "Eat — eaten", pt: "Comer — comido" }
+    ],
+    grammar: {
+      title: "Past Participles Irregulares",
+      rule: "Cada verbo irregular tem um particípio próprio. Não existe regra de formação: DO→DONE, GO→GONE, SEE→SEEN, WRITE→WRITTEN, MAKE→MADE, TAKE→TAKEN, FIND→FOUND. Memorize em pares com o passado.",
+      table: [
+        { form: "do → done", example: "I have done my homework.", pt: "Já fiz minha lição de casa." },
+        { form: "write → written", example: "She has written a great article.", pt: "Ela escreveu um ótimo artigo." },
+        { form: "make → made", example: "We have made a big decision.", pt: "Tomamos uma grande decisão." }
+      ]
+    },
+    reading: {
+      title: "What Have You Done Today?",
+      text: "Today has been productive. I have done all my tasks. I have written a long report, and I have taken notes during the meeting. My colleague has seen the new design and loved it. We have made progress on the database. I have found the bug we were looking for. Now I have thought about the solution.",
+      translation: "Hoje foi produtivo. Fiz todas as minhas tarefas. Escrevi um relatório longo, e tomei notas durante a reunião. Meu colega viu o novo design e adorou. Fizemos progresso no banco de dados. Achei o bug que procurávamos. Agora pensei na solução."
+    },
+    quiz: [
+      { q: "Particípio de 'write':", options: ["written", "wrote", "writed"], ans: "written" },
+      { q: "Particípio de 'see':", options: ["seen", "saw", "seed"], ans: "seen" },
+      { q: "Complete: 'She has ___ a great article.'", options: ["written", "wrote", "writes"], ans: "written" }
+    ],
+    chunks: [
+      { en: "I have done my tasks", pt: "já fiz minhas tarefas" },
+      { en: "she has written an article", pt: "ela escreveu um artigo" },
+      { en: "I have found the bug", pt: "achei o bug" }
+    ],
+    listeningScript: "What have you done today? I have done a lot! I have written a report and taken notes. My team has found the bug. We have made great progress. And I have thought about the next steps.",
+    speakingPrompt: "Liste 5 coisas que você já fez hoje: 'I have...' Use: done, written, taken, found, made.",
+    lightReading: "Changelogs use the participle: 'Fixed', 'Added', 'Removed', 'Written in Rust' — a changelog is a Present Perfect document in disguise.",
+    journalPrompt: "Today is Day 106. I have learned irregular past participles.",
+    tip: "DICA DE MEMÓRIA: agrupe os irregulares por som: write/wrote/written, eat/ate/eaten, see/saw/seen. O som da vogal muda em padrão. Ritmo facilita a memorização."
+  },
+  107: {
+    dayName: "Dia 107 — Quarta-feira",
+    title: "Present Perfect Negativo (Haven't / Hasn't)",
+    focus: "Negar experiências e ações com haven't e hasn't.",
+    vocab: [
+      { en: "Haven't (have not)", pt: "Não tenho / ainda não" },
+      { en: "Hasn't (has not)", pt: "Não (ele/ela) / ainda não" },
+      { en: "Never", pt: "Nunca" },
+      { en: "Yet", pt: "Ainda (não)" },
+      { en: "Finish", pt: "Terminar" },
+      { en: "Start", pt: "Começar" },
+      { en: "Try", pt: "Experimentar" },
+      { en: "Miss", pt: "Perder / sentir falta" },
+      { en: "Fail", pt: "Falhar" },
+      { en: "Succeed", pt: "Conseguir" }
+    ],
+    grammar: {
+      title: "Present Perfect (Negativa)",
+      rule: "HAVEN'T / HASN'T + particípio: I haven't finished. She hasn't tried it. Significa que algo NÃO aconteceu até agora (e o presente mostra o efeito). Com NEVER: I have never done that (nunca = reforço).",
+      table: [
+        { form: "Negativa", example: "I haven't finished the report yet.", pt: "Ainda não terminei o relatório." },
+        { form: "3ª pessoa", example: "He hasn't started the new project.", pt: "Ele ainda não começou o novo projeto." },
+        { form: "Com never", example: "I have never tried that framework.", pt: "Nunca experimentei esse framework." }
+      ]
+    },
+    reading: {
+      title: "Not Yet Done",
+      text: "My week is not over yet. I haven't finished the report, and I haven't tested the new feature. My boss hasn't approved the design. But don't worry: I haven't failed. I have a clear plan. I haven't missed any deadline this month. The team hasn't stopped working. Success hasn't arrived yet, but it is coming.",
+      translation: "Minha semana ainda não acabou. Ainda não terminei o relatório, e ainda não testei a nova funcionalidade. Meu chefe ainda não aprovou o design. Mas não se preocupe: eu não falhei. Tenho um plano claro. Não perdi nenhum prazo este mês. A equipe não parou de trabalhar. O sucesso ainda não chegou, mas está vindo."
+    },
+    quiz: [
+      { q: "Complete: 'I ___ finished the report yet.'", options: ["haven't", "hasn't", "don't have"], ans: "haven't" },
+      { q: "Complete: 'He ___ started the project.'", options: ["hasn't", "haven't", "not has"], ans: "hasn't" },
+      { q: "Complete: 'I have ___ tried that framework.'", options: ["never", "yet", "ever"], ans: "never" }
+    ],
+    chunks: [
+      { en: "I haven't finished yet", pt: "ainda não terminei" },
+      { en: "he hasn't started", pt: "ele ainda não começou" },
+      { en: "I have never tried it", pt: "nunca experimentei" }
+    ],
+    listeningScript: "How is the project going? Well, I haven't finished yet. My colleague hasn't tested the feature. But we haven't missed the deadline. We have never failed a sprint. We will finish!",
+    speakingPrompt: "Fale sobre o que ainda não fez: 'I haven't finished... I haven't tried... I have never done...'",
+    lightReading: "Status updates love the negative perfect: 'The tests haven't passed yet', 'We haven't deployed to production' — honesty with have not is professional English.",
+    journalPrompt: "Today is Day 107. I haven't missed my English practice.",
+    tip: "DICA DE FALA: 'haven't' e 'hasn't' quase se fundem na fala rápida: 'Iven't'. Pratique: I haven't done → 'aivènt'. O ouvido precisa reconhecer, a boca precisa imitar."
+  },
+  108: {
+    dayName: "Dia 108 — Quinta-feira",
+    title: "Perguntas com HAVE (Have You Ever...?)",
+    focus: "Perguntar sobre experiências de vida com have you ever.",
+    vocab: [
+      { en: "Have you ever...?", pt: "Você já...?" },
+      { en: "Ever", pt: "Já (alguma vez)" },
+      { en: "Yes, I have", pt: "Sim, já" },
+      { en: "No, I haven't", pt: "Não, nunca" },
+      { en: "Interview", pt: "Entrevista" },
+      { en: "Abroad", pt: "No exterior" },
+      { en: "Work on", pt: "Trabalhar em" },
+      { en: "Present", pt: "Apresentar" },
+      { en: "Teach", pt: "Ensinar" },
+      { en: "Meet", pt: "Conhecer (pessoa)" }
+    ],
+    grammar: {
+      title: "Perguntas no Present Perfect",
+      rule: "HAVE + sujeito + particípio? Have you ever worked abroad? Respostas curtas: Yes, I have / No, I haven't. EVER (alguma vez) só aparece em perguntas; em negativas usamos NEVER.",
+      table: [
+        { form: "Pergunta", example: "Have you ever worked abroad?", pt: "Você já trabalhou no exterior?" },
+        { form: "Resposta curta", example: "Yes, I have. / No, I haven't.", pt: "Sim, já. / Não, nunca." },
+        { form: "Pergunta com what", example: "What have you built recently?", pt: "O que você construiu recentemente?" }
+      ]
+    },
+    reading: {
+      title: "The Interview Questions",
+      text: "Yesterday I had a job interview. The interviewer asked: 'Have you ever worked abroad?' I answered: 'No, I haven't, but I have worked remotely.' Then she asked: 'What have you built?' I said: 'I have built three mobile apps.' Finally: 'Have you ever presented in English?' I said: 'Yes, I have, twice.' The interview went well.",
+      translation: "Ontem tive uma entrevista de emprego. A entrevistadora perguntou: 'Você já trabalhou no exterior?' Respondi: 'Não, nunca, mas já trabalhei remotamente.' Então ela perguntou: 'O que você já construiu?' Eu disse: 'Já construí três apps móveis.' Finalmente: 'Você já apresentou em inglês?' Eu disse: 'Sim, já, duas vezes.' A entrevista foi bem."
+    },
+    quiz: [
+      { q: "Pergunta correta:", options: ["Have you ever worked abroad?", "Did you ever worked?", "Have you worked ever?"], ans: "Have you ever worked abroad?" },
+      { q: "Resposta curta negativa:", options: ["No, I haven't", "No, I don't", "No, I didn't"], ans: "No, I haven't" },
+      { q: "Complete: 'What have you ___ recently?'", options: ["built", "builded", "building"], ans: "built" }
+    ],
+    chunks: [
+      { en: "have you ever worked abroad?", pt: "você já trabalhou no exterior?" },
+      { en: "yes, I have", pt: "sim, já" },
+      { en: "what have you built?", pt: "o que você já construiu?" }
+    ],
+    listeningScript: "Interview question time! Have you ever worked abroad? No, but I have worked remotely. Have you ever presented in English? Yes, I have, twice. What have you built? Three apps. Great experience!",
+    speakingPrompt: "Pergunte e responda: 'Have you ever...? Yes, I have. / No, I haven't.' Pratique 5 perguntas reais.",
+    lightReading: "Interviewers measure experience with Present Perfect: 'Have you ever led a team?', 'What have you shipped?' — your answers should use the same tense.",
+    journalPrompt: "Today is Day 108. I have practiced interview questions.",
+    tip: "DICA DE ENTREVISTA: responda com detalhe: 'Have you ever...? Yes, I have. I have worked on X for Y years, and I have also...' Sempre expanda a resposta curta."
+  },
+  109: {
+    dayName: "Dia 109 — Sexta-feira",
+    title: "Ever, Never e Experiências de Vida",
+    focus: "Combinar ever e never para falar de experiências e recordes pessoais.",
+    vocab: [
+      { en: "Ever", pt: "Alguma vez" },
+      { en: "Never", pt: "Nunca" },
+      { en: "Life experience", pt: "Experiência de vida" },
+      { en: "Record", pt: "Recorde" },
+      { en: "Amazing", pt: "Incrível" },
+      { en: "Best", pt: "Melhor" },
+      { en: "Worst", pt: "Pior" },
+      { en: "Surprising", pt: "Surpreendente" },
+      { en: "Memorable", pt: "Memorável" },
+      { en: "Special", pt: "Especial" }
+    ],
+    grammar: {
+      title: "Ever / Never + Superlativos",
+      rule: "EVER aparece em perguntas (Have you ever...?) e com superlativos: It is the best thing I have ever seen. NEVER é a negativa: I have never seen such a good tool. Os dois ficam entre have/has e o particípio.",
+      table: [
+        { form: "Superlativo + ever", example: "This is the best project I have ever done.", pt: "Este é o melhor projeto que já fiz." },
+        { form: "Nunca", example: "I have never seen such a fast build.", pt: "Nunca vi um build tão rápido." },
+        { form: "Pergunta", example: "Have you ever tried writing in English?", pt: "Você já tentou escrever em inglês?" }
+      ]
+    },
+    reading: {
+      title: "The Best Day of My Life",
+      text: "This is the best day I have ever had. My team launched the app, and it was a success. I have never felt so happy at work. Have you ever launched a product? It is memorable. The first user was amazing. I have never forgotten that moment. This experience is the most special thing I have ever done.",
+      translation: "Este é o melhor dia que já tive. Minha equipe lançou o app, e foi um sucesso. Nunca me senti tão feliz no trabalho. Você já lançou um produto? É memorável. O primeiro usuário foi incrível. Nunca esqueci esse momento. Essa experiência é a coisa mais especial que já fiz."
+    },
+    quiz: [
+      { q: "Complete: 'This is the best project I have ___ done.'", options: ["ever", "never", "yet"], ans: "ever" },
+      { q: "Complete: 'I have ___ felt so happy.'", options: ["never", "ever", "yet"], ans: "never" },
+      { q: "Pergunta correta:", options: ["Have you ever tried writing?", "Have you never tried ever?", "Ever have you tried?"], ans: "Have you ever tried writing?" }
+    ],
+    chunks: [
+      { en: "the best day I have ever had", pt: "o melhor dia que já tive" },
+      { en: "I have never felt so happy", pt: "nunca me senti tão feliz" },
+      { en: "have you ever tried writing?", pt: "você já tentou escrever?" }
+    ],
+    listeningScript: "What is the best thing you have ever built? For me, it was my first app. I have never forgotten the launch day. Have you ever launched something? If not, try it. It is amazing!",
+    speakingPrompt: "Fale dos seus recordes: 'This is the best... I have ever... I have never... Have you ever...?'",
+    lightReading: "'The most powerful feature we have ever shipped' — marketing and changelogs use superlatives + ever to emphasize records and milestones.",
+    journalPrompt: "Today is Day 109. I have never skipped my daily practice.",
+    tip: "DICA DE NATURALIDADE: nunca diga 'never ever' em textos formais. Em conversa, ok: 'I have never ever seen that'. Na escrita profissional, escolha apenas um."
+  },
+  110: {
+    dayName: "Dia 110 — Sábado",
+    title: "Consolidação da Semana 16 + TESTE DE SÁBADO 16",
+    focus: "Testar o Present Perfect: afirmativa, negativa, perguntas, ever e never.",
+    vocab: [
+      { en: "Experience", pt: "Experiência" },
+      { en: "Participle", pt: "Particípio" },
+      { en: "Achievement", pt: "Conquista" },
+      { en: "Milestone", pt: "Marco" },
+      { en: "Progress", pt: "Progresso" },
+      { en: "Career", pt: "Carreira" },
+      { en: "Skill", pt: "Habilidade" },
+      { en: "Goal", pt: "Meta" },
+      { en: "Result", pt: "Resultado" },
+      { en: "Journey", pt: "Jornada" }
+    ],
+    grammar: {
+      title: "Resumo da Semana 16",
+      rule: "Present Perfect = HAVE/HAS + particípio. Afirmativa: I have built. Negativa: I haven't finished. Pergunta: Have you ever...? EVER em perguntas, NEVER em negativas. Uso: experiências de vida, impacto no presente.",
+      table: [
+        { form: "Afirmativa", example: "I have built three apps.", pt: "Já construí três apps." },
+        { form: "Negativa", example: "I haven't finished the report.", pt: "Ainda não terminei o relatório." },
+        { form: "Pergunta", example: "Have you ever worked abroad?", pt: "Você já trabalhou no exterior?" }
+      ]
+    },
+    reading: {
+      title: "My New Superpower",
+      text: "I have discovered a new superpower: the Present Perfect. I have used it all week. I have told my experiences in English, and I have asked questions too. My friend has never seen me so confident. Have you ever felt this progress? It is amazing. I haven't finished my journey, but I have made a huge step.",
+      translation: "Descobri um novo superpoder: o Present Perfect. Usei-o a semana toda. Contei minhas experiências em inglês, e também fiz perguntas. Meu amigo nunca me viu tão confiante. Você já sentiu esse progresso? É incrível. Não terminei minha jornada, mas dei um passo enorme."
+    },
+    quiz: [
+      { q: "Complete: 'I ___ discovered a new skill.'", options: ["have", "has", "am"], ans: "have" },
+      { q: "Complete: 'My friend has ___ seen me so confident.'", options: ["never", "ever", "yet"], ans: "never" },
+      { q: "Complete: '___ you ever felt this progress?'", options: ["Have", "Has", "Do"], ans: "Have" }
+    ],
+    chunks: [
+      { en: "I have discovered a superpower", pt: "descobri um superpoder" },
+      { en: "I have made a huge step", pt: "dei um passo enorme" },
+      { en: "have you ever felt this progress?", pt: "você já sentiu esse progresso?" }
+    ],
+    listeningScript: "Great job this week! You have learned the Present Perfect. You have built sentences, asked questions, and talked about experiences. You have never been so confident. Next week: for, since, already and yet!",
+    speakingPrompt: "Grave seu Teste de Sábado: 'I have discovered... I have built... I have never... Have you ever...?'",
+    lightReading: "Every milestone review is Present Perfect: 'We have shipped', 'We have improved', 'We haven't stopped' — progress language keeps teams motivated.",
+    journalPrompt: "Today is Day 110. I have passed my Saturday Test 16!",
+    tip: "DICA DE REVISÃO: escreva 10 frases sobre sua vida usando have/has + particípio. Sua própria história é o melhor material de estudo do Present Perfect."
+  },
+  111: {
+    dayName: "Dia 111 — Domingo",
+    title: "Revisão da Semana 16 & Imersão Leve",
+    focus: "Consolidar o Present Perfect com leitura leve e descanso.",
+    vocab: [
+      { en: "Rest", pt: "Descanso" },
+      { en: "Movie", pt: "Filme" },
+      { en: "Series", pt: "Série" },
+      { en: "Song", pt: "Música" },
+      { en: "Lyrics", pt: "Letra da música" },
+      { en: "Relax", pt: "Relaxar" },
+      { en: "Recharge", pt: "Recarregar" },
+      { en: "Week", pt: "Semana" },
+      { en: "Proud", pt: "Orgulhoso" },
+      { en: "Ready", pt: "Pronto" }
+    ],
+    grammar: {
+      title: "Checkpoint 111 — Experiências em Inglês",
+      rule: "Você já sabe falar das suas experiências em inglês. 'I have done, I have built, I haven't tried, Have you ever...?' — isso é a linguagem de entrevistas e conversas reais.",
+      table: [
+        { form: "Experiência", example: "I have done many things this year.", pt: "Já fiz muitas coisas este ano." },
+        { form: "Negativa", example: "I haven't watched this series yet.", pt: "Ainda não assisti a essa série." },
+        { form: "Pergunta", example: "Have you ever watched a movie with English subtitles?", pt: "Você já assistiu a um filme com legendas em inglês?" }
+      ]
+    },
+    reading: {
+      title: "Sunday with Subtitles",
+      text: "Today I rest, but I still learn. I have watched two episodes of a series in English. I have listened to three songs and read the lyrics. I have played a game in English. I haven't studied grammar, but I have practiced listening. Rest has never felt so productive.",
+      translation: "Hoje eu descanso, mas ainda aprendo. Assisti a dois episódios de uma série em inglês. Ouvi três músicas e li as letras. Joguei um game em inglês. Não estudei gramática, mas pratiquei o listening. O descanso nunca foi tão produtivo."
+    },
+    quiz: [
+      { q: "Complete: 'I have ___ two episodes.'", options: ["watched", "watch", "watching"], ans: "watched" },
+      { q: "Complete: 'Rest has never ___ so productive.'", options: ["felt", "feeled", "feeling"], ans: "felt" },
+      { q: "Complete: 'I haven't studied grammar, ___ I practiced listening.'", options: ["but", "because", "so"], ans: "but" }
+    ],
+    chunks: [
+      { en: "I have watched two episodes", pt: "assisti a dois episódios" },
+      { en: "I have read the lyrics", pt: "li as letras" },
+      { en: "rest has never felt so productive", pt: "o descanso nunca foi tão produtivo" }
+    ],
+    listeningScript: "Sunday rest, English style! I have watched episodes, listened to songs, and read lyrics. I haven't opened a grammar book, but my ears have worked hard. Perfect Sunday!",
+    speakingPrompt: "Fale sobre seu domingo: 'Today I have... I haven't... It has never felt so...'",
+    lightReading: "Songs are Present Perfect gold: 'I have seen the world', 'I haven't found it yet' — music trains your ear for grammar patterns naturally.",
+    journalPrompt: "Today is Day 111. I have recharged with English immersion.",
+    tip: "DICA DE IMERSÃO: escolha UMA música por semana e cante com a letra aberta. Sublinhe os 'have/has + particípio' que encontrar. Você vai se surpreender com quantos existem."
+  },
+  112: {
+    dayName: "Dia 112 — Segunda-feira",
+    title: "FOR e SINCE (Duração de Tempo)",
+    focus: "Dizer há quanto tempo algo acontece com for e since.",
+    vocab: [
+      { en: "For", pt: "Há (duração)" },
+      { en: "Since", pt: "Desde (ponto de início)" },
+      { en: "Duration", pt: "Duração" },
+      { en: "Point in time", pt: "Ponto no tempo" },
+      { en: "Years", pt: "Anos" },
+      { en: "Months", pt: "Meses" },
+      { en: "Weeks", pt: "Semanas" },
+      { en: "2020", pt: "Desde 2020" },
+      { en: "Childhood", pt: "Infância" },
+      { en: "Long time", pt: "Muito tempo" }
+    ],
+    grammar: {
+      title: "FOR vs SINCE",
+      rule: "FOR + duração (quantidade): for two years, for a long time. SINCE + ponto de início: since 2020, since Monday, since I was a child. Os dois acompanham o Present Perfect para falar de algo que continua até agora.",
+      table: [
+        { form: "For + duração", example: "I have studied English for six months.", pt: "Estudo inglês há seis meses." },
+        { form: "Since + início", example: "I have worked here since 2022.", pt: "Trabalho aqui desde 2022." },
+        { form: "Desde um evento", example: "She has coded since she was 12.", pt: "Ela programa desde os 12 anos." }
+      ]
+    },
+    reading: {
+      title: "How Long Have You Studied?",
+      text: "People always ask me: 'How long have you studied English?' I have studied English for eight months. My friend has worked as a developer since 2021. Our team has used this framework for two years. I have practiced speaking since January. Time passes fast when you have a goal.",
+      translation: "As pessoas sempre me perguntam: 'Há quanto tempo você estuda inglês?' Estudo inglês há oito meses. Meu amigo trabalha como desenvolvedor desde 2021. Nossa equipe usa este framework há dois anos. Pratico a fala desde janeiro. O tempo passa rápido quando você tem uma meta."
+    },
+    quiz: [
+      { q: "Complete: 'I have studied ___ six months.'", options: ["for", "since", "from"], ans: "for" },
+      { q: "Complete: 'I have worked here ___ 2022.'", options: ["since", "for", "from"], ans: "since" },
+      { q: "Complete: 'She has coded ___ she was 12.'", options: ["since", "for", "at"], ans: "since" }
+    ],
+    chunks: [
+      { en: "for eight months", pt: "há oito meses" },
+      { en: "since 2022", pt: "desde 2022" },
+      { en: "how long have you studied?", pt: "há quanto tempo você estuda?" }
+    ],
+    listeningScript: "How long have you studied English? I have studied for eight months. And how long have you worked? Since 2022. Great! Time passes fast when you have a goal.",
+    speakingPrompt: "Responda com o tempo certo: 'I have studied English for... I have worked since... I have used this laptop for...'",
+    lightReading: "Documentation asks: 'How long has this API existed? Since version 2.0' — for/since appears in version notes and migration guides.",
+    journalPrompt: "Today is Day 112. I have studied English for 112 days.",
+    tip: "DICA DE OURO: FOR + número, SINCE + data/evento. 'For 3 years' vs 'Since 2023'. Se vier número de tempo, é FOR. Se vier data ou evento, é SINCE."
+  },
+  113: {
+    dayName: "Dia 113 — Terça-feira",
+    title: "ALREADY (Já — Ações Concluídas Cedo)",
+    focus: "Usar already para ações que aconteceram antes do esperado.",
+    vocab: [
+      { en: "Already", pt: "Já (antes do esperado)" },
+      { en: "Done", pt: "Feito" },
+      { en: "Solved", pt: "Resolvido" },
+      { en: "Finished", pt: "Terminado" },
+      { en: "Sent", pt: "Enviado" },
+      { en: "Received", pt: "Recebido" },
+      { en: "Answered", pt: "Respondido" },
+      { en: "Ready", pt: "Pronto" },
+      { en: "Early", pt: "Cedo" },
+      { en: "Surprise", pt: "Surpresa" }
+    ],
+    grammar: {
+      title: "ALREADY (Já)",
+      rule: "ALREADY = já, para ações concluídas antes do esperado. Posição: entre have/has e o particípio: I have already finished. Em perguntas, sinaliza surpresa: Have you already finished?",
+      table: [
+        { form: "Afirmativa", example: "I have already finished the task.", pt: "Já terminei a tarefa." },
+        { form: "Surpresa", example: "Have you already solved the bug?", pt: "Você já resolveu o bug?" },
+        { form: "Concluído cedo", example: "She has already sent the report.", pt: "Ela já enviou o relatório." }
+      ]
+    },
+    reading: {
+      title: "Ahead of Schedule",
+      text: "Today I finished everything early. I have already completed my tasks, and my colleague has already reviewed my code. We have already sent the report to the client. The project is ahead of schedule. Have you already seen the new dashboard? It looks great! Working fast has never felt so good.",
+      translation: "Hoje terminei tudo cedo. Já completei minhas tarefas, e meu colega já revisou meu código. Já enviamos o relatório ao cliente. O projeto está adiantado. Você já viu o novo painel? Ele está ótimo! Trabalhar rápido nunca foi tão bom."
+    },
+    quiz: [
+      { q: "Complete: 'I have ___ finished the task.'", options: ["already", "yet", "ever"], ans: "already" },
+      { q: "Complete: 'Have you ___ solved the bug?'", options: ["already", "never", "since"], ans: "already" },
+      { q: "Posição correta do already:", options: ["have already finished", "have finished already the", "already have finished"], ans: "have already finished" }
+    ],
+    chunks: [
+      { en: "I have already finished", pt: "já terminei" },
+      { en: "she has already sent the report", pt: "ela já enviou o relatório" },
+      { en: "have you already seen it?", pt: "você já viu?" }
+    ],
+    listeningScript: "Great news! I have already finished my tasks. My colleague has already reviewed the code. Have you already seen the new design? It is ready! Everything is ahead of schedule.",
+    speakingPrompt: "Fale sobre o que já fez hoje: 'I have already...' e pergunte com surpresa: 'Have you already...?'",
+    lightReading: "'The fix is already in production' — already signals completion before expected, perfect for status updates and stand-up meetings.",
+    journalPrompt: "Today is Day 113. I have already finished my practice.",
+    tip: "DICA DE POSIÇÃO: already fica entre have e o particípio (I have already done). Mas no final da frase também é comum: 'I have done it already.' As duas posições são corretas."
+  },
+  114: {
+    dayName: "Dia 114 — Quarta-feira",
+    title: "YET (Ainda — Perguntas e Negativas)",
+    focus: "Usar yet no fim de perguntas e frases negativas.",
+    vocab: [
+      { en: "Yet", pt: "Ainda (não) / já (pergunta)" },
+      { en: "Not yet", pt: "Ainda não" },
+      { en: "Have you... yet?", pt: "Você já...?" },
+      { en: "Arrive", pt: "Chegar" },
+      { en: "Decide", pt: "Decidir" },
+      { en: "Confirm", pt: "Confirmar" },
+      { en: "Submit", pt: "Enviar (formal)" },
+      { en: "Approve", pt: "Aprovar" },
+      { en: "Deliver", pt: "Entregar" },
+      { en: "Wait", pt: "Esperar" }
+    ],
+    grammar: {
+      title: "YET (Ainda)",
+      rule: "YET vai no FINAL da frase. Negativa: I haven't finished yet (ainda não). Pergunta: Have you finished yet? (já?). Expectativa: algo que esperamos que aconteça. NOT YET é a resposta padrão: 'Are you done?' 'Not yet.'",
+      table: [
+        { form: "Negativa", example: "I haven't submitted the form yet.", pt: "Ainda não enviei o formulário." },
+        { form: "Pergunta", example: "Have you decided yet?", pt: "Você já decidiu?" },
+        { form: "Resposta", example: "Not yet, I'm still thinking.", pt: "Ainda não, ainda estou pensando." }
+      ]
+    },
+    reading: {
+      title: "Waiting for Approval",
+      text: "We have a problem: the client hasn't approved the design yet. My boss hasn't decided yet either. Have you received any feedback yet? Not yet. We have already sent the proposal, but we haven't gotten an answer. The meeting starts in one hour. We haven't prepared the presentation yet. We need to hurry!",
+      translation: "Temos um problema: o cliente ainda não aprovou o design. Meu chefe também ainda não decidiu. Você já recebeu algum feedback? Ainda não. Já enviamos a proposta, mas ainda não tivemos resposta. A reunião começa em uma hora. Ainda não preparamos a apresentação. Precisamos nos apressar!"
+    },
+    quiz: [
+      { q: "Negativa: 'I ___ submitted the form yet.'", options: ["haven't", "hasn't", "not"], ans: "haven't" },
+      { q: "Pergunta: '___ you decided yet?'", options: ["Have", "Has", "Do"], ans: "Have" },
+      { q: "Resposta padrão:", options: ["Not yet", "Never yet", "Yet no"], ans: "Not yet" }
+    ],
+    chunks: [
+      { en: "I haven't submitted yet", pt: "ainda não enviei" },
+      { en: "have you decided yet?", pt: "você já decidiu?" },
+      { en: "not yet", pt: "ainda não" }
+    ],
+    listeningScript: "Quick check: have you received the feedback yet? Not yet. Has the client approved the design? Not yet. We have already sent the proposal. We just need to wait a little more.",
+    speakingPrompt: "Pergunte e responda: 'Have you... yet? Not yet, but I will soon.'",
+    lightReading: "Status meeting phrases: 'Has the deploy finished yet?', 'We haven't shipped yet' — yet is the waiting word of every engineering team.",
+    journalPrompt: "Today is Day 114. I haven't missed a day yet.",
+    tip: "DICA DE PRONÚNCIA: 'yet' rima com 'jet' (yét), não com 'yeet'. É curto e rápido: 'Not yet' → 'notchét' na fala corrida. Ouça e imite."
+  },
+  115: {
+    dayName: "Dia 115 — Quinta-feira",
+    title: "JUST (Aconteceu Agora Mesmo)",
+    focus: "Falar de ações que acabaram de acontecer com just.",
+    vocab: [
+      { en: "Just", pt: "Agora mesmo / acabei de" },
+      { en: "Right now", pt: "Neste momento" },
+      { en: "A moment ago", pt: "Um momento atrás" },
+      { en: "Receive", pt: "Receber" },
+      { en: "Send", pt: "Enviar" },
+      { en: "Fix", pt: "Corrigir" },
+      { en: "Update", pt: "Atualizar" },
+      { en: "Check", pt: "Verificar" },
+      { en: "Open", pt: "Abrir" },
+      { en: "Close", pt: "Fechar" }
+    ],
+    grammar: {
+      title: "JUST (Acabei de...)",
+      rule: "JUST = há poucos segundos/minutos. Posição: entre have/has e o particípio: I have just finished. Em inglês americano também aceita passado simples: I just finished. O Present Perfect é mais formal e muito usado no Reino Unido.",
+      table: [
+        { form: "Ação recente", example: "I have just finished the report.", pt: "Acabei de terminar o relatório." },
+        { form: "Notícia quente", example: "She has just received a promotion.", pt: "Ela acabou de receber uma promoção." },
+        { form: "Tecnologia", example: "We have just deployed the fix.", pt: "Acabamos de implantar a correção." }
+      ]
+    },
+    reading: {
+      title: "Breaking News at Work",
+      text: "Wait, I have news! We have just deployed the new version. The team has just fixed the last bug. My manager has just sent the success message. Everyone has just seen the new dashboard, and it looks amazing. I have just updated my LinkedIn with the news. What a day!",
+      translation: "Esperem, tenho notícias! Acabamos de implantar a nova versão. A equipe acabou de corrigir o último bug. Meu gerente acabou de enviar a mensagem de sucesso. Todos acabaram de ver o novo painel, e ele está incrível. Acabei de atualizar meu LinkedIn com a notícia. Que dia!"
+    },
+    quiz: [
+      { q: "Complete: 'We have ___ deployed the fix.'", options: ["just", "yet", "ever"], ans: "just" },
+      { q: "Complete: 'She has ___ received a promotion.'", options: ["just", "since", "for"], ans: "just" },
+      { q: "Tradução de 'I have just finished':", options: ["Acabei de terminar", "Ainda não terminei", "Já tinha terminado"], ans: "Acabei de terminar" }
+    ],
+    chunks: [
+      { en: "I have just finished", pt: "acabei de terminar" },
+      { en: "we have just deployed", pt: "acabamos de implantar" },
+      { en: "she has just received", pt: "ela acabou de receber" }
+    ],
+    listeningScript: "Breaking news! We have just deployed the new version. The team has just fixed the bug. And I have just received great feedback from the client. Perfect timing!",
+    speakingPrompt: "Conte notícias recentes: 'I have just... We have just... She has just...'",
+    lightReading: "Deploy announcements: 'We have just pushed the hotfix to production' — just + Present Perfect is how engineers announce fresh changes.",
+    journalPrompt: "Today is Day 115. I have just finished my daily lesson.",
+    tip: "DICA DE AMERICANO: nos EUA é comum 'I just finished' (passado simples). No Reino Unido, 'I have just finished'. Se você entende os dois, está pronto para as duas audiências."
+  },
+  116: {
+    dayName: "Dia 116 — Sexta-feira",
+    title: "STILL (Ainda — Não Concluído)",
+    focus: "Usar still para ações que continuam sem conclusão.",
+    vocab: [
+      { en: "Still", pt: "Ainda (continua)" },
+      { en: "Continue", pt: "Continuar" },
+      { en: "In progress", pt: "Em andamento" },
+      { en: "Wait", pt: "Esperar" },
+      { en: "Learn", pt: "Aprender" },
+      { en: "Improve", pt: "Melhorar" },
+      { en: "Search", pt: "Procurar" },
+      { en: "Develop", pt: "Desenvolver" },
+      { en: "Practice", pt: "Praticar" },
+      { en: "Keep going", pt: "Continuar em frente" }
+    ],
+    grammar: {
+      title: "STILL (Ainda continua)",
+      rule: "STILL = a ação CONTINUA no presente (não terminou). Posição: antes do verbo: I am still working. Com Present Perfect: I still haven't finished (continuo sem terminar). Compare: STILL (positivo, continua) vs YET (negativa/pergunta, ainda não).",
+      table: [
+        { form: "Ação contínua", example: "I am still working on the project.", pt: "Ainda estou trabalhando no projeto." },
+        { form: "Contínuo negativo", example: "I still haven't finished the course.", pt: "Ainda não terminei o curso." },
+        { form: "Pergunta", example: "Are you still learning English?", pt: "Você ainda está aprendendo inglês?" }
+      ]
+    },
+    reading: {
+      title: "Still Learning, Still Growing",
+      text: "Are you still studying English? Yes, I am still learning every day. My project is still in progress, and I still haven't finished all the features. But that is okay: I am still improving. The team is still working hard. We still have time to finish before the deadline. Keep going!",
+      translation: "Você ainda está estudando inglês? Sim, ainda estou aprendendo todos os dias. Meu projeto ainda está em andamento, e ainda não terminei todas as funcionalidades. Mas tudo bem: ainda estou melhorando. A equipe ainda está trabalhando duro. Ainda temos tempo de terminar antes do prazo. Continue!",
+    },
+    quiz: [
+      { q: "Complete: 'I am ___ working on the project.'", options: ["still", "yet", "never"], ans: "still" },
+      { q: "Complete: 'I ___ haven't finished the course.'", options: ["still", "yet", "just"], ans: "still" },
+      { q: "Tradução de 'Are you still learning?':", options: ["Você ainda está aprendendo?", "Você já aprendeu?", "Você nunca aprende?"], ans: "Você ainda está aprendendo?" }
+    ],
+    chunks: [
+      { en: "I am still working", pt: "ainda estou trabalhando" },
+      { en: "I still haven't finished", pt: "ainda não terminei" },
+      { en: "we still have time", pt: "ainda temos tempo" }
+    ],
+    listeningScript: "Hey, are you still working on the app? Yes, I am still fixing the last bug. Is the team still here? Yes, we still have two hours. We still can finish today. Keep going!",
+    speakingPrompt: "Fale sobre o que continua: 'I am still... I still haven't... We still have...'",
+    lightReading: "'The issue is still open', 'We are still investigating' — still is the honest word for ongoing work in tickets and status reports.",
+    journalPrompt: "Today is Day 116. I am still learning every single day.",
+    tip: "DICA DE CONTRASTE: STILL fala de CONTINUIDADE (positiva ou negativa), YET fala de EXPECTATIVA (pergunta/negativa). 'I am still working' (continuo) vs 'I haven't finished yet' (esperava terminar)."
+  },
+  117: {
+    dayName: "Dia 117 — Sábado",
+    title: "Consolidação da Semana 17 + TESTE DE SÁBADO 17",
+    focus: "Testar for, since, already, yet, just e still.",
+    vocab: [
+      { en: "Duration", pt: "Duração" },
+      { en: "Deadline", pt: "Prazo" },
+      { en: "Recently", pt: "Recentemente" },
+      { en: "Lately", pt: "Ultimamente" },
+      { en: "On time", pt: "No prazo" },
+      { en: "Late", pt: "Atrasado" },
+      { en: "Waiting", pt: "Esperando" },
+      { en: "Progress", pt: "Progresso" },
+      { en: "Feedback", pt: "Retorno / Feedback" },
+      { en: "Approval", pt: "Aprovação" }
+    ],
+    grammar: {
+      title: "Resumo da Semana 17",
+      rule: "FOR + duração (for 2 years). SINCE + início (since 2022). ALREADY = já (antes do esperado, entre have e particípio). YET = ainda não (final da negativa/pergunta). JUST = acabei de (recente). STILL = continua (antes do verbo).",
+      table: [
+        { form: "Duração", example: "I have worked here for two years.", pt: "Trabalho aqui há dois anos." },
+        { form: "Início", example: "I have worked here since 2024.", pt: "Trabalho aqui desde 2024." },
+        { form: "Ainda não", example: "I haven't finished yet, but I'm almost done.", pt: "Ainda não terminei, mas estou quase." }
+      ]
+    },
+    reading: {
+      title: "The Weekly Time Report",
+      text: "This week I have learned a lot. I have studied English for 117 days, since March. I have already completed my tasks, but I haven't published the report yet. My manager has just sent the feedback: excellent work! I am still improving my speaking, but I have made real progress. Time works for me now.",
+      translation: "Esta semana aprendi muito. Estudo inglês há 117 dias, desde março. Já completei minhas tarefas, mas ainda não publiquei o relatório. Meu gerente acabou de enviar o feedback: excelente trabalho! Ainda estou melhorando minha fala, mas fiz progresso real. O tempo trabalha a meu favor agora."
+    },
+    quiz: [
+      { q: "Complete: 'I have studied ___ 117 days.'", options: ["for", "since", "just"], ans: "for" },
+      { q: "Complete: 'I have studied ___ March.'", options: ["since", "for", "yet"], ans: "since" },
+      { q: "Complete: 'I haven't published the report ___'", options: ["yet", "still", "already"], ans: "yet" }
+    ],
+    chunks: [
+      { en: "I have studied for 117 days", pt: "estudo há 117 dias" },
+      { en: "I haven't published yet", pt: "ainda não publiquei" },
+      { en: "I have made real progress", pt: "fiz progresso real" }
+    ],
+    listeningScript: "Weekly review! I have studied for 117 days. I have already finished my tasks. I haven't published the report yet, but my manager has just sent great feedback. I am still improving. Progress!",
+    speakingPrompt: "Grave seu Teste de Sábado: 'I have studied for... I have already... I haven't... yet. I am still...'",
+    lightReading: "Personal reviews are Present Perfect time reports: 'I have learned for X days, I haven't shipped yet, but I have just hit a milestone' — measure progress with time markers.",
+    journalPrompt: "Today is Day 117. I have passed my Saturday Test 17!",
+    tip: "DICA DE FIXAÇÃO: crie UM cartaz mental: FOR = medida, SINCE = data, ALREADY = feito, YET = falta, JUST = agora, STILL = continua. Repita os 6 ao revisar a semana."
+  },
+  118: {
+    dayName: "Dia 118 — Domingo",
+    title: "Revisão da Semana 17 & Imersão Leve",
+    focus: "Revisar os marcadores de tempo com conteúdo leve.",
+    vocab: [
+      { en: "Repeat", pt: "Repetir" },
+      { en: "Remember", pt: "Lembrar" },
+      { en: "Review", pt: "Revisar" },
+      { en: "Practice", pt: "Praticar" },
+      { en: "Enjoy", pt: "Aproveitar" },
+      { en: "Favorite", pt: "Favorito" },
+      { en: "Channel", pt: "Canal" },
+      { en: "Video", pt: "Vídeo" },
+      { en: "Learn by heart", pt: "Decorar" },
+      { en: "Habit", pt: "Hábito" }
+    ],
+    grammar: {
+      title: "Checkpoint 118 — Marcadores de Tempo",
+      rule: "Você agora mede o tempo em inglês: for e since para duração, already/just para o que terminou, yet para o que falta, still para o que continua. Esses 6 marcadores aparecem em toda conversa real.",
+      table: [
+        { form: "Há quanto tempo", example: "I have watched this channel for years.", pt: "Assisto a este canal há anos." },
+        { form: "Recentemente", example: "I have just seen a great video.", pt: "Acabei de ver um ótimo vídeo." },
+        { form: "Continua", example: "I am still subscribed to it.", pt: "Ainda sou inscrito nele." }
+      ]
+    },
+    reading: {
+      title: "My Favorite Channel",
+      text: "I have watched my favorite channel for three years. I have learned so much since 2023. I have just seen their new video about AI, and it was great. I haven't finished the full course yet, but I have already started. I am still following the creator because he explains everything clearly. This habit has changed my career.",
+      translation: "Assisto ao meu canal favorito há três anos. Aprendi muito desde 2023. Acabei de ver o novo vídeo deles sobre IA, e foi ótimo. Ainda não terminei o curso completo, mas já comecei. Ainda sigo o criador porque ele explica tudo com clareza. Esse hábito mudou minha carreira."
+    },
+    quiz: [
+      { q: "Complete: 'I have watched this channel ___ three years.'", options: ["for", "since", "just"], ans: "for" },
+      { q: "Complete: 'I have just ___ their new video.'", options: ["seen", "saw", "seed"], ans: "seen" },
+      { q: "Complete: 'I ___ haven't finished the course.'", options: ["still", "yet", "already"], ans: "still" }
+    ],
+    chunks: [
+      { en: "I have watched for three years", pt: "assisto há três anos" },
+      { en: "I have just seen the video", pt: "acabei de ver o vídeo" },
+      { en: "this habit has changed my career", pt: "esse hábito mudou minha carreira" }
+    ],
+    listeningScript: "My favorite channel: I have watched it for three years. I have just seen a new video, and I haven't finished the course yet. I am still learning every week. It works!",
+    speakingPrompt: "Fale sobre um canal ou hábito: 'I have watched... for... I have learned since... I have just... I am still...'",
+    lightReading: "Content creators use the same time markers: 'I have been making videos since 2020', 'I haven't uploaded yet this week' — listen for for/since/just/yet in any video.",
+    journalPrompt: "Today is Day 118. I have reviewed my time markers.",
+    tip: "DICA DE OUVIDO: na próxima semana, assista 2 vídeos em inglês e anote cada 'have/has + particípio' que ouvir. Você perceberá que esses 6 marcadores aparecem em quase todas as frases."
+  },
+  119: {
+    dayName: "Dia 119 — Segunda-feira",
+    title: "Present Perfect vs Past Simple (A Grande Diferença)",
+    focus: "Escolher entre present perfect e past simple com clareza.",
+    vocab: [
+      { en: "Finished time", pt: "Tempo finalizado" },
+      { en: "Unfinished time", pt: "Tempo não finalizado" },
+      { en: "Yesterday", pt: "Ontem" },
+      { en: "Last week", pt: "Semana passada" },
+      { en: "This week", pt: "Esta semana" },
+      { en: "Ago", pt: "Atrás (tempo)" },
+      { en: "Today", pt: "Hoje" },
+      { en: "In 2024", pt: "Em 2024" },
+      { en: "Ever", pt: "Alguma vez" },
+      { en: "Recently", pt: "Recentemente" }
+    ],
+    grammar: {
+      title: "Quando usar cada um?",
+      rule: "PAST SIMPLE = tempo FINALIZADO (yesterday, last week, in 2024, 3 days ago): I finished it yesterday. PRESENT PERFECT = tempo NÃO finalizado ou experiência sem data (today, this week, ever, recently): I have finished it this week. Pergunte: 'O período acabou?' Sim → Past Simple. Não → Present Perfect.",
+      table: [
+        { form: "Passado finalizado", example: "I finished the report yesterday.", pt: "Terminei o relatório ontem." },
+        { form: "Período atual", example: "I have finished the report this week.", pt: "Terminei o relatório nesta semana." },
+        { form: "Experiência", example: "I have visited São Paulo. (alguma vez)", pt: "Já visitei São Paulo." }
+      ]
+    },
+    reading: {
+      title: "The Time Test",
+      text: "This morning I tested myself. Yesterday I studied the difference between the two tenses. This week I have practiced a lot. Last week I made many mistakes, but now I understand. Three days ago I failed a quiz. Today I have already passed two! Experience is the best teacher.",
+      translation: "Esta manhã me testei. Ontem estudei a diferença entre os dois tempos. Esta semana pratiquei muito. Semana passada cometi muitos erros, mas agora entendo. Há três dias falhei num quiz. Hoje já passei em dois! A experiência é a melhor professora."
+    },
+    quiz: [
+      { q: "Tempo finalizado:", options: ["I finished it yesterday.", "I have finished it yesterday.", "I finish it yesterday."], ans: "I finished it yesterday." },
+      { q: "Período atual:", options: ["I have finished it this week.", "I finished it this week yesterday.", "I finish this week."], ans: "I have finished it this week." },
+      { q: "Complete: 'I made mistakes ___ week.'", options: ["last", "this", "since"], ans: "last" }
+    ],
+    chunks: [
+      { en: "I finished it yesterday", pt: "terminei ontem" },
+      { en: "I have finished it this week", pt: "terminei esta semana" },
+      { en: "three days ago", pt: "há três dias" }
+    ],
+    listeningScript: "The time test! Yesterday I studied the tenses. This week I have practiced a lot. Last week I made mistakes. Today I have already passed two quizzes. Time decides the tense!",
+    speakingPrompt: "Conte ações com os dois tempos: 'Yesterday I... This week I have... Last month I... Today I have already...'",
+    lightReading: "Release notes mix both: 'Yesterday we fixed a crash. This week we have improved performance' — the present release note is Present Perfect; the past one is Past Simple.",
+    journalPrompt: "Today is Day 119. I have understood the two tenses.",
+    tip: "DICA DEFINITIVA: procure a 'âncora de tempo'. 'Yesterday, ago, in 2024, last week' → Passado Simples. 'Today, this week, ever, recently, since' → Present Perfect. A âncora manda."
+  },
+  120: {
+    dayName: "Dia 120 — Terça-feira",
+    title: "Âncoras de Tempo (Ago, Last, This, Since)",
+    focus: "Identificar âncoras de tempo e escolher o tempo certo.",
+    vocab: [
+      { en: "Ago", pt: "Atrás (tempo)" },
+      { en: "Last year", pt: "Ano passado" },
+      { en: "This month", pt: "Este mês" },
+      { en: "Since Monday", pt: "Desde segunda" },
+      { en: "Two days ago", pt: "Há dois dias" },
+      { en: "Recently", pt: "Recentemente" },
+      { en: "So far", pt: "Até agora" },
+      { en: "Up to now", pt: "Até agora" },
+      { en: "In the past", pt: "No passado" },
+      { en: "Lately", pt: "Ultimamente" }
+    ],
+    grammar: {
+      title: "Âncoras de Tempo",
+      rule: "A frase quase sempre traz uma âncora. AGO / LAST / IN + ano → PAST SIMPLE. THIS / SO FAR / SINCE / RECENTLY / LATELY → PRESENT PERFECT. Memorize as âncoras e o tempo escolhe sozinho.",
+      table: [
+        { form: "Âncora passada", example: "Two days ago, I fixed the bug.", pt: "Há dois dias, corrigi o bug." },
+        { form: "Âncora atual", example: "So far, I have fixed three bugs.", pt: "Até agora, corrigi três bugs." },
+        { form: "Desde", example: "I have been here since Monday.", pt: "Estou aqui desde segunda." }
+      ]
+    },
+    reading: {
+      title: "So Far, So Good",
+      text: "So far, this month has been great. Two weeks ago, I started a new course. Last week, I finished the first module. Since Monday, I have reviewed every lesson. Recently, I have improved my listening a lot. In the past, I was afraid of English. Now I feel confident. Time anchors make everything clear.",
+      translation: "Até agora, este mês foi ótimo. Há duas semanas, comecei um novo curso. Semana passada, terminei o primeiro módulo. Desde segunda, reviso todas as lições. Recentemente, melhorei muito meu listening. No passado, eu tinha medo do inglês. Agora me sinto confiante. As âncoras de tempo deixam tudo claro."
+    },
+    quiz: [
+      { q: "Âncora de passado:", options: ["Two days ago, I fixed it.", "Two days ago, I have fixed it.", "Two days ago, I fix it."], ans: "Two days ago, I fixed it." },
+      { q: "Âncora atual:", options: ["So far, I have fixed three bugs.", "So far, I fixed three bugs.", "So far, I fix three bugs."], ans: "So far, I have fixed three bugs." },
+      { q: "Complete: 'I have been here ___ Monday.'", options: ["since", "ago", "last"], ans: "since" }
+    ],
+    chunks: [
+      { en: "so far, I have fixed three bugs", pt: "até agora, corrigi três bugs" },
+      { en: "two days ago, I fixed it", pt: "há dois dias, corrigi" },
+      { en: "since Monday, I have reviewed", pt: "desde segunda, reviso" }
+    ],
+    listeningScript: "Progress report: two weeks ago I started a course. Last week I finished module one. Since Monday I have reviewed daily. Recently I have improved a lot. So far, so good!",
+    speakingPrompt: "Fale com âncoras: 'Last week I... This week I have... Two days ago I... Since Monday I have...'",
+    lightReading: "Bug reports are anchor tests: 'Yesterday the app crashed' (past), 'The app has crashed twice this week' (perfect) — anchors decide the tense in tickets too.",
+    journalPrompt: "Today is Day 120. I have mastered time anchors.",
+    tip: "DICA DE EXAME: ao escolher entre os dois tempos, sublinhe a âncora na frase. Se ela 'fechou' (ago, last, yesterday), use passado simples. Se está 'aberta' (this week, so far, since), use perfect."
+  },
+  121: {
+    dayName: "Dia 121 — Quarta-feira",
+    title: "Did You...? vs Have You...? (Perguntas)",
+    focus: "Diferenciar perguntas no passado simples e no present perfect.",
+    vocab: [
+      { en: "Did you...?", pt: "Você...? (passado)" },
+      { en: "Have you...?", pt: "Você já...? (experiência)" },
+      { en: "When?", pt: "Quando?" },
+      { en: "This morning", pt: "Esta manhã" },
+      { en: "Last night", pt: "Ontem à noite" },
+      { en: "Before", pt: "Antes" },
+      { en: "Details", pt: "Detalhes" },
+      { en: "Answer", pt: "Resposta" },
+      { en: "Memory", pt: "Memória" },
+      { en: "Past", pt: "Passado" }
+    ],
+    grammar: {
+      title: "DID vs HAVE em Perguntas",
+      rule: "DID + verbo base para tempo fechado: Did you eat last night? (quando importa). HAVE + particípio para experiência sem data: Have you eaten? (estou oferecendo comida agora). DID pergunta os detalhes; HAVE pergunta a experiência.",
+      table: [
+        { form: "Tempo fechado", example: "Did you finish the task last night?", pt: "Você terminou a tarefa ontem à noite?" },
+        { form: "Experiência", example: "Have you finished the task?", pt: "Você já terminou a tarefa?" },
+        { form: "Detalhes", example: "What did you do this morning?", pt: "O que você fez esta manhã?" }
+      ]
+    },
+    reading: {
+      title: "The Questions of the Day",
+      text: "In the meeting, my manager asked me questions. 'Did you sleep well last night?' Yes, I did. 'Have you ever worked with this database?' Yes, I have, two years ago. 'What did you do this morning?' I reviewed the code. 'Have you checked the new bug?' Not yet. Good questions, clear answers.",
+      translation: "Na reunião, meu gerente me fez perguntas. 'Você dormiu bem ontem à noite?' Sim, dormi. 'Você já trabalhou com esse banco de dados?' Sim, já, há dois anos. 'O que você fez esta manhã?' Revisei o código. 'Você já verificou o novo bug?' Ainda não. Boas perguntas, respostas claras."
+    },
+    quiz: [
+      { q: "Tempo fechado:", options: ["Did you sleep well last night?", "Have you slept well last night?", "Do you slept well?"], ans: "Did you sleep well last night?" },
+      { q: "Experiência:", options: ["Have you ever worked with this database?", "Did you ever worked?", "Do you work ever?"], ans: "Have you ever worked with this database?" },
+      { q: "Resposta de 'Did you...?':", options: ["Yes, I did", "Yes, I have", "Yes, I do"], ans: "Yes, I did" }
+    ],
+    chunks: [
+      { en: "did you finish last night?", pt: "você terminou ontem à noite?" },
+      { en: "have you ever worked with it?", pt: "você já trabalhou com isso?" },
+      { en: "not yet, but soon", pt: "ainda não, mas em breve" }
+    ],
+    listeningScript: "Quick questions! Did you sleep well? Yes, I did. Have you ever used Git? Yes, I have. What did you do this morning? I reviewed code. Have you checked the bug? Not yet. Perfect answers!",
+    speakingPrompt: "Pratique os dois tipos de pergunta e responda: 'Did you...? Yes, I did. / Have you ever...? Yes, I have.'",
+    lightReading: "Daily stand-up questions: 'Did you finish yesterday's ticket?' vs 'Have you ever seen this error?' — the two tenses run meetings.",
+    journalPrompt: "Today is Day 121. I have learned the two question forms.",
+    tip: "DICA DE RESPOSTA: DID → 'Yes, I did / No, I didn't'. HAVE → 'Yes, I have / No, I haven't'. Nunca misture: 'Yes, I did' para 'Have you...?' está errado."
+  },
+  122: {
+    dayName: "Dia 122 — Quinta-feira",
+    title: "Histórias com os Dois Tempos",
+    focus: "Contar histórias misturando present perfect e past simple.",
+    vocab: [
+      { en: "Story", pt: "História" },
+      { en: "First time", pt: "Primeira vez" },
+      { en: "Happened", pt: "Aconteceu" },
+      { en: "Moment", pt: "Momento" },
+      { en: "Suddenly", pt: "De repente" },
+      { en: "Finally", pt: "Finalmente" },
+      { en: "Before", pt: "Antes" },
+      { en: "Since then", pt: "Desde então" },
+      { en: "Never again", pt: "Nunca mais" },
+      { en: "Memory", pt: "Memória" }
+    ],
+    grammar: {
+      title: "Estrutura de uma História",
+      rule: "Abra com o PERFECT (o que isso significa para o presente): I have never seen such a bug. Depois conte os detalhes no PAST SIMPLE: Yesterday, it appeared suddenly. Feche com o perfect de novo: Since then, I have checked the logs daily.",
+      table: [
+        { form: "Abertura (perfect)", example: "I have never seen such a strange bug.", pt: "Nunca vi um bug tão estranho." },
+        { form: "Detalhes (past)", example: "Yesterday it appeared suddenly.", pt: "Ontem ele apareceu de repente." },
+        { form: "Fechamento (perfect)", example: "Since then, I have checked the logs daily.", pt: "Desde então, verifico os logs diariamente." }
+      ]
+    },
+    reading: {
+      title: "The Bug That Changed Me",
+      text: "I have never forgotten my first big bug. Last year, the app stopped working suddenly. I spent two days searching. Finally, I found the problem: one missing line. I have learned a lot since then. Have you ever faced a similar situation? It has taught me to test everything carefully.",
+      translation: "Nunca esqueci meu primeiro bug grande. Ano passado, o app parou de funcionar de repente. Passei dois dias procurando. Finalmente, encontrei o problema: uma linha faltando. Aprendi muito desde então. Você já enfrentou uma situação parecida? Isso me ensinou a testar tudo com cuidado."
+    },
+    quiz: [
+      { q: "Abertura de história:", options: ["I have never seen such a bug.", "I never saw such a bug last year.", "I see never such bug."], ans: "I have never seen such a bug." },
+      { q: "Detalhe no passado:", options: ["Yesterday it appeared suddenly.", "Yesterday it has appeared.", "It appears yesterday."], ans: "Yesterday it appeared suddenly." },
+      { q: "Complete: 'I have learned a lot ___ then.'", options: ["since", "for", "ago"], ans: "since" }
+    ],
+    chunks: [
+      { en: "I have never forgotten it", pt: "nunca esqueci" },
+      { en: "last year, the app stopped", pt: "ano passado, o app parou" },
+      { en: "it has taught me to test", pt: "isso me ensinou a testar" }
+    ],
+    listeningScript: "Let me tell you a story. I have never forgotten my first big bug. Last year, the app stopped suddenly. I spent two days searching. Finally, I found the problem. Since then, I have tested everything carefully.",
+    speakingPrompt: "Conte uma história: 'I have never... Last week... Finally... Since then, I have...'",
+    lightReading: "Great post-mortems tell stories with both tenses: 'We have never seen this error before. On Friday it appeared... Since then we have added monitoring' — learn from engineering stories.",
+    journalPrompt: "Today is Day 122. I have told a story in English.",
+    tip: "DICA DE CONTAR HISTÓRIAS: o PERFECT dá o contexto ('nunca vi isso'), o PAST conta a ação ('aconteceu ontem'), o PERFECT fecha a lição ('desde então eu...'). Esse ciclo é o formato de histórias em inglês."
+  },
+  123: {
+    dayName: "Dia 123 — Sexta-feira",
+    title: "Checkpoint Misto (Revisão Completa do Present Perfect)",
+    focus: "Revisar tudo: afirmativa, negativa, perguntas e marcadores.",
+    vocab: [
+      { en: "Checkpoint", pt: "Ponto de verificação" },
+      { en: "Review", pt: "Revisão" },
+      { en: "Summary", pt: "Resumo" },
+      { en: "Test", pt: "Teste" },
+      { en: "Mistake", pt: "Erro" },
+      { en: "Correction", pt: "Correção" },
+      { en: "Improvement", pt: "Melhoria" },
+      { en: "Confidence", pt: "Confiança" },
+      { en: "Achievement", pt: "Conquista" },
+      { en: "Next step", pt: "Próximo passo" }
+    ],
+    grammar: {
+      title: "Revisão Completa do Present Perfect",
+      rule: "Estrutura: HAVE/HAS + particípio. Afirmativa: I have done. Negativa: I haven't done. Pergunta: Have you done? Marcadores: for (duração), since (início), already (feito), yet (falta), just (agora), still (continua). vs Past Simple: âncora fechada → past.",
+      table: [
+        { form: "Estrutura completa", example: "Have you ever built an app? Yes, I have built three.", pt: "Você já construiu um app? Sim, já construí três." },
+        { form: "Duração", example: "I have studied for months and since January.", pt: "Estudo há meses e desde janeiro." },
+        { form: "Contraste", example: "I wrote the code yesterday, so I have tested it today.", pt: "Escrevi o código ontem, então testei hoje." }
+      ]
+    },
+    reading: {
+      title: "The Checkpoint Report",
+      text: "Today is my checkpoint. Have I learned the Present Perfect? Yes, I have. I have practiced for three weeks. I have already done the exercises, and I haven't made serious mistakes yet. Yesterday I reviewed the irregular participles. Since then, I have felt more confident. My next step: the Present Perfect Continuous. I have prepared my plan.",
+      translation: "Hoje é meu ponto de verificação. Aprendi o Present Perfect? Sim, aprendi. Pratico há três semanas. Já fiz os exercícios, e ainda não cometi erros graves. Ontem revisei os particípios irregulares. Desde então, me sinto mais confiante. Meu próximo passo: o Present Perfect Continuous. Já preparei meu plano."
+    },
+    quiz: [
+      { q: "Complete: '___ I learned the Present Perfect?'", options: ["Have", "Has", "Did"], ans: "Have" },
+      { q: "Complete: 'I have practiced ___ three weeks.'", options: ["for", "since", "ago"], ans: "for" },
+      { q: "Complete: 'Yesterday I ___ the participles.'", options: ["reviewed", "have reviewed", "review"], ans: "reviewed" }
+    ],
+    chunks: [
+      { en: "I have practiced for three weeks", pt: "pratico há três semanas" },
+      { en: "I haven't made serious mistakes yet", pt: "ainda não cometi erros graves" },
+      { en: "I have prepared my plan", pt: "preparei meu plano" }
+    ],
+    listeningScript: "Checkpoint time! Have I learned the Present Perfect? Yes, I have. I have practiced for weeks. I have already done the exercises. Yesterday I reviewed the participles. Since then, I feel confident. Next stop: Continuous!",
+    speakingPrompt: "Faça seu resumo oral: 'Have I learned...? Yes, I have. I have practiced for... I have already... Next, I will...'",
+    lightReading: "Quarterly reviews are checkpoints: 'What have we shipped this quarter?' (perfect) + 'What happened last quarter?' (past) — business English runs on this switch.",
+    journalPrompt: "Today is Day 123. My checkpoint is complete.",
+    tip: "DICA DE AUTOAVALIAÇÃO: grave 2 minutos respondendo 'What have you done this month?' e compare com a gravação do mês passado. O Present Perfect é o tempo da autoavaliação."
+  },
+  124: {
+    dayName: "Dia 124 — Sábado",
+    title: "Consolidação da Semana 18 + TESTE DE SÁBADO 18",
+    focus: "Testar present perfect vs past simple em contexto real.",
+    vocab: [
+      { en: "Comparison", pt: "Comparação" },
+      { en: "Difference", pt: "Diferença" },
+      { en: "Choice", pt: "Escolha" },
+      { en: "Reason", pt: "Razão" },
+      { en: "Example", pt: "Exemplo" },
+      { en: "Context", pt: "Contexto" },
+      { en: "Situation", pt: "Situação" },
+      { en: "Rule", pt: "Regra" },
+      { en: "Apply", pt: "Aplicar" },
+      { en: "Understand", pt: "Entender" }
+    ],
+    grammar: {
+      title: "Resumo da Semana 18",
+      rule: "Past Simple: tempo fechado (yesterday, ago, last). Present Perfect: experiência ou tempo aberto (ever, this week, since). Perguntas: DID para detalhes, HAVE para experiência. Histórias: perfect abre e fecha, past conta os detalhes.",
+      table: [
+        { form: "Fechado", example: "I wrote the code yesterday.", pt: "Escrevi o código ontem." },
+        { form: "Aberto", example: "I have written code all week.", pt: "Escrevi código a semana toda." },
+        { form: "Pergunta", example: "Did you test it? Have you ever tested this?", pt: "Você testou? Você já testou isso?" }
+      ]
+    },
+    reading: {
+      title: "The Tense Master",
+      text: "Yesterday, I created a small app. This week, I have created two more. Have I improved? Yes, I have. Two weeks ago, I mixed the tenses. Since then, I have practiced with anchors. Did I make mistakes last night? A few, but I have already corrected them. Now, the choice is automatic. Experience has done its job.",
+      translation: "Ontem, criei um app pequeno. Esta semana, criei mais dois. Eu melhorei? Sim, melhorei. Há duas semanas, eu misturava os tempos. Desde então, pratiquei com âncoras. Cometi erros ontem à noite? Alguns, mas já os corrigi. Agora, a escolha é automática. A experiência fez seu trabalho."
+    },
+    quiz: [
+      { q: "Complete: '___ I improved? Yes, I ___'", options: ["Have / have", "Did / have", "Do / did"], ans: "Have / have" },
+      { q: "Complete: 'Two weeks ago, I ___ the tenses.'", options: ["mixed", "have mixed", "mix"], ans: "mixed" },
+      { q: "Complete: 'I have already ___ them.'", options: ["corrected", "correct", "correcting"], ans: "corrected" }
+    ],
+    chunks: [
+      { en: "yesterday, I created an app", pt: "ontem, criei um app" },
+      { en: "this week, I have created two more", pt: "esta semana, criei mais dois" },
+      { en: "I have already corrected them", pt: "já os corrigi" }
+    ],
+    listeningScript: "The tense master! Yesterday I created an app. This week I have created two more. Two weeks ago I mixed the tenses. Since then, I have practiced. Did I make mistakes? A few. Have I corrected them? Yes, I have!",
+    speakingPrompt: "Grave seu Teste de Sábado: 'Yesterday I... This week I have... Have I...? Yes, I have. Two weeks ago... Since then...'",
+    lightReading: "Write your own changelog this week: yesterday (past) vs this week (perfect) — see your own history in both tenses.",
+    journalPrompt: "Today is Day 124. I have passed my Saturday Test 18!",
+    tip: "DICA FINAL DA SEMANA: crie um hábito: no fim do dia, escreva 2 frases: uma com 'Yesterday I...' e outra com 'Today I have...'. 2 minutos por dia, fluência garantida."
+  },
+  125: {
+    dayName: "Dia 125 — Domingo",
+    title: "Revisão da Semana 18 & Imersão Leve",
+    focus: "Consolidar a diferença dos tempos com descanso leve.",
+    vocab: [
+      { en: "Relax", pt: "Relaxar" },
+      { en: "Podcast", pt: "Podcast" },
+      { en: "Interview", pt: "Entrevista" },
+      { en: "Guest", pt: "Convidado" },
+      { en: "Career", pt: "Carreira" },
+      { en: "Story", pt: "História" },
+      { en: "Episode", pt: "Episódio" },
+      { en: "Listen", pt: "Ouvir" },
+      { en: "Learn", pt: "Aprender" },
+      { en: "Rest", pt: "Descanso" }
+    ],
+    grammar: {
+      title: "Checkpoint 125 — Dois Tempos, Uma Mente",
+      rule: "Você domina o interruptor: tempo fechado → past simple; tempo aberto/experiência → present perfect. Em podcasts e entrevistas, ouça os dois e identifique as âncoras.",
+      table: [
+        { form: "Ouça no podcast", example: "'In my career, I have worked in 5 companies.'", pt: "'Na minha carreira, já trabalhei em 5 empresas.'" },
+        { form: "Ouça no passado", example: "'Last year, I started my own business.'", pt: "'Ano passado, comecei meu próprio negócio.'" },
+        { form: "Pratique", example: "'I have listened to this podcast for months.'", pt: "'Ouço este podcast há meses.'" }
+      ]
+    },
+    reading: {
+      title: "Sunday Podcast",
+      text: "Today I listened to an amazing podcast. The guest has worked in tech for 15 years. Last year, he founded a startup. He said: 'I have never stopped learning.' He told a great story: 'Three years ago, I failed, but I have grown since then.' I have saved the episode. Have you heard it?",
+      translation: "Hoje ouvi um podcast incrível. O convidado trabalha em tecnologia há 15 anos. Ano passado, ele fundou uma startup. Ele disse: 'Nunca parei de aprender.' Ele contou uma ótima história: 'Há três anos, eu falhei, mas cresci desde então.' Salvei o episódio. Você já ouviu?",
+    },
+    quiz: [
+      { q: "Complete: 'He has ___ in tech for 15 years.'", options: ["worked", "work", "working"], ans: "worked" },
+      { q: "Complete: 'Three years ago, I ___'", options: ["failed", "have failed", "fail"], ans: "failed" },
+      { q: "Complete: 'I have ___ since then.'", options: ["grown", "grew", "grow"], ans: "grown" }
+    ],
+    chunks: [
+      { en: "I have never stopped learning", pt: "nunca parei de aprender" },
+      { en: "I have grown since then", pt: "cresci desde então" },
+      { en: "have you heard it?", pt: "você já ouviu?" }
+    ],
+    listeningScript: "Great podcast today! The guest has worked in tech for 15 years. Last year, he founded a startup. He has never stopped learning. Have you heard this episode? Listen and learn!",
+    speakingPrompt: "Fale sobre um podcast ou entrevista que já ouviu: 'The guest has... Last year, he... I have...'",
+    lightReading: "Every great interview episode is a grammar lab: guests switch between 'I have built' (experience) and 'I built it in 2019' (specific past). Follow the switches.",
+    journalPrompt: "Today is Day 125. I have rested with English in my ears.",
+    tip: "DICA DE DESCANSO ATIVO: escolha um podcast de tech com entrevistas. Não precisa entender tudo: foque só em caçar 'have/has + particípio'. É como um jogo de caça-palavras no ouvido."
+  },
+  126: {
+    dayName: "Dia 126 — Segunda-feira",
+    title: "Present Perfect Continuous (Have Been + -ING)",
+    focus: "Falar de ações que começaram no passado e continuam.",
+    vocab: [
+      { en: "Have been doing", pt: "Venho fazendo" },
+      { en: "Has been working", pt: "Tem trabalhado" },
+      { en: "Since morning", pt: "Desde a manhã" },
+      { en: "All day", pt: "O dia todo" },
+      { en: "Non-stop", pt: "Sem parar" },
+      { en: "Continuous", pt: "Contínuo" },
+      { en: "Activity", pt: "Atividade" },
+      { en: "Process", pt: "Processo" },
+      { en: "Effort", pt: "Esforço" },
+      { en: "Tiring", pt: "Cansativo" }
+    ],
+    grammar: {
+      title: "Present Perfect Continuous",
+      rule: "HAVE/HAS + BEEN + verbo -ING. Foca na ATIVIDADE que começou no passado e ainda continua: I have been studying all day. Ela destaca a duração e o processo, não o resultado. He/she/it → has been; demais → have been.",
+      table: [
+        { form: "Atividade contínua", example: "I have been studying English all day.", pt: "Venho estudando inglês o dia todo." },
+        { form: "3ª pessoa", example: "She has been working since morning.", pt: "Ela tem trabalhado desde a manhã." },
+        { form: "Processo", example: "We have been testing the app for hours.", pt: "Estamos testando o app há horas." }
+      ]
+    },
+    reading: {
+      title: "A Long Day of Coding",
+      text: "I have been coding since eight in the morning. My team has been fixing bugs non-stop. We have been testing the new feature for hours. My eyes are tired, but I feel good: the app is almost ready. I have been learning a lot this week. Hard work has been paying off.",
+      translation: "Venho programando desde as oito da manhã. Minha equipe tem corrigido bugs sem parar. Estamos testando a nova funcionalidade há horas. Meus olhos estão cansados, mas me sinto bem: o app está quase pronto. Tenho aprendido muito esta semana. O trabalho duro tem valido a pena."
+    },
+    quiz: [
+      { q: "Complete: 'I ___ studying all day.'", options: ["have been", "has been", "am being"], ans: "have been" },
+      { q: "Complete: 'She ___ working since morning.'", options: ["has been", "have been", "is been"], ans: "has been" },
+      { q: "Complete: 'We have been ___ the app for hours.'", options: ["testing", "tested", "test"], ans: "testing" }
+    ],
+    chunks: [
+      { en: "I have been coding all day", pt: "venho programando o dia todo" },
+      { en: "we have been fixing bugs", pt: "estamos corrigindo bugs" },
+      { en: "hard work has been paying off", pt: "o trabalho duro tem valido a pena" }
+    ],
+    listeningScript: "How are you? Tired! I have been coding since morning. My team has been testing non-stop. We have been working hard. But the app is almost ready. The effort has been worth it!",
+    speakingPrompt: "Fale do que você vem fazendo: 'I have been... since... I have been... for... We have been...'",
+    lightReading: "'The server has been running for 90 days' — uptime reports are Present Perfect Continuous: the process continues, measured over time.",
+    journalPrompt: "Today is Day 126. I have been learning non-stop.",
+    tip: "DICA DE USO: use o continuous quando o FOCO é a atividade em andamento ('I have been fixing bugs — ainda não acabei'). Use o simple quando o FOCO é o resultado ('I have fixed 3 bugs — já acabei')."
+  },
+  127: {
+    dayName: "Dia 127 — Terça-feira",
+    title: "FOR e SINCE no Continuous",
+    focus: "Combinar for e since com o present perfect continuous.",
+    vocab: [
+      { en: "For hours", pt: "Por horas" },
+      { en: "Since yesterday", pt: "Desde ontem" },
+      { en: "For a while", pt: "Por um tempo" },
+      { en: "All week", pt: "A semana toda" },
+      { en: "Since the beginning", pt: "Desde o começo" },
+      { en: "For months", pt: "Por meses" },
+      { en: "Keep doing", pt: "Continuar fazendo" },
+      { en: "Lately", pt: "Ultimamente" },
+      { en: "Recently", pt: "Recentemente" },
+      { en: "Long time", pt: "Muito tempo" }
+    ],
+    grammar: {
+      title: "FOR / SINCE + Continuous",
+      rule: "Com o continuous, FOR mede a duração total (for two hours) e SINCE marca o início (since morning). Pergunta clássica: HOW LONG have you been + -ing? (Há quanto tempo você vem...?)",
+      table: [
+        { form: "Duração", example: "I have been waiting for two hours.", pt: "Estou esperando há duas horas." },
+        { form: "Início", example: "The team has been working since yesterday.", pt: "A equipe trabalha desde ontem." },
+        { form: "Pergunta", example: "How long have you been learning English?", pt: "Há quanto tempo você vem aprendendo inglês?" }
+      ]
+    },
+    reading: {
+      title: "The Long Wait",
+      text: "We have been waiting for the deploy since yesterday. The server has been running for 24 hours non-stop. I have been checking the logs for hours. How long has the team been working on this? Since Monday. Finally, the status changed. We have been patient, and it worked.",
+      translation: "Estamos esperando o deploy desde ontem. O servidor está rodando há 24 horas sem parar. Venho verificando os logs há horas. Há quanto tempo a equipe trabalha nisso? Desde segunda. Finalmente, o status mudou. Fomos pacientes, e funcionou."
+    },
+    quiz: [
+      { q: "Complete: 'I have been waiting ___ two hours.'", options: ["for", "since", "ago"], ans: "for" },
+      { q: "Complete: 'The team has been working ___ yesterday.'", options: ["since", "for", "at"], ans: "since" },
+      { q: "Complete: 'How long ___ you been learning?'", options: ["have", "has", "did"], ans: "have" }
+    ],
+    chunks: [
+      { en: "I have been waiting for two hours", pt: "estou esperando há duas horas" },
+      { en: "since yesterday", pt: "desde ontem" },
+      { en: "how long have you been learning?", pt: "há quanto tempo você vem aprendendo?" }
+    ],
+    listeningScript: "How long have you been waiting? For two hours! Has the team been working? Since yesterday. Has the server been running? For 24 hours. Patient wins!",
+    speakingPrompt: "Pergunte e responda: 'How long have you been...? I have been... for/since...'",
+    lightReading: "Status pages measure processes: 'Database has been syncing for 40 minutes, since 14:00' — for/since + continuous is monitoring language.",
+    journalPrompt: "Today is Day 127. I have been practicing since the morning.",
+    tip: "DICA DE PERGUNTA: 'How long have you been + -ing?' é a pergunta mais útil do continuous. Memorize-a inteira: ela abre qualquer conversa sobre rotinas e projetos."
+  },
+  128: {
+    dayName: "Dia 128 — Quarta-feira",
+    title: "Continuous vs Simple Perfect (Atividade vs Resultado)",
+    focus: "Escolher entre have been doing e have done.",
+    vocab: [
+      { en: "Activity", pt: "Atividade" },
+      { en: "Result", pt: "Resultado" },
+      { en: "Focus", pt: "Foco" },
+      { en: "Finished", pt: "Terminado" },
+      { en: "Unfinished", pt: "Não terminado" },
+      { en: "Visible", pt: "Visível" },
+      { en: "Evidence", pt: "Evidência" },
+      { en: "Effect", pt: "Efeito" },
+      { en: "Recently", pt: "Recentemente" },
+      { en: "Just now", pt: "Agora mesmo" }
+    ],
+    grammar: {
+      title: "Simple vs Continuous Perfect",
+      rule: "CONTINUOUS = foco na ATIVIDADE (duração, processo, ainda acontecendo): I have been cleaning (ainda não acabei / cansaço visível). SIMPLE = foco no RESULTADO concluído: I have cleaned the room (está limpo, acabou). Pergunte: o importante é o processo ou o resultado?",
+      table: [
+        { form: "Resultado", example: "I have cleaned the room. It is clean now.", pt: "Limpei o quarto. Está limpo agora." },
+        { form: "Atividade", example: "I have been cleaning all morning.", pt: "Venho limpando a manhã toda." },
+        { form: "Efeito visível", example: "Your eyes are red. Have you been crying?", pt: "Seus olhos estão vermelhos. Você estava chorando?" }
+      ]
+    },
+    reading: {
+      title: "The Clean Code Report",
+      text: "My code is finally clean. I have refactored the whole module, and the tests pass. How long has this taken? I have been working on it for days. The old code has been causing problems since last month. Now, the result is visible: faster and clearer. The process was hard, but the result is worth it.",
+      translation: "Meu código finalmente está limpo. Refatorei o módulo inteiro, e os testes passam. Quanto tempo isso levou? Venho trabalhando nisso há dias. O código antigo vem causando problemas desde o mês passado. Agora, o resultado é visível: mais rápido e mais claro. O processo foi difícil, mas o resultado vale a pena."
+    },
+    quiz: [
+      { q: "Foco no resultado:", options: ["I have refactored the module.", "I have been refactoring for days.", "I am refactor the module."], ans: "I have refactored the module." },
+      { q: "Foco na atividade:", options: ["I have been working on it for days.", "I have worked on it. Done.", "I work on it yesterday."], ans: "I have been working on it for days." },
+      { q: "Complete: 'The old code has been ___ problems since last month.'", options: ["causing", "caused", "cause"], ans: "causing" }
+    ],
+    chunks: [
+      { en: "I have refactored the module", pt: "refatorei o módulo" },
+      { en: "I have been working for days", pt: "venho trabalhando há dias" },
+      { en: "the result is visible", pt: "o resultado é visível" }
+    ],
+    listeningScript: "Done! I have refactored the module. How long did it take? I have been working on it for days. The old code has been causing problems. Now the result is visible. Process and result, both important!",
+    speakingPrompt: "Fale com os dois: 'I have finished... I have been working on... The result is...'",
+    lightReading: "In code reviews, both tenses matter: 'I have fixed the bug' (result, check now) vs 'I have been debugging since morning' (effort, context) — know which to say in stand-ups.",
+    journalPrompt: "Today is Day 128. I have been studying for months.",
+    tip: "DICA DE STAND-UP: no trabalho, diga o RESULTADO primeiro: 'I have fixed the login bug.' Só depois conte o esforço: 'I have been debugging it since yesterday.' Resultado primeiro, processo depois."
+  },
+  129: {
+    dayName: "Dia 129 — Quinta-feira",
+    title: "How Long...? (Perguntas de Duração)",
+    focus: "Perguntar e responder sobre duração de ações e hábitos.",
+    vocab: [
+      { en: "How long?", pt: "Quanto tempo?" },
+      { en: "Since when?", pt: "Desde quando?" },
+      { en: "For how long?", pt: "Por quanto tempo?" },
+      { en: "Habit", pt: "Hábito" },
+      { en: "Routine", pt: "Rotina" },
+      { en: "Exercise", pt: "Exercício" },
+      { en: "Meditation", pt: "Meditação" },
+      { en: "Gym", pt: "Academia" },
+      { en: "Reading", pt: "Leitura" },
+      { en: "Practice", pt: "Prática" }
+    ],
+    grammar: {
+      title: "Perguntas de Duração",
+      rule: "HOW LONG + have/has + been + -ing? → How long have you been studying? Respostas: for + duração (for two years) ou since + início (since 2025). Também: SINCE WHEN? (Desde quando?) para o ponto de início.",
+      table: [
+        { form: "Duração", example: "How long have you been exercising?", pt: "Há quanto tempo você se exercita?" },
+        { form: "Resposta", example: "I have been exercising for two years.", pt: "Me exercito há dois anos." },
+        { form: "Ponto de início", example: "Since when? Since March.", pt: "Desde quando? Desde março." }
+      ]
+    },
+    reading: {
+      title: "Healthy Habits",
+      text: "My friends ask me about my habits. 'How long have you been studying English?' For eight months. 'How long have you been coding?' Since I was 15. 'How long have you been exercising?' I have been going to the gym for three years. 'Since when do you meditate?' Since last year. Good habits, good questions.",
+      translation: "Meus amigos me perguntam sobre meus hábitos. 'Há quanto tempo você estuda inglês?' Há oito meses. 'Há quanto tempo você programa?' Desde os 15 anos. 'Há quanto tempo você se exercita?' Vou à academia há três anos. 'Desde quando você medita?' Desde o ano passado. Bons hábitos, boas perguntas."
+    },
+    quiz: [
+      { q: "Pergunta de duração:", options: ["How long have you been studying?", "How much you study?", "Since long you study?"], ans: "How long have you been studying?" },
+      { q: "Resposta de duração:", options: ["I have been studying for eight months.", "I study eight months ago.", "I have studied since long."], ans: "I have been studying for eight months." },
+      { q: "Ponto de início:", options: ["Since when? Since March.", "How long? For March.", "When since? March ago."], ans: "Since when? Since March." }
+    ],
+    chunks: [
+      { en: "how long have you been studying?", pt: "há quanto tempo você estuda?" },
+      { en: "I have been going to the gym for years", pt: "vou à academia há anos" },
+      { en: "since I was 15", pt: "desde os 15 anos" }
+    ],
+    listeningScript: "Interview time! How long have you been studying English? For eight months. Since when do you code? Since I was 15. How long have you been exercising? For three years. Great habits!",
+    speakingPrompt: "Entreviste um amigo (ou a si mesmo): 'How long have you been...? Since when...?'",
+    lightReading: "Tech communities ask duration questions constantly: 'How long have you been using React?', 'Since when has this bug existed?' — duration questions in forums.",
+    journalPrompt: "Today is Day 129. I have been learning for 129 days.",
+    tip: "DICA DE CONVERSA: 'How long have you been + -ing?' é um quebra-gelo perfeito. Funciona com qualquer hábito: trabalho, estudos, esportes, jogos. Memorize a estrutura e pergunte sempre."
+  },
+  130: {
+    dayName: "Dia 130 — Sexta-feira",
+    title: "Continuous no Mundo Tech (Debugging, Deploying)",
+    focus: "Usar o continuous em situações reais de tecnologia.",
+    vocab: [
+      { en: "Debugging", pt: "Depurando" },
+      { en: "Deploying", pt: "Implantando" },
+      { en: "Monitoring", pt: "Monitorando" },
+      { en: "Updating", pt: "Atualizando" },
+      { en: "Improving", pt: "Melhorando" },
+      { en: "Testing", pt: "Testando" },
+      { en: "Researching", pt: "Pesquisando" },
+      { en: "Building", pt: "Construindo" },
+      { en: "Optimizing", pt: "Otimizando" },
+      { en: "Documenting", pt: "Documentando" }
+    ],
+    grammar: {
+      title: "Continuous Técnico",
+      rule: "No trabalho de engenharia, o continuous descreve processos longos: I have been debugging since morning. O simple descreve entregas: I have deployed the fix. Use o continuous para o que está EM ANDAMENTO e o simple para o que já FOI ENTREGUE.",
+      table: [
+        { form: "Em andamento", example: "I have been debugging this bug since morning.", pt: "Venho depurando este bug desde a manhã." },
+        { form: "Entregue", example: "I have deployed the fix to production.", pt: "Implantei a correção em produção." },
+        { form: "Monitorando", example: "We have been monitoring the server for hours.", pt: "Estamos monitorando o servidor há horas." }
+      ]
+    },
+    reading: {
+      title: "A Day in the Life of an Engineer",
+      text: "What have I been doing today? I have been debugging a strange error since nine. My colleague has been monitoring the servers all morning. We have been testing the new API for hours. I have already deployed one hotfix. The client has been waiting for a solution since yesterday. Finally, we are close. This is engineering life.",
+      translation: "O que eu tenho feito hoje? Venho depurando um erro estranho desde as nove. Meu colega monitora os servidores a manhã toda. Estamos testando a nova API há horas. Já implantei um hotfix. O cliente espera uma solução desde ontem. Finalmente, estamos perto. Essa é a vida de engenharia."
+    },
+    quiz: [
+      { q: "Em andamento:", options: ["I have been debugging since morning.", "I have debugged. Done.", "I debugged yesterday."], ans: "I have been debugging since morning." },
+      { q: "Entregue:", options: ["I have deployed the fix.", "I have been deploying for hours.", "I am deploy the fix."], ans: "I have deployed the fix." },
+      { q: "Complete: 'We have been ___ the server for hours.'", options: ["monitoring", "monitored", "monitor"], ans: "monitoring" }
+    ],
+    chunks: [
+      { en: "I have been debugging since morning", pt: "venho depurando desde a manhã" },
+      { en: "I have deployed the fix", pt: "implantei a correção" },
+      { en: "we have been monitoring the server", pt: "estamos monitorando o servidor" }
+    ],
+    listeningScript: "Engineering day! I have been debugging since nine. We have been monitoring the servers all morning. I have already deployed a hotfix. The client has been waiting since yesterday. Almost done!",
+    speakingPrompt: "Descreva seu dia de trabalho: 'I have been... since... I have already... We have been...'",
+    lightReading: "Stand-ups are continuous grammar: 'I've been fixing X', 'We've been investigating Y', 'I've shipped Z' — listen to how engineers mix the two perfects.",
+    journalPrompt: "Today is Day 130. I have been practicing tech English.",
+    tip: "DICA DE VOCABULÁRIO TÉCNICO: '-ing' com 'been' vira a forma natural de descrever trabalho: been debugging, been researching, been optimizing. Adote: é como engenheiros nativos falam do próprio dia."
+  },
+  131: {
+    dayName: "Dia 131 — Sábado",
+    title: "Consolidação da Semana 19 + TESTE DE SÁBADO 19",
+    focus: "Testar o present perfect continuous completo.",
+    vocab: [
+      { en: "Continuous", pt: "Contínuo" },
+      { en: "Process", pt: "Processo" },
+      { en: "Result", pt: "Resultado" },
+      { en: "Duration", pt: "Duração" },
+      { en: "Progress", pt: "Progresso" },
+      { en: "Effort", pt: "Esforço" },
+      { en: "Patience", pt: "Paciência" },
+      { en: "Consistency", pt: "Constância" },
+      { en: "Milestone", pt: "Marco" },
+      { en: "Achievement", pt: "Conquista" }
+    ],
+    grammar: {
+      title: "Resumo da Semana 19",
+      rule: "Present Perfect Continuous = HAVE/HAS + BEEN + -ING. Foco na atividade em andamento: I have been working. Simple = resultado: I have worked. FOR (duração) e SINCE (início) com os dois. Pergunta: How long have you been...?",
+      table: [
+        { form: "Atividade", example: "I have been practicing all week.", pt: "Venho praticando a semana toda." },
+        { form: "Resultado", example: "I have completed the exercises.", pt: "Completei os exercícios." },
+        { form: "Duração", example: "How long have you been studying? For months.", pt: "Há quanto tempo você estuda? Há meses." }
+      ]
+    },
+    reading: {
+      title: "The Continuous Journey",
+      text: "I have been studying English for 131 days. Have I been doing everything perfectly? No, but I have been consistent. My listening has been improving month by month. I have been watching videos without subtitles since last month. The result? I have understood full podcasts. The process has been hard, but the journey has been worth it.",
+      translation: "Venho estudando inglês há 131 dias. Tenho feito tudo perfeitamente? Não, mas tenho sido constante. Meu listening vem melhorando mês a mês. Venho assistindo vídeos sem legendas desde o mês passado. O resultado? Entendi podcasts completos. O processo tem sido difícil, mas a jornada tem valido a pena."
+    },
+    quiz: [
+      { q: "Complete: 'I have been ___ English for 131 days.'", options: ["studying", "studied", "study"], ans: "studying" },
+      { q: "Complete: 'My listening has been ___ month by month.'", options: ["improving", "improved", "improve"], ans: "improving" },
+      { q: "Complete: 'I have been watching videos ___ last month.'", options: ["since", "for", "ago"], ans: "since" }
+    ],
+    chunks: [
+      { en: "I have been studying for 131 days", pt: "venho estudando há 131 dias" },
+      { en: "I have been consistent", pt: "tenho sido constante" },
+      { en: "the journey has been worth it", pt: "a jornada tem valido a pena" }
+    ],
+    listeningScript: "The continuous journey! I have been studying for 131 days. I have been consistent. My listening has been improving. I have been watching videos without subtitles. The result? I understood podcasts. Worth it!",
+    speakingPrompt: "Grave seu Teste de Sábado: 'I have been... for... I have already... The result? I have...'",
+    lightReading: "Learning journeys are continuous: 'I have been studying daily', 'My skills have been growing' — describe your own progress in the continuous.",
+    journalPrompt: "Today is Day 131. I have passed my Saturday Test 19!",
+    tip: "DICA DE CONSOLIDAÇÃO: escreva 5 frases sobre seus hábitos com 'I have been + -ing for/since'. Sua rotina real é o melhor material para o continuous."
+  },
+  132: {
+    dayName: "Dia 132 — Domingo",
+    title: "Revisão da Semana 19 & Imersão Leve",
+    focus: "Revisar o continuous e fechar o mês com descanso.",
+    vocab: [
+      { en: "Month", pt: "Mês" },
+      { en: "Review", pt: "Revisão" },
+      { en: "Celebrate", pt: "Celebrar" },
+      { en: "Progress", pt: "Progresso" },
+      { en: "Milestone", pt: "Marco" },
+      { en: "Movie", pt: "Filme" },
+      { en: "Documentary", pt: "Documentário" },
+      { en: "English subtitles", pt: "Legendas em inglês" },
+      { en: "Weekend", pt: "Fim de semana" },
+      { en: "Recharge", pt: "Recarregar" }
+    ],
+    grammar: {
+      title: "Checkpoint 132 — Fim do Mês 4",
+      rule: "Quatro meses completos! Você domina: passado simples, presente simples/contínuo, futuro, comparativos e agora o Present Perfect (simple e continuous). Sua gramática cobre 90% das conversas do dia a dia.",
+      table: [
+        { form: "Present Perfect", example: "I have done a lot this month.", pt: "Fiz muita coisa este mês." },
+        { form: "Continuous", example: "I have been improving every week.", pt: "Venho melhorando toda semana." },
+        { form: "Passado", example: "Last month, I learned the perfect.", pt: "No mês passado, aprendi o perfect." }
+      ]
+    },
+    reading: {
+      title: "Four Months of English",
+      text: "Four months ago, I started this journey. Since then, I have been studying every single day. Last month, I learned the Present Perfect. This week, I have been practicing the continuous. I have watched a documentary today with English subtitles. Have I changed? Yes, I have. My confidence has never been higher.",
+      translation: "Há quatro meses, comecei esta jornada. Desde então, venho estudando todos os dias. No mês passado, aprendi o Present Perfect. Esta semana, tenho praticado o continuous. Assisti a um documentário hoje com legendas em inglês. Eu mudei? Sim, mudei. Minha confiança nunca esteve tão alta."
+    },
+    quiz: [
+      { q: "Complete: 'Four months ago, I ___ this journey.'", options: ["started", "have started", "start"], ans: "started" },
+      { q: "Complete: 'Since then, I have been ___ every day.'", options: ["studying", "studied", "study"], ans: "studying" },
+      { q: "Complete: 'My confidence has ___ been higher.'", options: ["never", "ever", "yet"], ans: "never" }
+    ],
+    chunks: [
+      { en: "four months ago, I started", pt: "há quatro meses, comecei" },
+      { en: "since then, I have been studying", pt: "desde então, venho estudando" },
+      { en: "my confidence has never been higher", pt: "minha confiança nunca esteve tão alta" }
+    ],
+    listeningScript: "Four months! Since then, I have been studying daily. Last month, I learned the perfect. This week, the continuous. Today, a documentary with subtitles. My confidence has never been higher. Keep going!",
+    speakingPrompt: "Fale seu marco mensal: 'Four months ago, I... Since then, I have been... This month, I have...'",
+    lightReading: "Monthly reviews in English: 'What have we been building?', 'What have we shipped?' — the perfect tenses are review language.",
+    journalPrompt: "Today is Day 132. I have completed four months of immersion.",
+    tip: "DICA DE FESTA: comemore o mês assistindo a um documentário em inglês sem legenda. Depois, escreva 3 frases com 'I have understood...' — celebrar com os olhos no progresso."
+  }
+};
+
+export const weeks_16_19 = [
+  {
+    id: 16,
+    title: "Semana 16 — Present Perfect: Experiências",
+    daysRange: "Dias 105 a 111",
+    subtitle: "Have/Has + Past Participle",
+    badgeClass: "badge-emerald",
+    grammar: ["Have/Has + past participle (afirmativa)", "Particípios irregulares (done, gone, seen, written)", "Negativa: haven't / hasn't", "Perguntas: Have you ever...?", "Ever e never com superlativos"],
+    vocab: "Experiências de vida, conquistas e recordes",
+    reading: "Histórias pessoais e perguntas de entrevista",
+    listening: "Diálogos de entrevista de emprego em inglês",
+    speaking: "Falar sobre experiências de vida e carreira",
+    techBridge: "Currículo em Present Perfect: 'I have developed...', 'I have improved...'",
+    saturday: {
+      recall: [
+        ["I have built three apps", "já construí três apps"],
+        ["I have learned English", "já aprendi inglês"],
+        ["I have done my tasks", "já fiz minhas tarefas"],
+        ["she has written an article", "ela escreveu um artigo"],
+        ["I haven't finished yet", "ainda não terminei"],
+        ["he hasn't started", "ele ainda não começou"],
+        ["I have never tried it", "nunca experimentei"],
+        ["have you ever worked abroad?", "você já trabalhou no exterior?"],
+        ["yes, I have / no, I haven't", "sim, já / não, nunca"],
+        ["what have you built?", "o que você já construiu?"],
+        ["the best day I have ever had", "o melhor dia que já tive"],
+        ["I have made a huge step", "dei um passo enorme"]
+      ],
+      reading: {
+        title: "The Interview",
+        text: "Yesterday I had an important interview. The manager asked me: 'Have you ever led a team?' I said: 'Yes, I have. I have led small teams for two years.' Then she asked: 'What have you shipped?' I answered: 'I have built three mobile apps and two websites.' Finally, she smiled: 'Have you ever worked with clients abroad?' I said: 'Not yet, but I have worked remotely for years.' The interview ended well, and I haven't stopped smiling since.",
+        questions: ["When did the writer have the interview?", "Has the writer ever led a team?", "What has the writer built?", "Has the writer worked with clients abroad?", "How is the writer feeling after the interview?"]
+      },
+      listening: "Listen: 'Have you ever led a team? Yes, I have, for two years. What have you shipped? Three apps. Have you worked abroad? Not yet, but I have worked remotely. The interview went well!'",
+      speaking: "Fale como numa entrevista: 'Have you ever...? Yes, I have. I have... I haven't... yet, but I have...'"
+    }
+  },
+  {
+    id: 17,
+    title: "Semana 17 — For, Since, Already, Yet, Just, Still",
+    daysRange: "Dias 112 a 118",
+    subtitle: "Marcadores de Tempo do Perfect",
+    badgeClass: "badge-blue",
+    grammar: ["For + duração vs Since + ponto de início", "Already: ações concluídas antes do esperado", "Yet: negativas e perguntas (ainda não)", "Just: ações que acabaram de acontecer", "Still: ações que continuam em aberto"],
+    vocab: "Tempo, prazos, feedback e status de trabalho",
+    reading: "Relatórios de status e atualizações de projetos",
+    listening: "Atualizações de projeto e reuniões rápidas",
+    speaking: "Reportar o que já fez, o que falta e o que continua",
+    techBridge: "Status de deploy: 'We have already shipped', 'Not yet', 'Still in progress'",
+    saturday: {
+      recall: [
+        ["for eight months", "há oito meses"],
+        ["since 2022", "desde 2022"],
+        ["how long have you studied?", "há quanto tempo você estuda?"],
+        ["I have already finished", "já terminei"],
+        ["she has already sent the report", "ela já enviou o relatório"],
+        ["I haven't submitted yet", "ainda não enviei"],
+        ["have you decided yet?", "você já decidiu?"],
+        ["not yet", "ainda não"],
+        ["I have just finished", "acabei de terminar"],
+        ["we have just deployed", "acabamos de implantar"],
+        ["I am still working", "ainda estou trabalhando"],
+        ["I still haven't finished", "ainda não terminei"]
+      ],
+      reading: {
+        title: "The Status Report",
+        text: "Good morning, team! Here is the status. I have already finished the login feature, and I have just deployed it to staging. My colleague has been working on the payment module since Monday. We haven't tested the new API yet, but we still have two days. The client has already approved the design. Have you seen the new dashboard? It is still in progress, but almost ready. Keep up the good work!",
+        questions: ["What has the writer already finished?", "Where has the writer just deployed it?", "Since when has the colleague been working on payments?", "What hasn't the team tested yet?", "Is the new dashboard finished?"]
+      },
+      listening: "Listen: 'Status update! I have already finished login and just deployed it. Payments are in progress since Monday. We haven't tested the API yet, but we still have time. Dashboard? Still in progress!'",
+      speaking: "Fale seu status: 'I have already... I have just... I haven't... yet. It is still...'"
+    }
+  },
+  {
+    id: 18,
+    title: "Semana 18 — Present Perfect vs Past Simple",
+    daysRange: "Dias 119 a 125",
+    subtitle: "A Grande Diferença de Tempos",
+    badgeClass: "badge-amber",
+    grammar: ["Tempo finalizado (past) vs aberto (perfect)", "Âncoras de tempo: ago, last, this, since", "Did you...? vs Have you...?", "Histórias misturando os dois tempos", "Checkpoint misto de revisão"],
+    vocab: "Âncoras de tempo, memórias e narrativas",
+    reading: "Histórias reais e relatos de trabalho",
+    listening: "Podcasts com entrevistas (caçada de âncoras)",
+    speaking: "Contar histórias alternando os dois tempos",
+    techBridge: "Relatórios e changelogs: 'Yesterday we fixed...', 'This week we have improved...'",
+    saturday: {
+      recall: [
+        ["I finished it yesterday", "terminei ontem"],
+        ["I have finished it this week", "terminei esta semana"],
+        ["three days ago", "há três dias"],
+        ["so far, I have fixed three bugs", "até agora, corrigi três bugs"],
+        ["since Monday, I have reviewed", "desde segunda, reviso"],
+        ["did you finish last night?", "você terminou ontem à noite?"],
+        ["have you ever worked with it?", "você já trabalhou com isso?"],
+        ["I have never forgotten it", "nunca esqueci"],
+        ["last year, the app stopped", "ano passado, o app parou"],
+        ["I have learned a lot since then", "aprendi muito desde então"],
+        ["this week, I have created two more", "esta semana, criei mais dois"],
+        ["I have already corrected them", "já os corrigi"]
+      ],
+      reading: {
+        title: "The Story of the Launch",
+        text: "I will never forget our first launch. Last year, we worked for months without stopping. We have learned so much since then. The first version had many bugs, and three days before the launch, everything failed. We fixed the last problem at midnight. Finally, the app went live. Have you ever launched a product? It is unforgettable. Since that day, I have tested everything twice. Last week, we launched version two, and it was perfect.",
+        questions: ["When did the team work without stopping?", "What happened three days before the launch?", "When did the app go live?", "What has the writer done since that day?", "How was version two?"]
+      },
+      listening: "Listen: 'I will never forget our first launch. Last year we worked for months. Three days before, everything failed. Finally, the app went live. Since that day, I have tested everything twice. Last week, version two was perfect!'",
+      speaking: "Conte uma história: 'I will never forget... Last year... Finally... Since then, I have...'"
+    }
+  },
+  {
+    id: 19,
+    title: "Semana 19 — Present Perfect Continuous",
+    daysRange: "Dias 126 a 132",
+    subtitle: "Have Been Doing — Atividade em Andamento",
+    badgeClass: "badge-purple",
+    grammar: ["Have/Has been + -ing (atividade contínua)", "For/Since com o continuous", "How long...? Perguntas de duração", "Continuous vs Simple (atividade vs resultado)", "Continuous no mundo tech"],
+    vocab: "Processos, hábitos, duração e esforço",
+    reading: "Rotinas de engenharia e relatos de trabalho",
+    listening: "Stand-ups e descrições de processos",
+    speaking: "Descrever o que vem fazendo e há quanto tempo",
+    techBridge: "'I have been debugging', 'We have been monitoring' — linguagem de stand-up",
+    saturday: {
+      recall: [
+        ["I have been coding all day", "venho programando o dia todo"],
+        ["we have been fixing bugs", "estamos corrigindo bugs"],
+        ["hard work has been paying off", "o trabalho duro tem valido a pena"],
+        ["I have been waiting for two hours", "estou esperando há duas horas"],
+        ["since yesterday", "desde ontem"],
+        ["how long have you been learning?", "há quanto tempo você vem aprendendo?"],
+        ["I have refactored the module", "refatorei o módulo"],
+        ["I have been working for days", "venho trabalhando há dias"],
+        ["I have been debugging since morning", "venho depurando desde a manhã"],
+        ["I have deployed the fix", "implantei a correção"],
+        ["we have been monitoring the server", "estamos monitorando o servidor"],
+        ["my listening has been improving", "meu listening vem melhorando"]
+      ],
+      reading: {
+        title: "The Marathon Sprint",
+        text: "My team has been working on the release for three weeks. I have been writing new features since Monday. My colleague has been fixing bugs for days, and he has just finished the last one. We have been testing the app non-stop. How long have we been doing this? Since the beginning of the month. The result is almost here: we have built a stable version. The marathon is almost over.",
+        questions: ["How long has the team been working on the release?", "What has the writer been doing since Monday?", "What has the colleague just finished?", "How long has the team been doing this?", "What has the team built?"]
+      },
+      listening: "Listen: 'We have been working for three weeks. I have been writing features since Monday. My colleague has just finished the last bug. We have been testing non-stop. The stable version is almost here!'",
+      speaking: "Fale seu status contínuo: 'I have been... since... I have been... for... I have just... We have been...'"
+    }
+  }
+];

@@ -1,0 +1,722 @@
+// FASE 3B — Semanas 14 e 15 (Dias 91 a 104) — Ambiente em Inglês, Processos, Gerúndio e Opiniões
+export const days_91_104 = {
+  91: {
+    dayName: "Dia 91 — Segunda-feira",
+    title: "Ambiente 100% Inglês (Configuração)",
+    focus: "Mudar sistema operacional, celular e ferramentas para o inglês.",
+    vocab: [
+      { en: "Settings", pt: "Configurações" },
+      { en: "Language", pt: "Idioma" },
+      { en: "Device", pt: "Aparelho / Dispositivo" },
+      { en: "Subtitles", pt: "Legendas" },
+      { en: "Browser", pt: "Navegador" },
+      { en: "Search engine", pt: "Mecanismo de busca" },
+      { en: "Notification", pt: "Notificação" },
+      { en: "Privacy", pt: "Privacidade" },
+      { en: "Account", pt: "Conta" },
+      { en: "Backup", pt: "Cópia de segurança" }
+    ],
+    grammar: {
+      title: "Instruções e Imperativo",
+      rule: "Para configurar o ambiente usamos o IMPERATIVO (o verbo sem sujeito): Open Settings, Change the language, Enable subtitles. Negativo: Don't skip this step.",
+      table: [
+        { form: "Instrução", example: "Open Settings and change the language to English.", pt: "Abra as Configurações e mude o idioma para inglês." },
+        { form: "Instrução", example: "Enable English subtitles on YouTube.", pt: "Ative legendas em inglês no YouTube." },
+        { form: "Negativo", example: "Don't translate everything into Portuguese.", pt: "Não traduza tudo para o português." }
+      ]
+    },
+    reading: {
+      title: "My Device Is in English Now",
+      text: "Today I changed my phone and my computer to English. First, I opened Settings. Then I changed the Language. Now my notifications are in English. My browser and search engine are also in English. I don't translate everything anymore. My brain is learning every single day, even with small words.",
+      translation: "Hoje mudei meu celular e meu computador para o inglês. Primeiro, abri as Configurações. Depois mudei o Idioma. Agora minhas notificações estão em inglês. Meu navegador e meu mecanismo de busca também estão em inglês. Não traduzo mais tudo. Meu cérebro aprende todos os dias, até com palavras pequenas."
+    },
+    quiz: [
+      { q: "Instrução correta:", options: ["Open Settings", "Opens Settings", "To open Settings"], ans: "Open Settings" },
+      { q: "Imperativo negativo:", options: ["Don't translate everything", "No translate everything", "Not translate everything"], ans: "Don't translate everything" },
+      { q: "Tradução de 'device':", options: ["Aparelho", "Tela", "Teclado"], ans: "Aparelho" }
+    ],
+    chunks: [
+      { en: "change the language to English", pt: "mudar o idioma para inglês" },
+      { en: "enable English subtitles", pt: "ativar legendas em inglês" },
+      { en: "don't translate everything", pt: "não traduza tudo" }
+    ],
+    listeningScript: "Welcome to your English environment. Today, change your phone and your computer to English. Open Settings, choose Language, and select English. Enable subtitles on your favorite channels. Don't translate every word. Let English surround you.",
+    speakingPrompt: "Explique como configurou seu aparelho: 'First, I open Settings. Then I change the language to English. I also enable English subtitles.'",
+    lightReading: "Operating systems, apps and documentation are written in English. Setting your device to English is free immersion: every click teaches you vocabulary.",
+    journalPrompt: "Today is Day 91. I changed my environment to English.",
+    tip: "DICA DE AMBIENTE: comece pelo que você mais usa: celular, navegador e YouTube. Depois de 1 semana, adicione o sistema do computador. Pequenas doses, sem voltar atrás."
+  },
+  92: {
+    dayName: "Dia 92 — Terça-feira",
+    title: "Descrevendo Processos (First, Then, Next, Finally)",
+    focus: "Explicar passos em ordem usando conectores de sequência.",
+    vocab: [
+      { en: "First", pt: "Primeiro" },
+      { en: "Then", pt: "Depois / Então" },
+      { en: "Next", pt: "Em seguida" },
+      { en: "After that", pt: "Depois disso" },
+      { en: "Finally", pt: "Finalmente" },
+      { en: "Step", pt: "Passo / Etapa" },
+      { en: "Process", pt: "Processo" },
+      { en: "Install", pt: "Instalar" },
+      { en: "Run", pt: "Executar / Rodar" },
+      { en: "Test", pt: "Testar" }
+    ],
+    grammar: {
+      title: "Conectores de Sequência",
+      rule: "Para descrever processos usamos conectores de ordem: FIRST (primeiro), THEN (depois), NEXT (em seguida), AFTER THAT (depois disso), FINALLY (finalmente). Eles organizam a fala e a escrita.",
+      table: [
+        { form: "Início", example: "First, I install the software.", pt: "Primeiro, instalo o software." },
+        { form: "Meio", example: "Then I configure it. After that, I run the tests.", pt: "Depois eu o configuro. Depois disso, rodo os testes." },
+        { form: "Fim", example: "Finally, I deploy the application.", pt: "Finalmente, implanto a aplicação." }
+      ]
+    },
+    reading: {
+      title: "How I Deploy a Project",
+      text: "Deploying a project is easy with a good process. First, I write the code and test it locally. Then I commit the changes with Git. Next, I push the code to the repository. After that, I wait for the tests to pass. Finally, I deploy the app to production. This simple process saves a lot of time.",
+      translation: "Implantar um projeto é fácil com um bom processo. Primeiro, escrevo o código e o testo localmente. Depois, faço commit das mudanças com Git. Em seguida, envio o código para o repositório. Depois disso, espero os testes passarem. Finalmente, implanto o app em produção. Esse processo simples economiza muito tempo."
+    },
+    quiz: [
+      { q: "Complete: '___ I install the software, ___ I configure it.'", options: ["First / then", "Finally / next", "After / first"], ans: "First / then" },
+      { q: "Qual é o conectivo de fim?", options: ["Finally", "Then", "Next"], ans: "Finally" },
+      { q: "Tradução de 'step':", options: ["Passo", "Saltar", "Correr"], ans: "Passo" }
+    ],
+    chunks: [
+      { en: "first, I install the software", pt: "primeiro, instalo o software" },
+      { en: "after that, I run the tests", pt: "depois disso, rodo os testes" },
+      { en: "finally, I deploy the app", pt: "finalmente, implanto o app" }
+    ],
+    listeningScript: "Let me explain my process. First, I write the code. Then I test it. Next, I commit and push. After that, the CI pipeline runs. Finally, the app goes to production. Simple and safe.",
+    speakingPrompt: "Descreva seu processo de estudo em 4 passos: 'First, I review vocabulary. Then I study grammar. Next, I do the listening. Finally, I speak out loud.'",
+    lightReading: "Documentation is full of process descriptions: 'First, install the package. Then configure it. Finally, run the server' — sequence words are the skeleton of every tutorial.",
+    journalPrompt: "Today is Day 92. I learned to describe processes with sequence words.",
+    tip: "DICA DE FALA: ao descrever processos, não precisa de frases complexas. 'First... then... after that... finally...' já faz você soar organizado e claro em entrevistas e reuniões."
+  },
+  93: {
+    dayName: "Dia 93 — Quarta-feira",
+    title: "Explicando Como as Coisas Funcionam",
+    focus: "Explicar o funcionamento de sistemas usando o presente simples.",
+    vocab: [
+      { en: "Work", pt: "Funcionar / Trabalhar" },
+      { en: "Use", pt: "Usar" },
+      { en: "Need", pt: "Precisar" },
+      { en: "Connect", pt: "Conectar" },
+      { en: "Send", pt: "Enviar" },
+      { en: "Receive", pt: "Receber" },
+      { en: "Store", pt: "Armazenar" },
+      { en: "Process", pt: "Processar" },
+      { en: "Convert", pt: "Converter" },
+      { en: "Load", pt: "Carregar" }
+    ],
+    grammar: {
+      title: "Presente Simples para Funcionamento",
+      rule: "Para explicar como algo funciona, usamos o PRESENTE SIMPLES, porque é um fato geral: The computer processes data. The app sends a request. Regra de ouro: he/she/it recebe -s: it stores, she loads.",
+      table: [
+        { form: "Fato geral", example: "The server stores information.", pt: "O servidor armazena informações." },
+        { form: "3ª pessoa (-s)", example: "The app loads pages quickly.", pt: "O app carrega páginas rapidamente." },
+        { form: "Processo", example: "First, the browser sends a request.", pt: "Primeiro, o navegador envia uma requisição." }
+      ]
+    },
+    reading: {
+      title: "How a Search Engine Works",
+      text: "A search engine works in three steps. First, it scans websites and stores the content. Then it organizes the information in a database. When you type a question, the engine searches the database in milliseconds. Finally, it shows the best results. It processes millions of pages every day.",
+      translation: "Um mecanismo de busca funciona em três etapas. Primeiro, ele varre os sites e armazena o conteúdo. Depois organiza as informações em um banco de dados. Quando você digita uma pergunta, o mecanismo busca no banco em milissegundos. Finalmente, mostra os melhores resultados. Ele processa milhões de páginas todos os dias."
+    },
+    quiz: [
+      { q: "Complete: 'The server ___ information.'", options: ["stores", "store", "storing"], ans: "stores" },
+      { q: "Complete: 'The app ___ pages quickly.'", options: ["loads", "load", "loading"], ans: "loads" },
+      { q: "Qual tempo verbal usamos para fatos gerais?", options: ["Present Simple", "Past Simple", "Future"], ans: "Present Simple" }
+    ],
+    chunks: [
+      { en: "the server stores information", pt: "o servidor armazena informações" },
+      { en: "the browser sends a request", pt: "o navegador envia uma requisição" },
+      { en: "it processes millions of pages", pt: "ele processa milhões de páginas" }
+    ],
+    listeningScript: "Have you ever asked how a search engine works? It scans the web, stores the content, and organizes everything in a database. When you type a question, it finds the best answers in milliseconds. Amazing, right?",
+    speakingPrompt: "Explique como algo funciona: 'First, it scans the websites. Then it stores the content. Finally, it shows the results.'",
+    lightReading: "Tech interviews love process explanations: 'The client sends a request, the server processes it, and the database stores the data' — a perfect Present Simple sentence.",
+    journalPrompt: "Today is Day 93. I can explain how systems work in English.",
+    tip: "DICA DE LEITURA: documentações técnicas explicam tudo no presente simples. Quando você ler 'it requires... it handles...', está vendo a regra de hoje em ação. Sublinhe esses verbos com -s."
+  },
+  94: {
+    dayName: "Dia 94 — Quinta-feira",
+    title: "Quantidade e Aproximação (A Lot Of, Almost, About)",
+    focus: "Falar de quantidades grandes, pequenas e aproximadas.",
+    vocab: [
+      { en: "A lot of", pt: "Muito / Muitos" },
+      { en: "Plenty of", pt: "De sobra / Bastante" },
+      { en: "Almost", pt: "Quase" },
+      { en: "About", pt: "Cerca de / Aproximadamente" },
+      { en: "Around", pt: "Por volta de" },
+      { en: "Nearly", pt: "Quase / Aproximadamente" },
+      { en: "Plenty", pt: "Bastante" },
+      { en: "Enough", pt: "Suficiente" },
+      { en: "A few", pt: "Alguns / Poucos (contáveis)" },
+      { en: "A little", pt: "Um pouco (incontáveis)" }
+    ],
+    grammar: {
+      title: "Expressões de Quantidade",
+      rule: "A LOT OF / PLENTY OF usamos com contáveis e incontáveis (a lot of users, plenty of time). A FEW para contáveis pequenos (a few bugs). A LITTLE para incontáveis (a little time). ALMOST / ABOUT / AROUND para aproximações: almost finished, about 10 minutes.",
+      table: [
+        { form: "Grande quantidade", example: "We have a lot of users and plenty of time.", pt: "Temos muitos usuários e tempo de sobra." },
+        { form: "Pequena quantidade", example: "There are a few bugs left, but only a little work.", pt: "Restam alguns bugs, mas só um pouco de trabalho." },
+        { form: "Aproximação", example: "The build takes about 10 minutes, almost done.", pt: "O build leva cerca de 10 minutos, quase pronto." }
+      ]
+    },
+    reading: {
+      title: "Almost Ready to Launch",
+      text: "Our app is almost ready to launch. We have plenty of features and a lot of happy beta users. There are still a few bugs, but they are small. We need a little more time to test everything. The release takes about two weeks, around mid-month. After that, we will have nearly a thousand users.",
+      translation: "Nosso app está quase pronto para o lançamento. Temos bastante funcionalidades e muitos usuários beta felizes. Ainda existem alguns bugs, mas são pequenos. Precisamos de um pouco mais de tempo para testar tudo. O lançamento leva cerca de duas semanas, por volta de meados do mês. Depois disso, teremos quase mil usuários."
+    },
+    quiz: [
+      { q: "Contáveis pequenos:", options: ["a few bugs", "a little bugs", "plenty bugs"], ans: "a few bugs" },
+      { q: "Incontável pequeno:", options: ["a little time", "a few time", "a lot time"], ans: "a little time" },
+      { q: "Tradução de 'almost':", options: ["Quase", "Sempre", "Depois"], ans: "Quase" }
+    ],
+    chunks: [
+      { en: "a lot of users", pt: "muitos usuários" },
+      { en: "plenty of features", pt: "bastante funcionalidades" },
+      { en: "almost ready to launch", pt: "quase pronto para lançar" }
+    ],
+    listeningScript: "Great news! The app is almost ready. We have a lot of features and plenty of happy users. There are a few small bugs, but only a little work is left. We launch in about two weeks. Nearly a thousand people are waiting!",
+    speakingPrompt: "Fale sobre seu progresso: 'I know a lot of English now. There are a few difficult things, but only a little. My level is almost A2/B1.'",
+    lightReading: "Estimates are everywhere in tech: 'about 30 minutes', 'almost 99.9% uptime', 'a few seconds of delay' — approximation language is daily life for engineers.",
+    journalPrompt: "Today is Day 94. I learned quantity and approximation expressions.",
+    tip: "DICA DE VOCABULÁRIO: 'a lot of' funciona em qualquer frase e não é informal. Em textos técnicos você também verá 'plenty of', 'nearly' e 'roughly'. Quanto mais variado, mais natural você soa."
+  },
+  95: {
+    dayName: "Dia 95 — Sexta-feira",
+    title: "Conectores Avançados (However, Also, In Addition)",
+    focus: "Conectar ideias com however, also e in addition para textos mais ricos.",
+    vocab: [
+      { en: "However", pt: "No entanto / Porém" },
+      { en: "Also", pt: "Também" },
+      { en: "In addition", pt: "Além disso" },
+      { en: "Instead of", pt: "Em vez de" },
+      { en: "Therefore", pt: "Portanto" },
+      { en: "For example", pt: "Por exemplo" },
+      { en: "In fact", pt: "Na verdade / De fato" },
+      { en: "On the other hand", pt: "Por outro lado" },
+      { en: "Besides", pt: "Além disso" },
+      { en: "As a result", pt: "Como resultado" }
+    ],
+    grammar: {
+      title: "Conectores Avançados",
+      rule: "HOWEVER contrasta ideias e vem seguido de vírgula: It is difficult. However, it is possible. ALSO adiciona: I study English. I also practice coding. IN ADDITION acrescenta no início de frase. THEREFORE mostra consequência.",
+      table: [
+        { form: "Contraste", example: "The task is hard. However, I can do it.", pt: "A tarefa é difícil. No entanto, eu consigo." },
+        { form: "Adição", example: "I study grammar. I also practice speaking.", pt: "Estudo gramática. Também pratico a fala." },
+        { form: "Consequência", example: "I practice daily. Therefore, I improve.", pt: "Pratico diariamente. Portanto, eu melhoro." }
+      ]
+    },
+    reading: {
+      title: "Why I Love Working Remotely",
+      text: "Working remotely is great. First, I save a lot of time on transport. In addition, I can focus better at home. However, it has one challenge: communication. Therefore, I write clear messages and use video calls. Also, I keep a daily routine. As a result, my productivity is high.",
+      translation: "Trabalhar remotamente é ótimo. Primeiro, economizo muito tempo no transporte. Além disso, consigo me concentrar melhor em casa. No entanto, tem um desafio: a comunicação. Portanto, escrevo mensagens claras e uso videochamadas. Também mantenho uma rotina diária. Como resultado, minha produtividade é alta."
+    },
+    quiz: [
+      { q: "Complete: 'It is hard. ___, it is possible.'", options: ["However", "Also", "First"], ans: "However" },
+      { q: "Complete: 'I practice daily. ___, I improve.'", options: ["Therefore", "However", "Instead of"], ans: "Therefore" },
+      { q: "Complete: 'I study grammar. I ___ practice speaking.'", options: ["also", "however", "finally"], ans: "also" }
+    ],
+    chunks: [
+      { en: "however, it is possible", pt: "no entanto, é possível" },
+      { en: "in addition, I can focus", pt: "além disso, consigo focar" },
+      { en: "as a result, my productivity is high", pt: "como resultado, minha produtividade é alta" }
+    ],
+    listeningScript: "Is remote work better? I think yes. It saves time and, in addition, it gives me focus. However, communication is harder. Therefore, I plan my messages and make video calls. As a result, everything works well.",
+    speakingPrompt: "Dê sua opinião com conectores: 'It is hard. However, I can do it. I study every day. In addition, I practice speaking. Therefore, I improve.'",
+    lightReading: "Connectors turn simple sentences into professional language. In reports and pull request descriptions, 'however', 'therefore' and 'as a result' show clear thinking.",
+    journalPrompt: "Today is Day 95. I learned advanced connectors.",
+    tip: "DICA DE ESCRITA: um parágrafo profissional fica assim: ideia + adição + contraste + consequência. Use: 'First... In addition... However... Therefore...' Esse é o formato de e-mails e post mortems."
+  },
+  96: {
+    dayName: "Dia 96 — Sábado",
+    title: "Consolidação da Semana 14 + TESTE DE SÁBADO 14",
+    focus: "Testar ambiente em inglês, sequência, processos, quantidades e conectores.",
+    vocab: [
+      { en: "Environment", pt: "Ambiente" },
+      { en: "Step", pt: "Passo" },
+      { en: "Process", pt: "Processo" },
+      { en: "Quantity", pt: "Quantidade" },
+      { en: "Estimate", pt: "Estimativa" },
+      { en: "Connect", pt: "Conectar" },
+      { en: "Improve", pt: "Melhorar" },
+      { en: "Routine", pt: "Rotina" },
+      { en: "Result", pt: "Resultado" },
+      { en: "Checklist", pt: "Lista de verificação" }
+    ],
+    grammar: {
+      title: "Resumo da Semana 14",
+      rule: "Imperativo para instruir (Change the language). Sequência com first, then, next, finally. Presente simples para funcionamento (it stores). Quantidade: a lot of, a few, a little, almost. Conectores: however, also, therefore.",
+      table: [
+        { form: "Instrução", example: "Open Settings and change the language.", pt: "Abra as Configurações e mude o idioma." },
+        { form: "Sequência", example: "First, install. Then, configure. Finally, deploy.", pt: "Primeiro, instale. Depois, configure. Finalmente, implante." },
+        { form: "Contraste", example: "It is hard. However, I improve every day.", pt: "É difícil. No entanto, eu melhoro todos os dias." }
+      ]
+    },
+    reading: {
+      title: "A Week in English",
+      text: "This week I changed my whole environment to English. First, I configured my phone and my computer. Then I started reading technical docs in English. In addition, I describe processes at work in English. However, my speaking is still slow. Therefore, I practice shadowing daily. As a result, my confidence is growing.",
+      translation: "Esta semana mudei todo o meu ambiente para o inglês. Primeiro, configurei meu celular e meu computador. Depois comecei a ler documentações técnicas em inglês. Além disso, descrevo processos no trabalho em inglês. No entanto, minha fala ainda é lenta. Portanto, pratico shadowing diariamente. Como resultado, minha confiança está crescendo."
+    },
+    quiz: [
+      { q: "Complete: 'Change the language ___ English.'", options: ["to", "for", "in"], ans: "to" },
+      { q: "Complete: '___ the software, ___ configure it.'", options: ["Install / then", "Then / install", "Finally / first"], ans: "Install / then" },
+      { q: "Complete: 'It is hard. ___, it is possible.'", options: ["However", "Also", "Finally"], ans: "However" }
+    ],
+    chunks: [
+      { en: "change the whole environment to English", pt: "mudar o ambiente inteiro para inglês" },
+      { en: "describe processes in English", pt: "descrever processos em inglês" },
+      { en: "my confidence is growing", pt: "minha confiança está crescendo" }
+    ],
+    listeningScript: "Congratulations on your English environment! This week you changed your devices, learned to describe processes, and connected ideas with however and therefore. Small daily changes, big results. Next week: purposes, opinions and gerunds!",
+    speakingPrompt: "Grave seu áudio do Teste de Sábado: 'This week I changed my environment to English. First, I configured my devices. In addition, I read technical docs. However, I still practice speaking every day.'",
+    lightReading: "The English environment is a force multiplier: every notification, error message and menu is now a vocabulary lesson. You study without studying.",
+    journalPrompt: "Today is Day 96. I passed my Saturday Test 14!",
+    tip: "DICA DE AMBIENTE: ative os erros do compilador e as mensagens do terminal em inglês também. 'Error: port already in use' é uma aula de vocabulário real toda vez que você codifica."
+  },
+  97: {
+    dayName: "Dia 97 — Domingo",
+    title: "Revisão da Semana 14 & Imersão Leve",
+    focus: "Consolidar a semana com leitura leve e conteúdo de descanso.",
+    vocab: [
+      { en: "Rest", pt: "Descanso" },
+      { en: "Week", pt: "Semana" },
+      { en: "Progress", pt: "Progresso" },
+      { en: "Review", pt: "Revisão" },
+      { en: "Movie", pt: "Filme" },
+      { en: "Series", pt: "Série" },
+      { en: "Music", pt: "Música" },
+      { en: "Game", pt: "Jogo" },
+      { en: "Relax", pt: "Relaxar" },
+      { en: "Recharge", pt: "Recarregar" }
+    ],
+    grammar: {
+      title: "Checkpoint 97 — Ambiente e Sequência",
+      rule: "Seu inglês agora vive no seu dia a dia: você lê menus em inglês, descreve processos e conecta ideias com however e therefore. A imersão virou rotina.",
+      table: [
+        { form: "Ambiente", example: "My phone and my computer are in English.", pt: "Meu celular e meu computador estão em inglês." },
+        { form: "Processo", example: "First, I install. Then, I test. Finally, I deploy.", pt: "Primeiro, instalo. Depois, testo. Finalmente, implanto." },
+        { form: "Contraste", example: "It is difficult, however, it is worth it.", pt: "É difícil; no entanto, vale a pena." }
+      ]
+    },
+    reading: {
+      title: "Sunday Recharge",
+      text: "Today is Sunday, my recharge day. I don't study heavy grammar. Instead of that, I watch a movie in English with English subtitles. I also listen to music and read the lyrics. Games are a great option too. Rest is part of the process. Tomorrow, a new week starts.",
+      translation: "Hoje é domingo, meu dia de recarga. Não estudo gramática pesada. Em vez disso, assisto a um filme em inglês com legendas em inglês. Também ouço música e leio a letra. Jogos também são uma ótima opção. O descanso faz parte do processo. Amanhã, uma nova semana começa."
+    },
+    quiz: [
+      { q: "Complete: 'I don't study heavy grammar. ___ that, I watch a movie.'", options: ["Instead of", "However", "Finally"], ans: "Instead of" },
+      { q: "Complete: 'Rest is part ___ the process.'", options: ["of", "in", "at"], ans: "of" },
+      { q: "Complete: 'Tomorrow, a new week ___'", options: ["starts", "start", "starting"], ans: "starts" }
+    ],
+    chunks: [
+      { en: "my recharge day", pt: "meu dia de recarga" },
+      { en: "rest is part of the process", pt: "o descanso faz parte do processo" },
+      { en: "a new week starts", pt: "uma nova semana começa" }
+    ],
+    listeningScript: "Take your Sunday rest seriously. Watch a movie with English subtitles. Sing along with the lyrics. Play a game in English. Rest is part of the process. Tomorrow, you come back stronger.",
+    speakingPrompt: "Fale sobre seu descanso: 'On Sundays I recharge. Instead of heavy grammar, I watch movies in English. I also listen to music. Rest is part of my process.'",
+    lightReading: "Even Netflix is a study tool now: with English audio and English subtitles, your brain connects sound and text while you relax.",
+    journalPrompt: "Today is Day 97. I reviewed my week and recharged.",
+    tip: "DICA DE IMERSÃO: no domingo, escolha UMA série e assista 2 episódios com áudio e legendas em inglês. Não precisa entender tudo. O objetivo é o hábito, não a perfeição."
+  },
+  98: {
+    dayName: "Dia 98 — Segunda-feira",
+    title: "Infinitivo de Propósito (To + Verbo)",
+    focus: "Explicar a razão de uma ação com 'to + verbo'.",
+    vocab: [
+      { en: "To improve", pt: "Para melhorar" },
+      { en: "To learn", pt: "Para aprender" },
+      { en: "To help", pt: "Para ajudar" },
+      { en: "To create", pt: "Para criar" },
+      { en: "To solve", pt: "Para resolver" },
+      { en: "To understand", pt: "Para entender" },
+      { en: "Purpose", pt: "Propósito" },
+      { en: "Reason", pt: "Razão" },
+      { en: "Goal", pt: "Meta" },
+      { en: "Why", pt: "Por quê" }
+    ],
+    grammar: {
+      title: "Infinitivo de Propósito",
+      rule: "Para dizer o PORQUÊ de uma ação, usamos TO + verbo base: I study TO learn (estudo PARA aprender). Responde à pergunta WHY? (Por quê?). Posição comum: no fim ou no início da frase.",
+      table: [
+        { form: "Propósito", example: "I study English to improve my career.", pt: "Estudo inglês para melhorar minha carreira." },
+        { form: "No início", example: "To solve the bug, I read the logs.", pt: "Para resolver o bug, li os logs." },
+        { form: "Pergunta e resposta", example: "Why do you code? To create things.", pt: "Por que você programa? Para criar coisas." }
+      ]
+    },
+    reading: {
+      title: "Why I Code",
+      text: "Why do I code every day? I code to create useful things. I study English to read the best documentation. I practice speaking to work abroad one day. To achieve my goals, I follow a daily routine. Every action has a purpose. That keeps me motivated.",
+      translation: "Por que eu programo todos os dias? Eu programo para criar coisas úteis. Estudo inglês para ler as melhores documentações. Pratico a fala para trabalhar no exterior um dia. Para alcançar minhas metas, sigo uma rotina diária. Toda ação tem um propósito. Isso me mantém motivado."
+    },
+    quiz: [
+      { q: "Complete: 'I study ___ learn English.'", options: ["to", "for", "so"], ans: "to" },
+      { q: "Complete: 'Why do you code? ___ create things.'", options: ["To", "For", "In"], ans: "To" },
+      { q: "Complete: '___ solve the bug, I read the logs.'", options: ["To", "Because", "So"], ans: "To" }
+    ],
+    chunks: [
+      { en: "I study to improve", pt: "estudo para melhorar" },
+      { en: "to solve the bug, I read the logs", pt: "para resolver o bug, leio os logs" },
+      { en: "to achieve my goals", pt: "para alcançar minhas metas" }
+    ],
+    listeningScript: "Why do you study English? I study to read documentation, to understand podcasts, and to work abroad. To reach my goals, I practice every day. Every action has a purpose.",
+    speakingPrompt: "Responda: 'Why do you study English? I study to... Why do you code? I code to...' Complete com seus objetivos reais.",
+    lightReading: "'Why do we use Docker? To run consistent environments.' Infinitive of purpose is the language of every FAQ and 'why' section in technical documentation.",
+    journalPrompt: "Today is Day 98. I learned the infinitive of purpose.",
+    tip: "DICA DE PRONÚNCIA: 'to' antes de vogal soa quase como 'tchô': to improve -> 'tchimprove'. Não encha o 'o' do 'to'. Isso deixa sua fala mais natural e rápida."
+  },
+  99: {
+    dayName: "Dia 99 — Terça-feira",
+    title: "Gerúndio (-ING) como Sujeito e Após Verbos",
+    focus: "Usar o -ing para ações como assunto e após verbos como enjoy, like, avoid.",
+    vocab: [
+      { en: "Learning", pt: "Aprender" },
+      { en: "Reading", pt: "Ler / Leitura" },
+      { en: "Coding", pt: "Programar" },
+      { en: "Writing", pt: "Escrever" },
+      { en: "Listening", pt: "Ouvir" },
+      { en: "Speaking", pt: "Falar" },
+      { en: "Practicing", pt: "Praticar" },
+      { en: "Testing", pt: "Testar" },
+      { en: "Solving", pt: "Resolver" },
+      { en: "Planning", pt: "Planejar" }
+    ],
+    grammar: {
+      title: "Gerúndio (-ING)",
+      rule: "O -ING transforma o verbo em 'nome da ação'. Usamos: (1) como SUJEITO: Learning English is fun; (2) após verbos como enjoy, like, love, avoid, keep, finish: I enjoy coding; (3) após preposições: I am good at solving problems.",
+      table: [
+        { form: "Sujeito", example: "Learning English opens doors.", pt: "Aprender inglês abre portas." },
+        { form: "Após verbo", example: "I enjoy coding and I avoid procrastinating.", pt: "Eu gosto de programar e evito procrastinar." },
+        { form: "Após preposição", example: "I am good at solving problems.", pt: "Sou bom em resolver problemas." }
+      ]
+    },
+    reading: {
+      title: "My Favorite Activities",
+      text: "Learning English is my favorite daily activity. I really enjoy reading technical articles, and I love listening to podcasts. Writing summaries helps me remember. At work, I am good at solving bugs. I avoid leaving tests for the last minute. Practicing every day keeps me sharp.",
+      translation: "Aprender inglês é minha atividade diária favorita. Gosto muito de ler artigos técnicos, e amo ouvir podcasts. Escrever resumos me ajuda a lembrar. No trabalho, sou bom em resolver bugs. Evito deixar os testes para a última hora. Praticar todos os dias me mantém afiado."
+    },
+    quiz: [
+      { q: "Complete: '___ English opens doors.'", options: ["Learning", "Learn", "To learning"], ans: "Learning" },
+      { q: "Complete: 'I enjoy ___ code.'", options: ["writing", "write", "to writing"], ans: "writing" },
+      { q: "Complete: 'I am good at ___ problems.'", options: ["solving", "solve", "to solve"], ans: "solving" }
+    ],
+    chunks: [
+      { en: "learning English opens doors", pt: "aprender inglês abre portas" },
+      { en: "I enjoy writing code", pt: "eu gosto de escrever código" },
+      { en: "I am good at solving problems", pt: "sou bom em resolver problemas" }
+    ],
+    listeningScript: "What do I enjoy most? I enjoy reading, writing, and coding. Learning English is fun. I am good at solving problems, and I avoid wasting time. Practicing every day is my secret.",
+    speakingPrompt: "Fale sobre o que você gosta: 'I enjoy... I love... I am good at... I avoid...' Use só verbos com -ing após essas expressões.",
+    lightReading: "Pull request descriptions use gerunds constantly: 'Fixing the timeout issue, adding unit tests, refactoring the API' — the -ing form is the standard for titles and headings.",
+    journalPrompt: "Today is Day 99. I learned the gerund.",
+    tip: "DICA DE ESCRITA: em títulos de artigos e PRs no GitHub, use o gerúndio: 'Improving performance', 'Fixing login bug'. É a forma nativa de escrever manchetes em inglês."
+  },
+  100: {
+    dayName: "Dia 100 — Quarta-feira",
+    title: "Expressando Opiniões (I Think, In My Opinion)",
+    focus: "Dar opinião, concordar e discordar com educação.",
+    vocab: [
+      { en: "Opinion", pt: "Opinião" },
+      { en: "I think", pt: "Eu acho" },
+      { en: "I believe", pt: "Eu acredito" },
+      { en: "In my opinion", pt: "Na minha opinião" },
+      { en: "I agree", pt: "Concordo" },
+      { en: "I disagree", pt: "Discordo" },
+      { en: "You're right", pt: "Você tem razão" },
+      { en: "I'm not sure", pt: "Não tenho certeza" },
+      { en: "Maybe", pt: "Talvez" },
+      { en: "Definitely", pt: "Definitivamente" }
+    ],
+    grammar: {
+      title: "Opiniões, Concordar e Discordar",
+      rule: "Para opinar: I THINK / I BELIEVE / IN MY OPINION + frase. Para concordar: I agree (with you), You're right. Para discordar com educação: I disagree, I see your point, but... / I'm not sure about that.",
+      table: [
+        { form: "Opinião", example: "In my opinion, Python is the best language to start.", pt: "Na minha opinião, Python é a melhor linguagem para começar." },
+        { form: "Concordar", example: "I agree with you. You're right!", pt: "Concordo com você. Você tem razão!" },
+        { form: "Discordar educado", example: "I see your point, but I think Java is more versatile.", pt: "Entendo seu ponto, mas acho Java mais versátil." }
+      ]
+    },
+    reading: {
+      title: "AI: Good or Bad?",
+      text: "Everyone talks about AI these days. In my opinion, AI is a great tool, but it is not magic. I believe it helps developers write code faster. However, I think humans still make the best decisions. Some people disagree and say AI will replace us. I see their point, but I am not sure about that. What do you think?",
+      translation: "Todo mundo fala sobre IA hoje em dia. Na minha opinião, a IA é uma ótima ferramenta, mas não é mágica. Acredito que ela ajuda os desenvolvedores a escrever código mais rápido. No entanto, acho que humanos ainda tomam as melhores decisões. Algumas pessoas discordam e dizem que a IA vai nos substituir. Entendo o ponto delas, mas não tenho certeza disso. O que você acha?"
+    },
+    quiz: [
+      { q: "Opinião:", options: ["In my opinion, it is great.", "In my opinion is great.", "My opinion it is great."], ans: "In my opinion, it is great." },
+      { q: "Concordar:", options: ["You're right!", "You right!", "You're rightly!"], ans: "You're right!" },
+      { q: "Discordar educado:", options: ["I see your point, but I think...", "No. Wrong.", "You are wrong totally"], ans: "I see your point, but I think..." }
+    ],
+    chunks: [
+      { en: "in my opinion, AI is a great tool", pt: "na minha opinião, IA é uma ótima ferramenta" },
+      { en: "I agree with you", pt: "concordo com você" },
+      { en: "I see your point, but I think", pt: "entendo seu ponto, mas acho" }
+    ],
+    listeningScript: "What do you think about AI? In my opinion, it is a great assistant. I believe it makes developers faster. However, I think humans make the final decisions. I see the other point of view, but I am not sure. And you? Do you agree?",
+    speakingPrompt: "Dê sua opinião sobre um tema tech: 'In my opinion, ... I believe ... However, ... I see your point, but ...'",
+    lightReading: "Tech forums and reviews are opinion playgrounds: 'I think this framework is overrated', 'In my opinion, the docs are excellent' — opinions are a core skill of professional English.",
+    journalPrompt: "Today is Day 100. I can express opinions, agree and disagree politely.",
+    tip: "DICA DE CORTESIA: nunca diga 'You are wrong'. Prefira: 'I see your point, but I think...' ou 'I'm not sure about that'. Em reuniões internacionais, essa cortesia é obrigatória."
+  },
+  101: {
+    dayName: "Dia 101 — Quinta-feira",
+    title: "Pedidos Educados e Sugestões (Could, Would, How About)",
+    focus: "Pedir favores com educação e sugerir planos.",
+    vocab: [
+      { en: "Could you...?", pt: "Você poderia...?" },
+      { en: "Would you...?", pt: "Você aceitaria...?" },
+      { en: "Can you...?", pt: "Você pode...?" },
+      { en: "How about...?", pt: "Que tal...?" },
+      { en: "What about...?", pt: "E que tal...?" },
+      { en: "Let's...", pt: "Vamos..." },
+      { en: "Why don't we...?", pt: "Por que não...?" },
+      { en: "Please", pt: "Por favor" },
+      { en: "Sure", pt: "Claro" },
+      { en: "Of course", pt: "É claro" }
+    ],
+    grammar: {
+      title: "Pedidos e Sugestões",
+      rule: "Pedidos educados: COULD you...? / WOULD you...? + verbo: Could you help me? Sugestões: HOW ABOUT / WHAT ABOUT + -ing (How about trying this?), LET'S + verbo (Let's go!), WHY DON'T WE + verbo.",
+      table: [
+        { form: "Pedido educado", example: "Could you review my code, please?", pt: "Você poderia revisar meu código, por favor?" },
+        { form: "Sugestão com -ing", example: "How about fixing that bug first?", pt: "Que tal corrigir aquele bug primeiro?" },
+        { form: "Sugestão com let's", example: "Let's schedule a quick call.", pt: "Vamos marcar uma reunião rápida." }
+      ]
+    },
+    reading: {
+      title: "A Polite Request",
+      text: "In meetings, polite requests open doors. Yesterday I asked my colleague: 'Could you review my pull request, please?' She said: 'Sure, of course.' Then I suggested: 'How about testing the new feature today?' She agreed: 'Good idea. Let's do it!' Politeness makes teamwork easy.",
+      translation: "Em reuniões, pedidos educados abrem portas. Ontem pedi à minha colega: 'Você poderia revisar meu pull request, por favor?' Ela disse: 'Claro, é claro.' Então sugeri: 'Que tal testar a nova funcionalidade hoje?' Ela concordou: 'Boa ideia. Vamos fazer isso!' A cortesia facilita o trabalho em equipe."
+    },
+    quiz: [
+      { q: "Pedido educado:", options: ["Could you help me, please?", "You help me?", "Help me you?"], ans: "Could you help me, please?" },
+      { q: "Sugestão com -ing:", options: ["How about trying this?", "How about try this?", "How about to try?"], ans: "How about trying this?" },
+      { q: "Complete: '___ schedule a quick call.'", options: ["Let's", "How", "Could"], ans: "Let's" }
+    ],
+    chunks: [
+      { en: "could you review my code, please?", pt: "você poderia revisar meu código, por favor?" },
+      { en: "how about testing the new feature?", pt: "que tal testar a nova funcionalidade?" },
+      { en: "let's schedule a quick call", pt: "vamos marcar uma reunião rápida" }
+    ],
+    listeningScript: "Hi, Mark! Could you review my pull request, please? Of course! How about we test it together? Good idea. Let's do it after lunch. Perfect, see you then!",
+    speakingPrompt: "Faça pedidos e sugestões: 'Could you...? Would you...? How about...? Let's...' Use na sua rotina de estudos e trabalho.",
+    lightReading: "Slack and email language is built on these forms: 'Could you check this?', 'Would you mind reviewing?', 'Let's sync tomorrow' — politeness is the professional default.",
+    journalPrompt: "Today is Day 101. I learned polite requests and suggestions.",
+    tip: "DICA DE REUNIÃO: em calls internacionais, 'Could you repeat that, please?' é a frase mais valiosa que você vai aprender. Nunca finja entender."
+  },
+  102: {
+    dayName: "Dia 102 — Sexta-feira",
+    title: "Dando Conselhos (You Should, Why Don't You)",
+    focus: "Dar conselhos úteis com should, why don't you e if I were you.",
+    vocab: [
+      { en: "Should / Shouldn't", pt: "Deveria / Não deveria" },
+      { en: "Advice", pt: "Conselho" },
+      { en: "Why don't you...?", pt: "Por que você não...?" },
+      { en: "If I were you", pt: "Se eu fosse você" },
+      { en: "It's a good idea to...", pt: "É uma boa ideia..." },
+      { en: "You'd better...", pt: "É melhor você..." },
+      { en: "Suggestion", pt: "Sugestão" },
+      { en: "Try", pt: "Experimentar" },
+      { en: "Practice", pt: "Praticar" },
+      { en: "Carefully", pt: "Com cuidado" }
+    ],
+    grammar: {
+      title: "Conselhos",
+      rule: "SHOULD + verbo base para recomendar: You should practice daily. SHOULDN'T para desaconselhar: You shouldn't skip listening. VARIAÇÕES: Why don't you + verbo? (Why don't you try this?), If I were you, I would + verbo (If I were you, I would sleep more).",
+      table: [
+        { form: "Recomendação", example: "You should practice speaking every day.", pt: "Você deveria praticar a fala todos os dias." },
+        { form: "Sugestão", example: "Why don't you try watching series in English?", pt: "Por que você não tenta assistir séries em inglês?" },
+        { form: "Condicional de conselho", example: "If I were you, I would review daily.", pt: "Se eu fosse você, revisaria diariamente." }
+      ]
+    },
+    reading: {
+      title: "Advice for Beginners",
+      text: "If you want to learn English fast, here is my advice. You should study a little every day. You shouldn't translate every word. Why don't you change your phone to English? It's a good idea to watch videos with subtitles. If I were you, I would speak out loud even without a partner. Consistency beats intensity.",
+      translation: "Se você quer aprender inglês rápido, aqui está meu conselho. Você deveria estudar um pouco todos os dias. Você não deveria traduzir cada palavra. Por que você não muda seu celular para inglês? É uma boa ideia assistir vídeos com legendas. Se eu fosse você, falaria em voz alta mesmo sem parceiro. A constância vence a intensidade."
+    },
+    quiz: [
+      { q: "Complete: 'You ___ practice every day.'", options: ["should", "shoulds", "shoulding"], ans: "should" },
+      { q: "Complete: '___ you try this method?'", options: ["Why don't", "Why doesn't", "Why not to"], ans: "Why don't" },
+      { q: "Complete: 'If I ___ you, I would review daily.'", options: ["were", "was", "am"], ans: "were" }
+    ],
+    chunks: [
+      { en: "you should practice daily", pt: "você deveria praticar diariamente" },
+      { en: "why don't you try this method?", pt: "por que você não tenta esse método?" },
+      { en: "if I were you, I would", pt: "se eu fosse você, eu" }
+    ],
+    listeningScript: "My advice for learning English: study a little every day. You shouldn't worry about mistakes. Why don't you try shadowing? It's a good idea. If I were you, I would start today, not tomorrow.",
+    speakingPrompt: "Dê conselhos a um amigo: 'You should... You shouldn't... Why don't you...? If I were you, I would...'",
+    lightReading: "Forums like Stack Overflow are full of advice: 'You should use async/await', 'Why don't you check the logs first?', 'If I were you, I would refactor this' — advice grammar everywhere.",
+    journalPrompt: "Today is Day 102. I learned how to give advice.",
+    tip: "DICA DE NATURALIDADE: 'If I were you' é sempre com WERE (não was), mesmo com 'I'. É um resto do subjuntivo em inglês: If I were rich, If I were you."
+  },
+  103: {
+    dayName: "Dia 103 — Sábado",
+    title: "Consolidação da Semana 15 + TESTE DE SÁBADO 15",
+    focus: "Testar propósito, gerúndio, opiniões, pedidos e conselhos.",
+    vocab: [
+      { en: "Purpose", pt: "Propósito" },
+      { en: "Gerund", pt: "Gerúndio" },
+      { en: "Opinion", pt: "Opinião" },
+      { en: "Request", pt: "Pedido" },
+      { en: "Advice", pt: "Conselho" },
+      { en: "Suggestion", pt: "Sugestão" },
+      { en: "Politeness", pt: "Cortesia" },
+      { en: "Confidence", pt: "Confiança" },
+      { en: "Fluency", pt: "Fluência" },
+      { en: "Progress", pt: "Progresso" }
+    ],
+    grammar: {
+      title: "Resumo da Semana 15",
+      rule: "TO + verbo para propósito (I study to improve). -ING para ações como assunto (Learning is fun) e após enjoy/avoid. Opiniões: I think, In my opinion, I agree/disagree. Pedidos: Could you...? Sugestões: How about -ing? Conselhos: You should, Why don't you.",
+      table: [
+        { form: "Propósito", example: "I practice to become fluent.", pt: "Pratico para me tornar fluente." },
+        { form: "Gerúndio", example: "Speaking daily is the secret.", pt: "Falar diariamente é o segredo." },
+        { form: "Conselho", example: "You should review every Saturday.", pt: "Você deveria revisar todo sábado." }
+      ]
+    },
+    reading: {
+      title: "Fifteen Weeks of Progress",
+      text: "Today marks fifteen weeks of my immersion. Why do I keep going? I study to reach fluency. Learning grammar is important, but speaking is the real game. In my opinion, consistency beats talent. My advice: you should review every week, and why don't you record your voice? If I were you, I would compare old recordings. That is how you see progress.",
+      translation: "Hoje marco quinze semanas da minha imersão. Por que eu continuo? Estudo para alcançar a fluência. Aprender gramática é importante, mas falar é o jogo real. Na minha opinião, a constância vence o talento. Meu conselho: você deveria revisar toda semana, e por que você não grava sua voz? Se eu fosse você, compararia gravações antigas. É assim que você vê o progresso."
+    },
+    quiz: [
+      { q: "Complete: 'I study ___ reach fluency.'", options: ["to", "for", "so"], ans: "to" },
+      { q: "Complete: '___ daily is the secret.'", options: ["Speaking", "Speak", "Spoke"], ans: "Speaking" },
+      { q: "Complete: '___ you record your voice?'", options: ["Why don't", "How", "Should"], ans: "Why don't" }
+    ],
+    chunks: [
+      { en: "I study to reach fluency", pt: "estudo para alcançar a fluência" },
+      { en: "consistency beats talent", pt: "a constância vence o talento" },
+      { en: "why don't you record your voice?", pt: "por que você não grava sua voz?" }
+    ],
+    listeningScript: "Fifteen weeks! Why do you keep going? To reach fluency. Learning grammar matters, but speaking is the real game. My advice: review every week and record your voice. Consistency beats talent. Great job!",
+    speakingPrompt: "Grave seu Teste de Sábado: 'I study to... Learning ... is important. In my opinion, ... My advice: you should ... Why don't you ...?'",
+    lightReading: "The best advice in tech communities follows today's patterns: 'You should start with the basics', 'Why don't you try a side project?' — advice language is community language.",
+    journalPrompt: "Today is Day 103. I passed my Saturday Test 15!",
+    tip: "DICA DE MÉTODO: seu Teste de Sábado de speaking é um exame real. Grave 2-3 minutos, ouça depois e anote 3 erros para corrigir na semana seguinte. Esse ciclo é o que destrava a fluência."
+  },
+  104: {
+    dayName: "Dia 104 — Domingo",
+    title: "Revisão da Semana 15 & Checkpoint 104",
+    focus: "Fechar a etapa de consolidação e recarregar para as semanas técnicas.",
+    vocab: [
+      { en: "Milestone", pt: "Marco" },
+      { en: "Checkpoint", pt: "Ponto de verificação" },
+      { en: "Achievement", pt: "Conquista" },
+      { en: "Consolidation", pt: "Consolidação" },
+      { en: "Bridge", pt: "Ponte" },
+      { en: "Next level", pt: "Próximo nível" },
+      { en: "Technical", pt: "Técnico" },
+      { en: "Documentation", pt: "Documentação" },
+      { en: "Summary", pt: "Resumo" },
+      { en: "Review", pt: "Revisão" }
+    ],
+    grammar: {
+      title: "Checkpoint 104 — Consolidação Completa",
+      rule: "Você fechou a ponte A2: ambiente em inglês, processos, quantidades, conectores, propósito, gerúndio, opiniões, pedidos e conselhos. Nas próximas semanas: inglês técnico, Present Perfect e condicionais.",
+      table: [
+        { form: "Ambiente", example: "My entire environment is in English now.", pt: "Meu ambiente inteiro está em inglês agora." },
+        { form: "Processo", example: "First, I plan. Then, I code. Finally, I review.", pt: "Primeiro, planejo. Depois, programo. Finalmente, reviso." },
+        { form: "Conselho", example: "If I were you, I would keep this routine.", pt: "Se eu fosse você, manteria essa rotina." }
+      ]
+    },
+    reading: {
+      title: "Ready for the Technical Phase",
+      text: "Today I close a consolidation stage. My environment is in English, and I can describe processes, give opinions, and make polite requests. In my opinion, this bridge was essential. I studied to build confidence, and I am ready for the next phase: technical documentation, Present Perfect, and conditionals. Consistency got me here, and consistency will take me further.",
+      translation: "Hoje fecho uma etapa de consolidação. Meu ambiente está em inglês, e consigo descrever processos, dar opiniões e fazer pedidos educados. Na minha opinião, essa ponte foi essencial. Estudei para construir confiança, e estou pronto para a próxima fase: documentação técnica, Present Perfect e condicionais. A constância me trouxe até aqui, e a constância me levará mais longe."
+    },
+    quiz: [
+      { q: "Complete: 'I studied ___ build confidence.'", options: ["to", "for", "of"], ans: "to" },
+      { q: "Complete: 'I am ready ___ the next phase.'", options: ["for", "to", "in"], ans: "for" },
+      { q: "Complete: 'Consistency ___ me here.'", options: ["got", "get", "getting"], ans: "got" }
+    ],
+    chunks: [
+      { en: "I close a consolidation stage", pt: "fecho uma etapa de consolidação" },
+      { en: "I am ready for the next phase", pt: "estou pronto para a próxima fase" },
+      { en: "consistency will take me further", pt: "a constância me levará mais longe" }
+    ],
+    listeningScript: "Stage complete! Your environment is in English, and you can describe processes, give opinions, and make requests. Next stop: technical English, Present Perfect, and conditionals. Keep going — consistency will take you further!",
+    speakingPrompt: "Fale seu marco: 'Today I close a consolidation stage. I can describe processes and give opinions. I studied to build confidence. I am ready for the technical phase.'",
+    lightReading: "Day 104: your 'version A2.1' is stable and documented. Next release includes technical modules — just like software, learning ships in milestones.",
+    journalPrompt: "Today is Day 104. I closed the consolidation stage with confidence.",
+    tip: "DICA DE ESCRITA: escreva um resumo (summary) de 100 palavras sobre tudo que aprendeu nas semanas 14 e 15. Resumos em inglês fixam o vocabulário ativo melhor do que reler anotações."
+  }
+};
+
+export const weeks_14_15 = [
+  {
+    id: 14,
+    title: "Semana 14 — Ambiente em Inglês & Processos",
+    daysRange: "Dias 91 a 97",
+    subtitle: "Imersão Total no Dia a Dia",
+    badgeClass: "badge-blue",
+    grammar: ["Imperativo para instruções", "Sequência: first, then, next, finally", "Present Simple para funcionamento de sistemas", "Quantidade: a lot of, plenty of, a few, a little", "Conectores: however, also, in addition, therefore"],
+    vocab: "Configurações de dispositivos, processos de deploy e estimativas",
+    reading: "Tutoriais técnicos e documentações introdutórias em inglês",
+    listening: "Podcasts técnicos em 1.0x com legendas em inglês",
+    speaking: "Descrever processos de trabalho e estudo em inglês",
+    techBridge: "SO, celular e navegador 100% em inglês. Erros do terminal em inglês",
+    saturday: {
+      recall: [
+        ["change the language to English", "mudar o idioma para inglês"],
+        ["enable English subtitles", "ativar legendas em inglês"],
+        ["don't translate everything", "não traduza tudo"],
+        ["first, I install the software", "primeiro, instalo o software"],
+        ["after that, I run the tests", "depois disso, rodo os testes"],
+        ["finally, I deploy the app", "finalmente, implanto o app"],
+        ["the server stores information", "o servidor armazena informações"],
+        ["the browser sends a request", "o navegador envia uma requisição"],
+        ["a few bugs are left", "restam alguns bugs"],
+        ["a little more time", "um pouco mais de tempo"],
+        ["almost ready to launch", "quase pronto para lançar"],
+        ["however, it is possible", "no entanto, é possível"]
+      ],
+      reading: {
+        title: "The English Environment",
+        text: "This week I made a big change: my whole environment is in English now. First, I configured my phone and my computer. Then I changed my browser and my search engine. Now every notification is a vocabulary lesson. In addition, I started reading technical documentation in English. However, my listening still needs practice. Therefore, I use podcasts and subtitles daily. As a result, my confidence is growing. Small changes create big results.",
+        questions: ["What big change did the writer make?", "What did they do first?", "Why is every notification a lesson?", "What still needs practice?", "What is the final result?"]
+      },
+      listening: "Listen: 'My environment is in English now. First, I configured my devices. Then, my browser and search engine. Now notifications teach me vocabulary. I read docs in English, and I use podcasts daily. My confidence is growing!'",
+      speaking: "Fale sobre sua semana: 'First, I... Then, I... In addition, ... However, ... Therefore, ... As a result, ...'"
+    }
+  },
+  {
+    id: 15,
+    title: "Semana 15 — Propósito, Gerúndio, Opiniões & Conselhos",
+    daysRange: "Dias 98 a 104",
+    subtitle: "Fluência Conversacional A2+",
+    badgeClass: "badge-purple",
+    grammar: ["Infinitivo de propósito (to + verbo)", "Gerúndio -ing como sujeito e após verbos", "Opiniões: I think, In my opinion, I agree/disagree", "Pedidos educados: Could you...? How about -ing? Let's", "Conselhos: You should, Why don't you, If I were you"],
+    vocab: "Propósito, opinião, cortesia e conselhos profissionais",
+    reading: "FAQ técnicos e discussões de fóruns (Stack Overflow)",
+    listening: "Vídeos de opinião e entrevistas em velocidade normal",
+    speaking: "Opinion monologues de 3-5 minutos sobre tecnologia",
+    techBridge: "Comentar PRs e issues com opiniões e sugestões educadas em inglês",
+    saturday: {
+      recall: [
+        ["I study to improve", "estudo para melhorar"],
+        ["to solve the bug, I read the logs", "para resolver o bug, leio os logs"],
+        ["learning English opens doors", "aprender inglês abre portas"],
+        ["I enjoy writing code", "eu gosto de escrever código"],
+        ["I am good at solving problems", "sou bom em resolver problemas"],
+        ["in my opinion, it is a great tool", "na minha opinião, é uma ótima ferramenta"],
+        ["I agree with you", "concordo com você"],
+        ["I see your point, but I think", "entendo seu ponto, mas acho"],
+        ["could you review my code, please?", "você poderia revisar meu código, por favor?"],
+        ["how about testing the feature?", "que tal testar a funcionalidade?"],
+        ["let's schedule a quick call", "vamos marcar uma reunião rápida"],
+        ["if I were you, I would review daily", "se eu fosse você, revisaria diariamente"]
+      ],
+      reading: {
+        title: "The Opinionated Developer",
+        text: "Every developer has opinions, and I am not different. In my opinion, reading code is as important as writing it. I believe code reviews make teams better. Why? To review well, you need patience and attention. Some people disagree and say reviews waste time. I see their point, but I think they save time in the long run. My advice: you should review carefully, and why don't you start with small pull requests? If I were you, I would make this a habit. Consistency always wins.",
+        questions: ["What is as important as writing code?", "Why do code reviews make teams better?", "What do some people say about reviews?", "What is the writer's advice?", "What does the writer say about consistency?"]
+      },
+      listening: "Listen: 'Every developer has opinions. In my opinion, reading code is as important as writing it. Reviews make teams better. Some disagree, but I think they save time. My advice: review carefully. Consistency always wins!'",
+      speaking: "Fale seu posicionamento: 'In my opinion, ... I believe ... Some people disagree, but ... My advice: you should ... If I were you, I would ...'"
+    }
+  }
+];
