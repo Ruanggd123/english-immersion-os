@@ -3,6 +3,7 @@ import { Volume2, Sparkles, Heart, Flame, Award, ArrowRight, RotateCcw, Eye, Eye
 import { speakNaturalEnglish } from '../utils/audio';
 import { gameVocabData } from '../data/gameVocabData';
 import { syncStateToFirebase, subscribeToFirebaseRealtime } from '../utils/firebaseSync';
+import { triggerConfetti } from '../utils/confetti';
 
 // Web Audio API Sound Effects Synthesizer
 const playSoundEffect = (type) => {
@@ -56,6 +57,7 @@ const playSoundEffect = (type) => {
     console.warn("Sound effect note:", e);
   }
 };
+
 
 export default function VocabGameArena({ initialMode = 'listening' }) {
   const [gameMode, setGameMode] = useState(initialMode);
@@ -217,17 +219,32 @@ export default function VocabGameArena({ initialMode = 'listening' }) {
       setSrsState(updatedSrs);
 
       if (!dailyStats.masteredIds.includes(qId)) {
+        const newCount = dailyStats.count + 1;
         setDailyStats(prev => ({
           ...prev,
           masteredIds: [...prev.masteredIds, qId],
-          count: prev.count + 1
+          count: newCount
         }));
+
+        if (newCount === dailyStats.target) {
+          playSoundEffect('victory');
+          triggerConfetti(80);
+        }
       }
 
       const comboStreak = gameStats.streak + 1;
+      if (comboStreak > 0 && comboStreak % 5 === 0) {
+        triggerConfetti(40);
+      }
+
       const xpGained = 10 + (comboStreak >= 3 ? 5 : 0);
       const newXp = gameStats.xp + xpGained;
       const newLevel = Math.floor(newXp / 100) + 1;
+
+      if (newLevel > gameStats.level) {
+        playSoundEffect('victory');
+        triggerConfetti(60);
+      }
 
       setGameStats(prev => ({
         ...prev,
@@ -238,6 +255,7 @@ export default function VocabGameArena({ initialMode = 'listening' }) {
         totalAnswered: prev.totalAnswered + 1,
         totalCorrect: prev.totalCorrect + 1
       }));
+
 
     } else {
       playSoundEffect('wrong');

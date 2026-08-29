@@ -13,7 +13,9 @@ export const syncStateToFirebase = async () => {
       english_immersion_progress: localStorage.getItem('english_immersion_progress'),
       english_game_stats: localStorage.getItem('english_game_stats'),
       english_daily_vocab_goal: localStorage.getItem('english_daily_vocab_goal'),
-      english_vocab_srs_state: localStorage.getItem('english_vocab_srs_state')
+      english_vocab_srs_state: localStorage.getItem('english_vocab_srs_state'),
+      english_journal_state: localStorage.getItem('english_journal_state'),
+      english_saturday_tests: localStorage.getItem('english_saturday_tests')
     };
 
     const progressRef = ref(db, DB_ROOT_PATH);
@@ -22,6 +24,39 @@ export const syncStateToFirebase = async () => {
   } catch (err) {
     console.warn("Firebase sync upload note:", err);
     return false;
+  }
+};
+
+// Diagnostic: Perform instant live write & read handshake test with Firebase Realtime Database
+export const testFirebaseRealtimeConnection = async () => {
+  const startTime = Date.now();
+  try {
+    const pingRef = ref(db, 'english_immersion_os/connection_test');
+    const testData = {
+      pingTimestamp: startTime,
+      clientDevice: navigator.userAgent.includes('Mobile') ? 'Mobile' : 'Desktop',
+      testStatus: 'ACTIVE'
+    };
+
+    await set(pingRef, testData);
+    const snapshot = await get(pingRef);
+    const val = snapshot.val();
+
+    const latency = Date.now() - startTime;
+    return {
+      success: !!(val && val.pingTimestamp === startTime),
+      latencyMs: latency,
+      timestamp: new Date().toLocaleTimeString(),
+      dbUrl: "https://concursos-20cce-default-rtdb.firebaseio.com",
+      path: 'english_immersion_os/user_progress'
+    };
+  } catch (err) {
+    return {
+      success: false,
+      error: err.message || 'Erro ao conectar com Firebase Realtime Database',
+      latencyMs: 0,
+      timestamp: new Date().toLocaleTimeString()
+    };
   }
 };
 
@@ -37,25 +72,21 @@ export const subscribeToFirebaseRealtime = (onStateChange) => {
       isRemoteUpdate = true;
       let hasChanges = false;
 
-      if (data.english_immersion_progress && data.english_immersion_progress !== localStorage.getItem('english_immersion_progress')) {
-        localStorage.setItem('english_immersion_progress', data.english_immersion_progress);
-        hasChanges = true;
-      }
+      const keysToSync = [
+        'english_immersion_progress',
+        'english_game_stats',
+        'english_daily_vocab_goal',
+        'english_vocab_srs_state',
+        'english_journal_state',
+        'english_saturday_tests'
+      ];
 
-      if (data.english_game_stats && data.english_game_stats !== localStorage.getItem('english_game_stats')) {
-        localStorage.setItem('english_game_stats', data.english_game_stats);
-        hasChanges = true;
-      }
-
-      if (data.english_daily_vocab_goal && data.english_daily_vocab_goal !== localStorage.getItem('english_daily_vocab_goal')) {
-        localStorage.setItem('english_daily_vocab_goal', data.english_daily_vocab_goal);
-        hasChanges = true;
-      }
-
-      if (data.english_vocab_srs_state && data.english_vocab_srs_state !== localStorage.getItem('english_vocab_srs_state')) {
-        localStorage.setItem('english_vocab_srs_state', data.english_vocab_srs_state);
-        hasChanges = true;
-      }
+      keysToSync.forEach(key => {
+        if (data[key] && data[key] !== localStorage.getItem(key)) {
+          localStorage.setItem(key, data[key]);
+          hasChanges = true;
+        }
+      });
 
       if (hasChanges && onStateChange) {
         onStateChange(data);
@@ -72,3 +103,4 @@ export const subscribeToFirebaseRealtime = (onStateChange) => {
     return () => {};
   }
 };
+

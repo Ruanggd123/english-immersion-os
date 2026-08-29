@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { LayoutDashboard, Sparkles, Bot, Gamepad2, Flame, Cloud, RefreshCw, ShieldCheck } from 'lucide-react';
+import { LayoutDashboard, Sparkles, Bot, Gamepad2, Flame, Cloud, RefreshCw, ShieldCheck, Zap, Activity, Volume2, Mic, X } from 'lucide-react';
 import Dashboard from './components/Dashboard';
 import LocalAiCoach from './components/LocalAiCoach';
 import VocabGameArena from './components/VocabGameArena';
-import { syncStateToFirebase, subscribeToFirebaseRealtime } from './utils/firebaseSync';
+import { syncStateToFirebase, subscribeToFirebaseRealtime, testFirebaseRealtimeConnection } from './utils/firebaseSync';
+import { speakNaturalEnglish } from './utils/audio';
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState('game');
   const [isFirebaseConnected, setIsFirebaseConnected] = useState(false);
+  const [showFabModal, setShowFabModal] = useState(false);
+  const [fabStatusText, setFabStatusText] = useState('');
 
   // Persistent progress state
   const [progressData, setProgressData] = useState(() => {
@@ -61,6 +64,16 @@ export default function App() {
     }));
   };
 
+  const handleFabPingTest = async () => {
+    setFabStatusText('Testando conexão com Firebase Realtime Database...');
+    const res = await testFirebaseRealtimeConnection();
+    if (res.success) {
+      setFabStatusText(`✅ Conectado em tempo real! Latência: ${res.latencyMs}ms`);
+    } else {
+      setFabStatusText(`❌ Erro de conexão: ${res.error}`);
+    }
+  };
+
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       {/* Clean Minimal Header Bar */}
@@ -87,21 +100,21 @@ export default function App() {
                 border: currentTab === 'game' ? '1px solid rgba(251, 191, 36, 0.3)' : 'none'
               }}
             >
-              <Gamepad2 size={16} /> 🎮 1. Game de Escuta & Palavras
+              <Gamepad2 size={16} /> 🎮 1. Game de Escuta
             </button>
 
             <button
               className={`tab-btn ${currentTab === 'ai' ? 'active' : ''}`}
               onClick={() => setCurrentTab('ai')}
             >
-              <Bot size={16} /> 🤖 2. Tutor de IA (Voz)
+              <Bot size={16} /> 🤖 2. Tutor IA (Voz)
             </button>
 
             <button
               className={`tab-btn ${currentTab === 'dashboard' ? 'active' : ''}`}
               onClick={() => setCurrentTab('dashboard')}
             >
-              <LayoutDashboard size={16} /> 📊 3. Meu Progresso
+              <LayoutDashboard size={16} /> 📊 3. Progresso
             </button>
           </nav>
 
@@ -149,6 +162,94 @@ export default function App() {
         )}
       </main>
 
+      {/* FLOATING QUICK ACTION BUTTON (FAB) */}
+      <button 
+        className="fab-button pulse-glow"
+        onClick={() => setShowFabModal(true)}
+        title="Menu Rápido de Ações"
+      >
+        <Zap size={24} />
+      </button>
+
+      {/* FAB QUICK TOOLS MODAL DRAWER */}
+      {showFabModal && (
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'rgba(0, 0, 0, 0.75)',
+          backdropFilter: 'blur(8px)',
+          zIndex: 9999,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '1rem'
+        }}>
+          <div className="card" style={{ maxWidth: '420px', width: '100%', borderColor: 'var(--accent-blue)', boxShadow: '0 20px 60px rgba(0,0,0,0.8)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <Zap size={20} color="var(--accent-amber)" />
+                <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#fff' }}>Ações Rápidas</h3>
+              </div>
+              <button className="btn btn-secondary" style={{ padding: '0.3rem', width: '32px', height: '32px', minHeight: 0 }} onClick={() => setShowFabModal(false)}>
+                <X size={16} />
+              </button>
+            </div>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+              <button 
+                className="btn btn-emerald" 
+                onClick={handleFabPingTest}
+                style={{ justifyContent: 'flex-start' }}
+              >
+                <Activity size={18} /> Testar Firebase Realtime Database
+              </button>
+
+              <button 
+                className="btn btn-primary" 
+                onClick={() => {
+                  speakNaturalEnglish("Welcome to English Immersion OS! Daily practice leads to fluency.", 0.88);
+                  setFabStatusText("🔊 Pronúnciando frase de teste em áudio natural!");
+                }}
+                style={{ justifyContent: 'flex-start' }}
+              >
+                <Volume2 size={18} /> Testar Pronúncia de Áudio (TTS)
+              </button>
+
+              <button 
+                className="btn btn-secondary" 
+                onClick={() => {
+                  setCurrentTab('game');
+                  setShowFabModal(false);
+                }}
+                style={{ justifyContent: 'flex-start' }}
+              >
+                <Gamepad2 size={18} /> Ir para o Game de Vocabulário
+              </button>
+
+              <button 
+                className="btn btn-secondary" 
+                onClick={() => {
+                  setCurrentTab('ai');
+                  setShowFabModal(false);
+                }}
+                style={{ justifyContent: 'flex-start' }}
+              >
+                <Bot size={18} /> Ir para Tutor de Voz (IA)
+              </button>
+            </div>
+
+            {fabStatusText && (
+              <div style={{ marginTop: '1rem', padding: '0.75rem', background: 'rgba(56, 189, 248, 0.12)', border: '1px solid var(--accent-blue)', borderRadius: 'var(--radius-sm)', fontSize: '0.82rem', color: 'var(--accent-blue)' }}>
+                {fabStatusText}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* 📱 MOBILE BOTTOM NAVIGATION BAR */}
       <nav className="mobile-bottom-nav">
         <button
@@ -184,8 +285,9 @@ export default function App() {
         color: 'var(--text-muted)',
         fontSize: '0.85rem'
       }}>
-        English Immersion OS — Sincronização em Nuvem com Firebase Realtime Database.
+        English Immersion OS — Sincronização em Nuvem em Tempo Real com Firebase Database.
       </footer>
     </div>
   );
 }
+
