@@ -1,0 +1,940 @@
+// Massively Enriched Database with "Como se Fala" (Pronúncia Figurada), IPA & Sound Tips
+export const gameVocabData = {
+  essentialWords: [
+    // 1-10: Hardware & Setup
+    { 
+      id: "w1", 
+      en: "Computer", 
+      pt: "Computador", 
+      phoneticPt: "këm-piú-der", 
+      ipa: "/kəmˈpjuː.t̬ɚ/", 
+      soundTip: "O 't' tem som de 'r' suave ('piúder') no inglês americano.",
+      category: "Hardware", 
+      options: ["Computador", "Teclado", "Impressora", "Celular"], 
+      tip: "Aparelho principal." 
+    },
+    { 
+      id: "w2", 
+      en: "Keyboard", 
+      pt: "Teclado", 
+      phoneticPt: "kíi-bórd", 
+      ipa: "/ˈkiː.bɔːrd/", 
+      soundTip: "O 'Key' tem som de 'kíi' longo, e 'board' tem o 'r' enrolado.",
+      category: "Hardware", 
+      options: ["Teclado", "Mouse", "Monitor", "Cabo"], 
+      tip: "Para digitar." 
+    },
+    { 
+      id: "w3", 
+      en: "Screen", 
+      pt: "Tela", 
+      phoneticPt: "skríin", 
+      ipa: "/skriːn/", 
+      soundTip: "Não coloque 'i' no começo. Comece direto no som de 'ssss-kríin'.",
+      category: "Hardware", 
+      options: ["Tela", "Janela", "Câmera", "Fone"], 
+      tip: "Onde o vídeo aparece." 
+    },
+    { 
+      id: "w4", 
+      en: "Mouse", 
+      pt: "Mouse", 
+      phoneticPt: "máuss", 
+      ipa: "/maʊs/", 
+      soundTip: "O 'ou' tem som de 'áu' e o 'e' final é 100% mudo.",
+      category: "Hardware", 
+      options: ["Mouse", "Teclado", "Tela", "Cabo"], 
+      tip: "Dispositivo de ponteiro." 
+    },
+    { 
+      id: "w5", 
+      en: "File", 
+      pt: "Arquivo", 
+      phoneticPt: "fáil", 
+      ipa: "/faɪl/", 
+      soundTip: "O 'e' final é mudo. O 'L' no final tem a ponta da língua no céu da boca ('fáil').",
+      category: "TI Geral", 
+      options: ["Arquivo", "Pasta", "Fila", "Linha"], 
+      tip: "Documento salvo." 
+    },
+    { 
+      id: "w6", 
+      en: "Folder", 
+      pt: "Pasta", 
+      phoneticPt: "fôul-der", 
+      ipa: "/ˈfoʊl.dɚ/", 
+      soundTip: "O som começa como 'fôul' com a língua no céu da boca.",
+      category: "TI Geral", 
+      options: ["Pasta", "Arquivo", "Documento", "Gaveta"], 
+      tip: "Diretório de arquivos." 
+    },
+    { 
+      id: "w7", 
+      en: "Memory", 
+      pt: "Memória", 
+      phoneticPt: "mê-mó-ri", 
+      ipa: "/ˈmem.ər.i/", 
+      soundTip: "A sílaba mais forte é 'mê' no início ('MÊ-mori').",
+      category: "Hardware", 
+      options: ["Memória", "Processador", "Placa", "Fonte"], 
+      tip: "Armazenamento RAM." 
+    },
+    { 
+      id: "w8", 
+      en: "Processor", 
+      pt: "Processador", 
+      phoneticPt: "pró-sé-ser", 
+      ipa: "/ˈprɑː.ses.ɚ/", 
+      soundTip: "O 'pro' soa como 'pró' aberto e o final termina em 'er' suave.",
+      category: "Hardware", 
+      options: ["Processador", "Memória", "Disco", "Tela"], 
+      tip: "A CPU do computador." 
+    },
+    { 
+      id: "w9", 
+      en: "Cable", 
+      pt: "Cabo", 
+      phoneticPt: "kêi-böl", 
+      ipa: "/ˈkeɪ.bəl/", 
+      soundTip: "O 'a' tem som de 'êi' ('kêi-böl').",
+      category: "Hardware", 
+      options: ["Cabo", "Tomada", "Placa", "Botão"], 
+      tip: "Cabo de conexão." 
+    },
+    { 
+      id: "w10", 
+      en: "Battery", 
+      pt: "Bateria", 
+      phoneticPt: "bê-të-ri", 
+      ipa: "/ˈbæt̬.ɚ.i/", 
+      soundTip: "O 'tt' soa como 'r' brando ('bédëri') no inglês americano.",
+      category: "Hardware", 
+      options: ["Bateria", "Fonte", "Cabo", "Luz"], 
+      tip: "Energia do notebook." 
+    },
+
+    // 11-25: Essential Verbs
+    { 
+      id: "w11", 
+      en: "Understand", 
+      pt: "Entender", 
+      phoneticPt: "ân-der-stênd", 
+      ipa: "/ˌʌn.dɚˈstænd/", 
+      soundTip: "O 'u' inicial soa como 'ân' fechado. A sílaba mais forte é 'stênd'.",
+      category: "Verbos", 
+      options: ["Entender", "Escrever", "Ouvir", "Explicar"], 
+      tip: "I understand." 
+    },
+    { 
+      id: "w12", 
+      en: "Learn", 
+      pt: "Aprender", 
+      phoneticPt: "lêrn", 
+      ipa: "/lɝːn/", 
+      soundTip: "O 'ea' tem som de 'ê' com o 'r' enrolado ('lêrrrn').",
+      category: "Verbos", 
+      options: ["Aprender", "Ensinar", "Lembrar", "Praticar"], 
+      tip: "I learn fast." 
+    },
+    { 
+      id: "w13", 
+      en: "Build", 
+      pt: "Construir", 
+      phoneticPt: "bíld", 
+      ipa: "/bɪld/", 
+      soundTip: "O 'u' é 100% mudo! Não fale 'bûild', fale 'bíld'.",
+      category: "Verbos", 
+      options: ["Construir", "Quebrar", "Comprar", "Vender"], 
+      tip: "We build systems." 
+    },
+    { 
+      id: "w14", 
+      en: "Help", 
+      pt: "Ajudar", 
+      phoneticPt: "rélp", 
+      ipa: "/help/", 
+      soundTip: "O 'H' tem som de 'R' aspirado soprado ('rélp').",
+      category: "Verbos", 
+      options: ["Ajudar", "Chamar", "Esperar", "Perguntar"], 
+      tip: "Can you help me?" 
+    },
+    { 
+      id: "w15", 
+      en: "Work", 
+      pt: "Trabalhar", 
+      phoneticPt: "uôrk", 
+      ipa: "/wɝːk/", 
+      soundTip: "Começa com som de 'u' e o 'or' soa como 'êr' enrolado ('uôrrrk').",
+      category: "Verbos", 
+      options: ["Trabalhar", "Estudar", "Descansar", "Morar"], 
+      tip: "I work daily." 
+    },
+    { 
+      id: "w16", 
+      en: "Speak", 
+      pt: "Falar", 
+      phoneticPt: "spíik", 
+      ipa: "/spiːk/", 
+      soundTip: "Comece direto no som de 'ssss' sem colocar 'i' na frente ('spíik').",
+      category: "Verbos", 
+      options: ["Falar", "Ouvir", "Pensar", "Escrever"], 
+      tip: "Speak English." 
+    },
+    { 
+      id: "w17", 
+      en: "Need", 
+      pt: "Precisar", 
+      phoneticPt: "níid", 
+      ipa: "/niːd/", 
+      soundTip: "O 'ee' é um 'i' longo sorrindo ('níiid').",
+      category: "Verbos", 
+      options: ["Precisar", "Querer", "Poder", "Saber"], 
+      tip: "I need this." 
+    },
+    { 
+      id: "w18", 
+      en: "Know", 
+      pt: "Saber", 
+      phoneticPt: "nôu", 
+      ipa: "/noʊ/", 
+      soundTip: "O 'k' inicial é 100% mudo! Não pronuncie o K, soa como 'nôu'.",
+      category: "Verbos", 
+      options: ["Saber", "Achar", "Ver", "Tentar"], 
+      tip: "I know code." 
+    },
+    { 
+      id: "w19", 
+      en: "Think", 
+      pt: "Pensar", 
+      phoneticPt: "tíŋk (língua nos dentes)", 
+      ipa: "/θɪŋk/", 
+      soundTip: "Coloque a ponta da língua entre os dentes e sopre o ar (/θ/).",
+      category: "Verbos", 
+      options: ["Pensar", "Falar", "Sentir", "Querer"], 
+      tip: "I think so." 
+    },
+    { 
+      id: "w20", 
+      en: "Start", 
+      pt: "Começar", 
+      phoneticPt: "stárt", 
+      ipa: "/stɑːrt/", 
+      soundTip: "Comece com 'ssss-tárt' com o 'R' puxado para trás.",
+      category: "Verbos", 
+      options: ["Começar", "Terminar", "Pausar", "Salvar"], 
+      tip: "Start the game." 
+    },
+    { 
+      id: "w21", 
+      en: "Stop", 
+      pt: "Parar", 
+      phoneticPt: "stóp", 
+      ipa: "/stɑːp/", 
+      soundTip: "O 'o' soa quase como um 'ó' aberto no inglês americano.",
+      category: "Verbos", 
+      options: ["Parar", "Começar", "Continuar", "Voltar"], 
+      tip: "Stop the process." 
+    },
+    { 
+      id: "w22", 
+      en: "Try", 
+      pt: "Tentar", 
+      phoneticPt: "trái", 
+      ipa: "/traɪ/", 
+      soundTip: "O 'tr' soa um pouco como 'tchr' suave ('tchr-ái').",
+      category: "Verbos", 
+      options: ["Tentar", "Conseguir", "Desistir", "Mudar"], 
+      tip: "Try again." 
+    },
+    { 
+      id: "w23", 
+      en: "Call", 
+      pt: "Chamar", 
+      phoneticPt: "kól", 
+      ipa: "/kɑːl/", 
+      soundTip: "O 'a' tem som de 'ó' e o 'L' final termina no céu da boca ('kól').",
+      category: "Verbos", 
+      options: ["Chamar", "Enviar", "Receber", "Apagar"], 
+      tip: "Call a function." 
+    },
+    { 
+      id: "w24", 
+      en: "Open", 
+      pt: "Abrir", 
+      phoneticPt: "ôu-pën", 
+      ipa: "/ˈoʊ.pən/", 
+      soundTip: "Começa com som de 'ôu' ('ôu-pen').",
+      category: "Verbos", 
+      options: ["Abrir", "Fechar", "Salvar", "Limpar"], 
+      tip: "Open the file." 
+    },
+    { 
+      id: "w25", 
+      en: "Close", 
+      pt: "Fechar", 
+      phoneticPt: "klôuz", 
+      ipa: "/kloʊz/", 
+      soundTip: "O 's' tem som de 'z' com vibração ('klôuz').",
+      category: "Verbos", 
+      options: ["Fechar", "Abrir", "Mover", "Copiar"], 
+      tip: "Close the tab." 
+    },
+
+    // 26-40: Adjectives & States
+    { 
+      id: "w26", 
+      en: "Ready", 
+      pt: "Pronto", 
+      phoneticPt: "ré-di", 
+      ipa: "/ˈred.i/", 
+      soundTip: "O 'R' puxa a língua para trás ('rré-di').",
+      category: "Adjetivos", 
+      options: ["Pronto", "Rápido", "Cansado", "Ocupado"], 
+      tip: "Are you ready?" 
+    },
+    { 
+      id: "w27", 
+      en: "Tired", 
+      pt: "Cansado", 
+      phoneticPt: "tái-ërd", 
+      ipa: "/taɪɚd/", 
+      soundTip: "Soa como 'tái-erd' em 2 sílabas rápidas.",
+      category: "Adjetivos", 
+      options: ["Cansado", "Doente", "Feliz", "Triste"], 
+      tip: "I am not tired." 
+    },
+    { 
+      id: "w28", 
+      en: "Busy", 
+      pt: "Ocupado", 
+      phoneticPt: "bí-zi", 
+      ipa: "/ˈbɪz.i/", 
+      soundTip: "O 'u' tem som de 'i' curto e o 's' soa como 'z' ('bí-zi'). Não fale 'búzi'.",
+      category: "Adjetivos", 
+      options: ["Ocupado", "Livre", "Atrasado", "Calmo"], 
+      tip: "He is busy." 
+    },
+    { 
+      id: "w29", 
+      en: "Fast", 
+      pt: "Rápido", 
+      phoneticPt: "fêst", 
+      ipa: "/fæst/", 
+      soundTip: "O 'a' é bem aberto entre o 'é' e o 'a' ('fêst').",
+      category: "Adjetivos", 
+      options: ["Rápido", "Lento", "Fácil", "Difícil"], 
+      tip: "Fast computer." 
+    },
+    { 
+      id: "w30", 
+      en: "Slow", 
+      pt: "Lento", 
+      phoneticPt: "slôu", 
+      ipa: "/sloʊ/", 
+      soundTip: "O 'ow' soa como 'ôu' ('slôu').",
+      category: "Adjetivos", 
+      options: ["Lento", "Pesado", "Rápido", "Antigo"], 
+      tip: "Slow connection." 
+    },
+    { 
+      id: "w31", 
+      en: "Easy", 
+      pt: "Fácil", 
+      phoneticPt: "íi-zi", 
+      ipa: "/ˈiː.zi/", 
+      soundTip: "O 'ea' é um 'i' longo e o 's' soa como 'z' ('íi-zi').",
+      category: "Adjetivos", 
+      options: ["Fácil", "Difícil", "Chato", "Longo"], 
+      tip: "Easy step." 
+    },
+    { 
+      id: "w32", 
+      en: "Difficult", 
+      pt: "Difícil", 
+      phoneticPt: "dí-fi-këlt", 
+      ipa: "/ˈdɪf.ə.kəlt/", 
+      soundTip: "A sílaba mais forte é 'dí' no início.",
+      category: "Adjetivos", 
+      options: ["Difícil", "Fácil", "Rápido", "Curto"], 
+      tip: "Not difficult." 
+    },
+    { 
+      id: "w33", 
+      en: "New", 
+      pt: "Novo", 
+      phoneticPt: "núu / niú", 
+      ipa: "/nuː/", 
+      soundTip: "No inglês americano soa simplesmente como 'núu'.",
+      category: "Adjetivos", 
+      options: ["Novo", "Velho", "Grande", "Pequeno"], 
+      tip: "New feature." 
+    },
+    { 
+      id: "w34", 
+      en: "Old", 
+      pt: "Antigo", 
+      phoneticPt: "ôuld", 
+      ipa: "/oʊld/", 
+      soundTip: "O 'L' final soa com a língua no céu da boca ('ôuld').",
+      category: "Adjetivos", 
+      options: ["Antigo", "Novo", "Bom", "Ruim"], 
+      tip: "Old version." 
+    },
+    { 
+      id: "w35", 
+      en: "Clean", 
+      pt: "Limpo", 
+      phoneticPt: "klíin", 
+      ipa: "/kliːn/", 
+      soundTip: "O 'ea' tem som de 'i' longo ('klíin').",
+      category: "Adjetivos", 
+      options: ["Limpo", "Sujo", "Cheio", "Vazio"], 
+      tip: "Clean code." 
+    },
+    { 
+      id: "w36", 
+      en: "Safe", 
+      pt: "Seguro", 
+      phoneticPt: "sêif", 
+      ipa: "/seɪf/", 
+      soundTip: "O 'a' soa como 'êi' e o 'e' final é mudo ('sêif').",
+      category: "Adjetivos", 
+      options: ["Seguro", "Perigoso", "Fraco", "Rápido"], 
+      tip: "Safe connection." 
+    },
+    { 
+      id: "w37", 
+      en: "Important", 
+      pt: "Importante", 
+      phoneticPt: "im-pór-tënt", 
+      ipa: "/ɪmˈpɔːr.tənt/", 
+      soundTip: "A sílaba forte é o 'pór'. O 't' final quase não solta ar.",
+      category: "Adjetivos", 
+      options: ["Importante", "Simples", "Fácil", "Secundário"], 
+      tip: "Important task." 
+    },
+    { 
+      id: "w38", 
+      en: "Great", 
+      pt: "Ótimo", 
+      phoneticPt: "grêit", 
+      ipa: "/ɡreɪt/", 
+      soundTip: "O 'ea' soa como 'êi' ('grêit').",
+      category: "Adjetivos", 
+      options: ["Ótimo", "Péssimo", "Médio", "Pequeno"], 
+      tip: "Great job." 
+    },
+    { 
+      id: "w39", 
+      en: "Correct", 
+      pt: "Correto", 
+      phoneticPt: "kë-rrékt", 
+      ipa: "/kəˈrekt/", 
+      soundTip: "O 'co' no início é bem fraco e rápido ('kë-rrékt').",
+      category: "Adjetivos", 
+      options: ["Correto", "Errado", "Duplo", "Nulo"], 
+      tip: "Correct answer." 
+    },
+    { 
+      id: "w40", 
+      en: "Wrong", 
+      pt: "Errado", 
+      phoneticPt: "rôŋ", 
+      ipa: "/rɑːŋ/", 
+      soundTip: "O 'W' inicial é 100% mudo! Não pronuncie o W, soa como 'rôŋ'.",
+      category: "Adjetivos", 
+      options: ["Errado", "Correto", "Certo", "Pronto"], 
+      tip: "Wrong password." 
+    },
+
+    // 41-55: Questions, Connectors & Time
+    { 
+      id: "w41", 
+      en: "Where", 
+      pt: "Onde", 
+      phoneticPt: "uér", 
+      ipa: "/wer/", 
+      soundTip: "O 'h' é mudo. Soa como 'uér' com 'R' americano.",
+      category: "Perguntas", 
+      options: ["Onde", "Quando", "Quem", "Por que"], 
+      tip: "Where are you?" 
+    },
+    { 
+      id: "w42", 
+      en: "Who", 
+      pt: "Quem", 
+      phoneticPt: "rruu", 
+      ipa: "/huː/", 
+      soundTip: "O 'W' é mudo! Soa como 'rruu' soprado na garganta.",
+      category: "Perguntas", 
+      options: ["Quem", "O que", "Qual", "Como"], 
+      tip: "Who is that?" 
+    },
+    { 
+      id: "w43", 
+      en: "What", 
+      pt: "O que", 
+      phoneticPt: "uót", 
+      ipa: "/wɑːt/", 
+      soundTip: "O 'h' é mudo. O 'a' soa como 'ó' ('uót').",
+      category: "Perguntas", 
+      options: ["O que", "Onde", "Quando", "Quem"], 
+      tip: "What is this?" 
+    },
+    { 
+      id: "w44", 
+      en: "When", 
+      pt: "Quando", 
+      phoneticPt: "uên", 
+      ipa: "/wen/", 
+      soundTip: "O 'h' é mudo. Soa como 'uên'.",
+      category: "Perguntas", 
+      options: ["Quando", "Onde", "Como", "Quem"], 
+      tip: "When do we start?" 
+    },
+    { 
+      id: "w45", 
+      en: "Why", 
+      pt: "Por que", 
+      phoneticPt: "uái", 
+      ipa: "/waɪ/", 
+      soundTip: "O 'h' é mudo. Soa exatamente como 'uái'.",
+      category: "Perguntas", 
+      options: ["Por que", "Como", "Onde", "Qual"], 
+      tip: "Why is it slow?" 
+    },
+    { 
+      id: "w46", 
+      en: "How", 
+      pt: "Como", 
+      phoneticPt: "rráu", 
+      ipa: "/haʊ/", 
+      soundTip: "O 'H' é aspirado como 'rr' e termina em 'áu' ('rráu').",
+      category: "Perguntas", 
+      options: ["Como", "O que", "Onde", "Quem"], 
+      tip: "How to fix it?" 
+    },
+    { 
+      id: "w47", 
+      en: "Because", 
+      pt: "Porque", 
+      phoneticPt: "bi-kóz", 
+      ipa: "/bɪˈkɑːz/", 
+      soundTip: "O 'au' soa como 'ó' e o 's' final tem som de 'z' ('bi-kóz').",
+      category: "Conectivos", 
+      options: ["Porque", "Mas", "Então", "Portanto"], 
+      tip: "Because it works." 
+    },
+    { 
+      id: "w48", 
+      en: "Always", 
+      pt: "Sempre", 
+      phoneticPt: "ól-ueiz", 
+      ipa: "/ˈɑːl.weɪz/", 
+      soundTip: "O 'al' soa como 'ól' ('ól-ueiz').",
+      category: "Tempo", 
+      options: ["Sempre", "Nunca", "Às vezes", "Raramente"], 
+      tip: "Always test." 
+    },
+    { 
+      id: "w49", 
+      en: "Never", 
+      pt: "Nunca", 
+      phoneticPt: "né-ver", 
+      ipa: "/ˈnev.ɚ/", 
+      soundTip: "O 'v' vibra nos dentes e termina em 'er' enrolado.",
+      category: "Tempo", 
+      options: ["Nunca", "Sempre", "Hoje", "Amanhã"], 
+      tip: "Never give up." 
+    },
+    { 
+      id: "w50", 
+      en: "Today", 
+      pt: "Hoje", 
+      phoneticPt: "të-dêi", 
+      ipa: "/təˈdeɪ/", 
+      soundTip: "O 'to' inicial é fraco e rápido ('të-dêi').",
+      category: "Tempo", 
+      options: ["Hoje", "Ontem", "Amanhã", "Agora"], 
+      tip: "Today is good." 
+    },
+    { 
+      id: "w51", 
+      en: "Tomorrow", 
+      pt: "Amanhã", 
+      phoneticPt: "të-mó-rou", 
+      ipa: "/təˈmɑːr.oʊ/", 
+      soundTip: "A sílaba forte é 'mó' ('të-MÓ-rou').",
+      category: "Tempo", 
+      options: ["Amanhã", "Hoje", "Ontem", "Agora"], 
+      tip: "See you tomorrow." 
+    },
+    { 
+      id: "w52", 
+      en: "Yesterday", 
+      pt: "Ontem", 
+      phoneticPt: "iés-ter-dêi", 
+      ipa: "/ˈjes.tɚ.deɪ/", 
+      soundTip: "Começa com som de 'iés' ('iés-ter-dêi').",
+      category: "Tempo", 
+      options: ["Ontem", "Hoje", "Amanhã", "Cedo"], 
+      tip: "I studied yesterday." 
+    },
+    { 
+      id: "w53", 
+      en: "Now", 
+      pt: "Agora", 
+      phoneticPt: "náu", 
+      ipa: "/naʊ/", 
+      soundTip: "O 'ow' soa como 'áu' ('náu').",
+      category: "Tempo", 
+      options: ["Agora", "Depois", "Nunca", "Antes"], 
+      tip: "Do it now." 
+    },
+    { 
+      id: "w54", 
+      en: "Later", 
+      pt: "Mais tarde", 
+      phoneticPt: "lêi-der", 
+      ipa: "/ˈleɪ.t̬ɚ/", 
+      soundTip: "O 't' soa como 'r' suave ('lêider') no inglês americano.",
+      category: "Tempo", 
+      options: ["Mais tarde", "Agora", "Ontem", "Sempre"], 
+      tip: "See you later." 
+    },
+    { 
+      id: "w55", 
+      en: "Soon", 
+      pt: "Em breve", 
+      phoneticPt: "súun", 
+      ipa: "/suːn/", 
+      soundTip: "O 'oo' é um 'u' longo ('súun').",
+      category: "Tempo", 
+      options: ["Em breve", "Nunca", "Ontem", "Tarde"], 
+      tip: "Coming soon." 
+    }
+  ],
+
+  // Mode 2: Tech & Engineering Words (TI & Programação)
+  techWords: [
+    { 
+      id: "t1", 
+      en: "Bug", 
+      pt: "Erro no código", 
+      phoneticPt: "bâg", 
+      ipa: "/bʌɡ/", 
+      soundTip: "O 'u' soa como um 'â' fechado de 'cama'. Não fale 'búg'.",
+      category: "Programação", 
+      options: ["Erro no código", "Recurso novo", "Servidor online", "Banco de dados"], 
+      tip: "Falha no sistema." 
+    },
+    { 
+      id: "t2", 
+      en: "Database", 
+      pt: "Banco de dados", 
+      phoneticPt: "dêi-ta-bêis", 
+      ipa: "/ˈdeɪ.t̬ə.beɪs/", 
+      soundTip: "O 'Data' soa como 'dêita' e 'base' soa como 'bêis'.",
+      category: "Backend", 
+      options: ["Banco de dados", "Servidor de rede", "Memória RAM", "Tela principal"], 
+      tip: "Guarda as tabelas." 
+    },
+    { 
+      id: "t3", 
+      en: "Deploy", 
+      pt: "Publicar aplicação", 
+      phoneticPt: "di-plói", 
+      ipa: "/dɪˈplɔɪ/", 
+      soundTip: "A sílaba forte é o 'plói' no final.",
+      category: "DevOps", 
+      options: ["Publicar aplicação", "Excluir código", "Copiar arquivo", "Reiniciar máquina"], 
+      tip: "Colocar em produção." 
+    },
+    { 
+      id: "t4", 
+      en: "Developer", 
+      pt: "Desenvolvedor", 
+      phoneticPt: "di-vé-lo-per", 
+      ipa: "/dɪˈvel.ə.pɚ/", 
+      soundTip: "A sílaba forte é o 'VÉ' no meio ('di-VÉ-lo-per'). Não fale 'dév-lo-per'.",
+      category: "Cargos TI", 
+      options: ["Desenvolvedor", "Designer", "Gerente", "Suporte"], 
+      tip: "Programador." 
+    },
+    { 
+      id: "t5", 
+      en: "Engineer", 
+      pt: "Engenheiro", 
+      phoneticPt: "en-dji-níer", 
+      ipa: "/ˌen.dʒɪˈnɪr/", 
+      soundTip: "O 'g' soa como 'dj' e a sílaba forte é 'níer' no final.",
+      category: "Cargos TI", 
+      options: ["Engenheiro", "Arquiteto", "Técnico", "Analista"], 
+      tip: "Software Engineer." 
+    },
+    { 
+      id: "t6", 
+      en: "Feature", 
+      pt: "Nova funcionalidade", 
+      phoneticPt: "fíi-tchër", 
+      ipa: "/ˈfiː.tʃɚ/", 
+      soundTip: "O 'ea' soa como 'íi' longo e o 'ture' soa como 'tchër'.",
+      category: "Produto", 
+      options: ["Nova funcionalidade", "Erro antigo", "Relatório final", "Interface visual"], 
+      tip: "Recurso novo." 
+    },
+    { 
+      id: "t7", 
+      en: "Fix", 
+      pt: "Corrigir erro", 
+      phoneticPt: "fíks", 
+      ipa: "/fɪks/", 
+      soundTip: "O 'x' soa como 'ks' bem nítido ('fíks').",
+      category: "Ações TI", 
+      options: ["Corrigir erro", "Criar projeto", "Deletar código", "Testar sistema"], 
+      tip: "Fix the error." 
+    },
+    { 
+      id: "t8", 
+      en: "Fetch data", 
+      pt: "Buscar dados", 
+      phoneticPt: "fétch dêita", 
+      ipa: "/fetʃ ˈdeɪ.t̬ə/", 
+      soundTip: "O 'tch' estala como o 'tche' gaúcho ('fétch').",
+      category: "Ações TI", 
+      options: ["Buscar dados", "Salvar arquivo", "Limpar banco", "Enviar email"], 
+      tip: "Consumir API." 
+    },
+    { 
+      id: "t9", 
+      en: "Cloud", 
+      pt: "Nuvem", 
+      phoneticPt: "kláud", 
+      ipa: "/klaʊd/", 
+      soundTip: "O 'ou' soa como 'áu' ('kláud').",
+      category: "Cloud", 
+      options: ["Nuvem", "Roteador", "Cabo de rede", "Disco local"], 
+      tip: "Servidores remotos." 
+    },
+    { 
+      id: "t10", 
+      en: "API", 
+      pt: "Integração de sistemas", 
+      phoneticPt: "êi-pi-ái", 
+      ipa: "/ˌeɪ.piːˈaɪ/", 
+      soundTip: "Soletra-se cada letra: A (êi) + P (pi) + I (ái).",
+      category: "Backend", 
+      options: ["Integração de sistemas", "Estilo visual", "Banco local", "Sistema operacional"], 
+      tip: "Comunicação entre apps." 
+    },
+    { 
+      id: "t11", 
+      en: "Backend", 
+      pt: "Lado do servidor", 
+      phoneticPt: "bêk-ênd", 
+      ipa: "/ˈbæk.end/", 
+      soundTip: "O 'a' é aberto ('bêk') e o 'e' é curto ('ênd').",
+      category: "Arquitetura", 
+      options: ["Lado do servidor", "Design visual", "Tela do usuário", "Cabo de força"], 
+      tip: "Regras de negócio." 
+    },
+    { 
+      id: "t12", 
+      en: "Frontend", 
+      pt: "Interface do usuário", 
+      phoneticPt: "frânt-ênd", 
+      ipa: "/ˈfrʌnt.end/", 
+      soundTip: "O 'o' soa como 'â' fechado ('frânt-ênd').",
+      category: "Arquitetura", 
+      options: ["Interface do usuário", "Servidor de banco", "Terminal Linux", "Compilador"], 
+      tip: "Telas e botões." 
+    },
+    { 
+      id: "t13", 
+      en: "Pull Request", 
+      pt: "Revisão de código", 
+      phoneticPt: "púl ri-kuêst", 
+      ipa: "/pʊl rɪˈkwest/", 
+      soundTip: "O 'u' de 'pull' soa como 'u' curto e 'request' soa como 'ri-kuêst'.",
+      category: "Git", 
+      options: ["Revisão de código", "Exclusão de projeto", "Download de arquivo", "Envio de email"], 
+      tip: "PR no GitHub." 
+    },
+    { 
+      id: "t14", 
+      en: "Debug", 
+      pt: "Depurar código", 
+      phoneticPt: "di-bâg", 
+      ipa: "/diːˈbʌɡ/", 
+      soundTip: "O 'u' tem som de 'â' fechado ('di-bâg').",
+      category: "Ações TI", 
+      options: ["Depurar código", "Formatar máquina", "Escrever texto", "Desligar servidor"], 
+      tip: "Encontrar causas de bugs." 
+    },
+    { 
+      id: "t15", 
+      en: "Server", 
+      pt: "Servidor", 
+      phoneticPt: "sêr-ver", 
+      ipa: "/ˈsɝː.vɚ/", 
+      soundTip: "O 'er' soa com o 'R' puxado para trás ('sêrr-ver').",
+      category: "Infra", 
+      options: ["Servidor", "Teclado", "Câmera", "Monitor"], 
+      tip: "Computador central." 
+    }
+  ],
+
+  // Mode 3: Real-Life & Work Phrases
+  sentences: [
+    {
+      id: "s1",
+      en: "Is the server online right now?",
+      pt: "O servidor está online agora?",
+      phoneticPt: "Iz dhë sêrver on-láin ráit náu?",
+      ipa: "/ɪz ðə ˈsɝː.vɚ ˌɑːnˈlaɪn raɪt naʊ/",
+      soundTip: "O 'th' de 'the' vibra nos dentes. 'right now' soa como 'ráit náu'.",
+      category: "TI & Infra",
+      options: [
+        "O servidor está online agora?",
+        "O computador está desligado?",
+        "O sistema está lento hoje?",
+        "Onde fica o servidor da empresa?"
+      ]
+    },
+    {
+      id: "s2",
+      en: "I am a software engineer.",
+      pt: "Eu sou um engenheiro de software.",
+      phoneticPt: "Ai ém a sóft-uér en-dji-níer.",
+      ipa: "/aɪ æm ə ˈsɑːft.wer ˌen.dʒɪˈnɪr/",
+      soundTip: "As palavras conectam-se em uma só melodia: 'Ai-ém-a-sóftuér...'.",
+      category: "Apresentação",
+      options: [
+        "Eu sou um engenheiro de software.",
+        "Eu estudo com um engenheiro.",
+        "Meu amigo é programador.",
+        "Eu quero ser engenheiro civil."
+      ]
+    },
+    {
+      id: "s3",
+      en: "We need to fix this error today.",
+      pt: "Nós precisamos corrigir este erro hoje.",
+      phoneticPt: "Uí níid tu fíks dhis é-ror të-dêi.",
+      ipa: "/wiː niːd tuː fɪks ðɪs ˈer.ɚ təˈdeɪ/",
+      soundTip: "O 'this' tem a língua nos dentes com vibração.",
+      category: "Trabalho em Equipe",
+      options: [
+        "Nós precisamos corrigir este erro hoje.",
+        "Eles encontraram um erro novo ontem.",
+        "Você pode criar um relatório hoje?",
+        "O erro já foi consertado ontem."
+      ]
+    },
+    {
+      id: "s4",
+      en: "My laptop is very fast and new.",
+      pt: "Meu notebook é muito rápido e novo.",
+      phoneticPt: "Mái lép-top iz vé-ri fêst end núu.",
+      ipa: "/maɪ ˈlæp.tɑːp ɪz ˈver.i fæst ænd nuː/",
+      soundTip: "O 'p' de 'laptop' estala levemente nos lábios.",
+      category: "Hardware & Rotina",
+      options: [
+        "Meu notebook é muito rápido e novo.",
+        "Meu computador antigo está quebrado.",
+        "Preciso comprar um notebook novo.",
+        "A tela do computador é muito grande."
+      ]
+    },
+    {
+      id: "s5",
+      en: "Are you ready for the team meeting?",
+      pt: "Você está pronto para a reunião de equipe?",
+      phoneticPt: "Ár iú ré-di fór dhë tíim míi-tiŋ?",
+      ipa: "/ɑːr juː ˈred.i fɔːr ðə tiːm ˈmiː.t̬ɪŋ/",
+      soundTip: "O 't' de 'meeting' soa como 'r' suave ('míidiŋ').",
+      category: "Rotina de Trabalho",
+      options: [
+        "Você está pronto para a reunião de equipe?",
+        "Quem vai participar da reunião hoje?",
+        "A reunião foi cancelada pela equipe?",
+        "Você já terminou a apresentação?"
+      ]
+    },
+    {
+      id: "s6",
+      en: "I study English every day to get a tech job.",
+      pt: "Eu estudo inglês todo dia para conseguir um emprego em TI.",
+      phoneticPt: "Ai stâ-di íŋ-glish év-ri dêi tu gét a ték djób.",
+      ipa: "/aɪ ˈstʌd.i ˈɪŋ.ɡlɪʃ ˈev.ri deɪ tuː ɡet ə tek dʒɑːb/",
+      soundTip: "'get a' conecta como 'géta'. 'job' começa com som de 'dj'.",
+      category: "Metas & Carreira",
+      options: [
+        "Eu estudo inglês todo dia para conseguir um emprego em TI.",
+        "Eu trabalho com tecnologia e estudo espanhol.",
+        "Meu emprego em tecnologia exige inglês avançado.",
+        "Eu quero viajar para fora a trabalho."
+      ]
+    },
+    {
+      id: "s7",
+      en: "The application is working perfectly now.",
+      pt: "O aplicativo está funcionando perfeitamente agora.",
+      phoneticPt: "Dhë ép-li-kêi-shën iz uôr-kiŋ pêr-fekt-li náu.",
+      ipa: "/ðə ˌæp.ləˈkeɪ.ʃən ɪz ˈwɝː.kɪŋ ˈpɝː.fekt.li naʊ/",
+      soundTip: "'tion' soa como 'shën'. O 'g' final de 'working' não é pronunciado forte.",
+      category: "TI & Produto",
+      options: [
+        "O aplicativo está funcionando perfeitamente agora.",
+        "O aplicativo ainda tem muitos erros.",
+        "Estamos testando o aplicativo novo.",
+        "O sistema caiu e não está funcionando."
+      ]
+    },
+    {
+      id: "s8",
+      en: "Where is the API documentation?",
+      pt: "Onde está a documentação da API?",
+      phoneticPt: "Uér iz dhë êi-pi-ái dok-iu-men-têi-shën?",
+      ipa: "/wer ɪz ðə ˌeɪ.piːˈaɪ ˌdɑː.kjə.menˈteɪ.ʃən/",
+      soundTip: "'documentation' tem a sílaba mais forte em 'TÊI' ('dok-iu-men-TÊI-shën').",
+      category: "Programação & Dúvidas",
+      options: [
+        "Onde está a documentação da API?",
+        "Como eu configuro esta API?",
+        "A API já foi publicada em produção?",
+        "Quem escreveu este código da API?"
+      ]
+    },
+    {
+      id: "s9",
+      en: "Can you explain how this algorithm works?",
+      pt: "Você pode explicar como este algoritmo funciona?",
+      phoneticPt: "Kên iú eks-plêin rráu dhis él-gö-ri-dhëm uôrks?",
+      ipa: "/kæn juː ɪkˈspleɪn haʊ ðɪs ˈæl.ɡə.rɪ.ðəm wɝːks/",
+      soundTip: "'algorithm' tem o som do 'th' com vibração no final (/ð/).",
+      category: "Entrevista Técnica",
+      options: [
+        "Você pode explicar como este algoritmo funciona?",
+        "Onde posso encontrar mais algoritmos?",
+        "Este código já foi testado no servidor?",
+        "Quem desenvolveu essa funcionalidade nova?"
+      ]
+    },
+    {
+      id: "s10",
+      en: "I understand the problem and I have a solution.",
+      pt: "Eu entendo o problema e tenho uma solução.",
+      phoneticPt: "Ai ân-der-stênd dhë pró-blëm end ai rrév a së-lúu-shën.",
+      ipa: "/aɪ ˌʌn.dɚˈstænd ðə ˈprɑː.bləm ænd aɪ hæv ə səˈluː.ʃən/",
+      soundTip: "'solution' soa como 'së-lúu-shën'.",
+      category: "Resolução de Problemas",
+      options: [
+        "Eu entendo o problema e tenho uma solução.",
+        "O problema é muito complexo para resolver.",
+        "Nós não conseguimos entender o relatório.",
+        "Você tem alguma pergunta sobre o projeto?"
+      ]
+    }
+  ]
+};
