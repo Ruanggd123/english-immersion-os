@@ -13,7 +13,9 @@ export const syncStateToFirebase = async () => {
       english_immersion_progress: localStorage.getItem('english_immersion_progress'),
       english_game_stats: localStorage.getItem('english_game_stats'),
       english_daily_vocab_goal: localStorage.getItem('english_daily_vocab_goal'),
-      english_vocab_srs_state: localStorage.getItem('english_vocab_srs_state')
+      english_vocab_srs_state: localStorage.getItem('english_vocab_srs_state'),
+      english_unlocked_blocks: localStorage.getItem('english_unlocked_blocks'),
+      english_active_block_id: localStorage.getItem('english_active_block_id')
     };
 
     const progressRef = ref(db, DB_ROOT_PATH);
@@ -54,6 +56,16 @@ export const subscribeToFirebaseRealtime = (onStateChange) => {
 
       if (data.english_vocab_srs_state && data.english_vocab_srs_state !== localStorage.getItem('english_vocab_srs_state')) {
         localStorage.setItem('english_vocab_srs_state', data.english_vocab_srs_state);
+        hasChanges = true;
+      }
+
+      if (data.english_unlocked_blocks && data.english_unlocked_blocks !== localStorage.getItem('english_unlocked_blocks')) {
+        localStorage.setItem('english_unlocked_blocks', data.english_unlocked_blocks);
+        hasChanges = true;
+      }
+
+      if (data.english_active_block_id && data.english_active_block_id !== localStorage.getItem('english_active_block_id')) {
+        localStorage.setItem('english_active_block_id', data.english_active_block_id);
         hasChanges = true;
       }
 
