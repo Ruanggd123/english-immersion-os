@@ -271,6 +271,9 @@ body {
   border: none;
   transition: var(--transition-fast);
   min-height: 44px;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .btn-primary {
