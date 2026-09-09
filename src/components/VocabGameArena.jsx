@@ -3,6 +3,7 @@ import { Volume2, Sparkles, Heart, Flame, ArrowRight, RotateCcw, Eye, Headphones
 import { speakNaturalEnglish } from '../utils/audio';
 import { CEFR_LEVELS, BLOCKS_REGISTRY, getBlocksForLevel, getBlockById, getLevelStats } from '../data/blockVocabData';
 import { syncStateToFirebase } from '../utils/firebaseSync';
+import { triggerConfetti } from '../utils/confetti';
 
 // Web Audio API Sound Synthesizer
 const playSoundEffect = (type) => {
@@ -238,6 +239,7 @@ export default function VocabGameArena() {
           nextBlockNum
         });
         playSoundEffect('victory');
+        triggerConfetti(60);
       }
     }
   };

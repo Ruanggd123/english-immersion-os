@@ -1,9 +1,24 @@
-import React, { useState } from 'react';
-import { Calendar, Clock, Flame, Award, CheckCircle2, Play, Sparkles, Gamepad2, Bot, Trophy, Download, Upload, Database, Check, ShieldCheck, Cloud, Wifi } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Calendar, Clock, Flame, Award, CheckCircle2, Play, Sparkles, Gamepad2, Bot, Trophy, Download, Upload, Database, Check, ShieldCheck, Cloud, Wifi, Activity, RefreshCw, Smartphone, Monitor } from 'lucide-react';
+import { testFirebaseRealtimeConnection, syncStateToFirebase } from '../utils/firebaseSync';
 
 export default function Dashboard({ progressData, setTab }) {
   const { currentDay, completedDays, totalHours, streak } = progressData;
   const [importSuccess, setImportSuccess] = useState(false);
+  const [testResult, setTestResult] = useState(null);
+  const [isTestingSync, setIsTestingSync] = useState(false);
+
+  // Auto-run connection diagnostic on mount
+  useEffect(() => {
+    runConnectionTest();
+  }, []);
+
+  const runConnectionTest = async () => {
+    setIsTestingSync(true);
+    const res = await testFirebaseRealtimeConnection();
+    setTestResult(res);
+    setIsTestingSync(false);
+  };
 
   const gameStats = (() => {
     try {
@@ -42,7 +57,9 @@ export default function Dashboard({ progressData, setTab }) {
       english_immersion_progress: localStorage.getItem('english_immersion_progress'),
       english_game_stats: localStorage.getItem('english_game_stats'),
       english_daily_vocab_goal: localStorage.getItem('english_daily_vocab_goal'),
-      english_vocab_srs_state: localStorage.getItem('english_vocab_srs_state')
+      english_vocab_srs_state: localStorage.getItem('english_vocab_srs_state'),
+      english_journal_state: localStorage.getItem('english_journal_state'),
+      english_saturday_tests: localStorage.getItem('english_saturday_tests')
     };
 
     const blob = new Blob([JSON.stringify(backupData, null, 2)], { type: 'application/json' });
@@ -67,7 +84,10 @@ export default function Dashboard({ progressData, setTab }) {
         if (parsed.english_game_stats) localStorage.setItem('english_game_stats', parsed.english_game_stats);
         if (parsed.english_daily_vocab_goal) localStorage.setItem('english_daily_vocab_goal', parsed.english_daily_vocab_goal);
         if (parsed.english_vocab_srs_state) localStorage.setItem('english_vocab_srs_state', parsed.english_vocab_srs_state);
+        if (parsed.english_journal_state) localStorage.setItem('english_journal_state', parsed.english_journal_state);
+        if (parsed.english_saturday_tests) localStorage.setItem('english_saturday_tests', parsed.english_saturday_tests);
         
+        syncStateToFirebase();
         setImportSuccess(true);
         setTimeout(() => {
           window.location.reload();
@@ -80,42 +100,42 @@ export default function Dashboard({ progressData, setTab }) {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.75rem', maxWidth: '1000px', margin: '0 auto' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', maxWidth: '1000px', margin: '0 auto' }}>
       
       {/* Welcome Banner */}
       <div style={{
         background: 'linear-gradient(135deg, rgba(251, 191, 36, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%)',
         border: '1px solid var(--accent-amber)',
         borderRadius: 'var(--radius-xl)',
-        padding: '2rem',
+        padding: '1.75rem',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
         flexWrap: 'wrap',
-        gap: '1.5rem'
+        gap: '1.25rem'
       }}>
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
             <span className="badge badge-amber">
-              <Sparkles size={14} /> Imersão Acelerada (4 Meses)
+              <Sparkles size={14} /> Imersão Acelerada (180 Dias)
             </span>
             <span className="badge badge-emerald">
-              <Cloud size={14} /> Firebase Realtime Cloud: concursos-20cce
+              <Cloud size={14} /> Firebase Realtime Database
             </span>
           </div>
-          <h1 style={{ fontSize: '1.8rem', fontWeight: 800, marginBottom: '0.4rem' }}>
-            Seu Progresso de Imersão & Fluência
+          <h1 style={{ fontSize: '1.7rem', fontWeight: 800, marginBottom: '0.4rem', color: '#ffffff' }}>
+            Seu Painel de Imersão & Fluência
           </h1>
-          <p style={{ color: 'var(--text-secondary)', maxWidth: '650px', fontSize: '0.95rem' }}>
-            Sincronizado automaticamente pelo <strong>Firebase Realtime Database</strong> entre o seu Computador e Celular!
+          <p style={{ color: 'var(--text-secondary)', maxWidth: '650px', fontSize: '0.92rem', lineHeight: 1.5 }}>
+            Sincronizado automaticamente em tempo real via <strong>Firebase WebSocket</strong> entre seu Computador e Celular!
           </p>
         </div>
-        <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-          <button className="btn btn-emerald" onClick={() => setTab('game')} style={{ padding: '0.75rem 1.5rem', fontSize: '0.95rem' }}>
-            <Gamepad2 size={18} /> Jogar Game de Escuta
+        <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', width: '100%', maxWidth: '380px' }}>
+          <button className="btn btn-emerald" onClick={() => setTab('game')} style={{ flex: 1, padding: '0.75rem 1rem', fontSize: '0.9rem' }}>
+            <Gamepad2 size={18} /> Jogar Game
           </button>
-          <button className="btn btn-primary" onClick={() => setTab('ai')} style={{ padding: '0.75rem 1.5rem', fontSize: '0.95rem' }}>
-            <Bot size={18} /> Conversar com IA por Voz
+          <button className="btn btn-primary" onClick={() => setTab('ai')} style={{ flex: 1, padding: '0.75rem 1rem', fontSize: '0.9rem' }}>
+            <Bot size={18} /> Tutor IA por Voz
           </button>
         </div>
       </div>
@@ -127,7 +147,7 @@ export default function Dashboard({ progressData, setTab }) {
             <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600 }}>VOCABULÁRIO HOJE</span>
             <Trophy size={20} color="var(--accent-amber)" />
           </div>
-          <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--accent-amber)', marginBottom: '0.5rem' }}>
+          <div style={{ fontSize: '1.9rem', fontWeight: 800, color: 'var(--accent-amber)', marginBottom: '0.5rem' }}>
             {gameStats.todayCount} <span style={{ fontSize: '1rem', color: 'var(--text-muted)', fontWeight: 500 }}>/ {gameStats.todayTarget} palavras</span>
           </div>
           <div className="progress-bar-bg">
@@ -144,11 +164,11 @@ export default function Dashboard({ progressData, setTab }) {
             <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600 }}>BANCO DE RETENÇÃO (SRS)</span>
             <Database size={20} color="var(--accent-emerald)" />
           </div>
-          <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--accent-emerald)', marginBottom: '0.5rem' }}>
+          <div style={{ fontSize: '1.9rem', fontWeight: 800, color: 'var(--accent-emerald)', marginBottom: '0.5rem' }}>
             {gameStats.masteredCount} <span style={{ fontSize: '1rem', color: 'var(--text-muted)', fontWeight: 500 }}>dominadas</span>
           </div>
           <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-            🟨 <strong>{gameStats.reviewingCount}</strong> em revisão • 👂 <strong>{gameStats.soundGapCount}</strong> foco em pronúncia
+            🟨 <strong>{gameStats.reviewingCount}</strong> em revisão • 👂 <strong>{gameStats.soundGapCount}</strong> foco em som
           </p>
         </div>
 
@@ -157,7 +177,7 @@ export default function Dashboard({ progressData, setTab }) {
             <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600 }}>NÍVEL & COMBO</span>
             <Flame size={20} color="var(--accent-amber)" />
           </div>
-          <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--accent-blue)', marginBottom: '0.5rem' }}>
+          <div style={{ fontSize: '1.9rem', fontWeight: 800, color: 'var(--accent-blue)', marginBottom: '0.5rem' }}>
             Nível {gameStats.level} <span style={{ fontSize: '1rem', color: 'var(--accent-amber)', fontWeight: 700 }}>({gameStats.xp} XP)</span>
           </div>
           <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
@@ -166,31 +186,83 @@ export default function Dashboard({ progressData, setTab }) {
         </div>
       </div>
 
-      {/* ☁️ FIREBASE REALTIME CLOUD STATUS */}
-      <div className="card" style={{ borderColor: 'rgba(16, 185, 129, 0.4)', background: 'linear-gradient(135deg, var(--bg-card) 0%, rgba(16, 185, 129, 0.08) 100%)' }}>
+      {/* ☁️ FIREBASE REALTIME DIAGNOSTIC & SYNC VERIFICATION CARD */}
+      <div className="card" style={{ borderColor: testResult?.success ? 'rgba(16, 185, 129, 0.4)' : 'rgba(56, 189, 248, 0.3)', background: 'linear-gradient(135deg, var(--bg-card) 0%, rgba(16, 185, 129, 0.06) 100%)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.4rem' }}>
-              <Cloud size={18} color="var(--accent-emerald)" />
-              <span className="badge badge-emerald">Firebase Realtime Database Ativo</span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.4rem', flexWrap: 'wrap' }}>
+              <Cloud size={18} color={testResult?.success ? "var(--accent-emerald)" : "var(--accent-blue)"} />
+              <span className={`badge ${testResult?.success ? 'badge-emerald' : 'badge-blue'}`}>
+                {testResult?.success ? "🟢 Realtime Database Ativo & Sincronizando" : "🟡 Verificando Conexão..."}
+              </span>
+              {testResult?.latencyMs && (
+                <span className="badge badge-amber">
+                  ⚡ Latência: {testResult.latencyMs} ms
+                </span>
+              )}
             </div>
-            <h3 style={{ fontSize: '1.25rem', fontWeight: 800 }}>Sincronização em Nuvem Global</h3>
-            <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '0.2rem', maxWidth: '650px' }}>
-              Seu banco de dados do Firebase (<strong>concursos-20cce</strong>) está conectado. Você pode abrir o app em qualquer lugar do mundo no seu celular ou PC: o progresso sincroniza em milissegundos via WebSocket!
+
+            <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#ffffff' }}>
+              Auditoria de Banco de Dados Firebase Realtime
+            </h3>
+
+            <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '0.2rem', maxWidth: '680px', lineHeight: 1.5 }}>
+              URL do Banco: <strong style={{ color: 'var(--accent-blue)', fontFamily: 'var(--font-mono)' }}>https://concursos-20cce-default-rtdb.firebaseio.com</strong>
+              <br />
+              Caminho de Sincronização: <code style={{ color: 'var(--accent-emerald)' }}>english_immersion_os/user_progress</code>
             </p>
           </div>
 
-          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', alignItems: 'center' }}>
-            <button className="btn btn-secondary" onClick={handleExportBackup} style={{ fontSize: '0.85rem' }}>
-              <Download size={16} /> Baixar Backup Local (.json)
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', alignItems: 'center', width: '100%', maxWidth: '420px' }}>
+            <button 
+              className="btn btn-emerald" 
+              onClick={runConnectionTest} 
+              disabled={isTestingSync}
+              style={{ flex: 1, fontSize: '0.88rem' }}
+            >
+              {isTestingSync ? <RefreshCw size={16} className="spin" /> : <Activity size={16} />}
+              Testar Conexão Realtime Agora
             </button>
 
-            <label className="btn btn-primary" style={{ fontSize: '0.85rem', cursor: 'pointer', margin: 0 }}>
-              <Upload size={16} /> Restaurar Arquivo
-              <input type="file" accept=".json" onChange={handleImportBackup} style={{ display: 'none' }} />
-            </label>
+            <button className="btn btn-secondary" onClick={handleExportBackup} style={{ fontSize: '0.85rem' }}>
+              <Download size={15} /> Backup (.json)
+            </button>
           </div>
         </div>
+
+        {/* Live Test Diagnostic Output */}
+        {testResult && (
+          <div style={{
+            marginTop: '1.25rem',
+            padding: '1rem 1.25rem',
+            background: testResult.success ? 'rgba(16, 185, 129, 0.1)' : 'rgba(244, 63, 94, 0.1)',
+            border: testResult.success ? '1px solid var(--accent-emerald)' : '1px solid var(--accent-rose)',
+            borderRadius: 'var(--radius-md)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '0.75rem'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+              <CheckCircle2 size={20} color={testResult.success ? "var(--accent-emerald)" : "var(--accent-rose)"} />
+              <div>
+                <div style={{ fontSize: '0.9rem', fontWeight: 800, color: testResult.success ? "var(--accent-emerald)" : "var(--accent-rose)" }}>
+                  {testResult.success ? "✅ Teste de Leitura & Escrita Realtime Concluído com Sucesso!" : "❌ Falha no teste de conexão"}
+                </div>
+                <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)' }}>
+                  Resposta em <strong>{testResult.latencyMs}ms</strong> às {testResult.timestamp}. Dados de progresso salvos continuamente via WebSocket!
+                </div>
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+              <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                <Monitor size={13} /> PC ↔ <Smartphone size={13} /> Celular
+              </span>
+            </div>
+          </div>
+        )}
 
         {importSuccess && (
           <div style={{ marginTop: '1rem', padding: '0.75rem', background: 'var(--accent-emerald-glow)', border: '1px solid var(--accent-emerald)', borderRadius: 'var(--radius-sm)', color: 'var(--accent-emerald)', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -202,3 +274,4 @@ export default function Dashboard({ progressData, setTab }) {
     </div>
   );
 }
+
